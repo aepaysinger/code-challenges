@@ -1,18 +1,28 @@
-import math
-import os
-import random
-import re
+import io
 import sys
 
-def weird_stuff(n):
-    if n % 2 != 0:
-        print("Weird")
-    elif n % 2 == 0 and n in range(2,6):
-        print("Not Weird")
-    elif n % 2 == 0 and n in range(6,21):    
-        print("Weird")
-    elif  n % 2 == 0 and n > 20:
-        print("Not Weird") 
+from code_challenges.hacker_rank.if_else import weird_stuff
 
-assert weird_stuff(3) == "Weird", f"Returned: {weird_stuff(3)}, instead of Weird"
-assert weird_stuff(4) == "Not Weird", f"Returned: {weird_stuff(4)}, instead of Not Weird"
+
+def test_weird_stuff_not_weird():
+    capturedOutput = io.StringIO()                  # Create StringIO object
+    sys.stdout = capturedOutput                     #  and redirect stdout.
+    weird_stuff(4)                                  # Call function.
+    sys.stdout = sys.__stdout__                     # Reset redirect.
+
+    assert capturedOutput.getvalue() == "Not Weird\n", f"Printed: {capturedOutput.getvalue()}, instead of Not Weird"
+# not the \n in the string
+
+def test_weird_stuff_weird():
+    capturedOutput = io.StringIO()                  # Create StringIO object
+    sys.stdout = capturedOutput                     #  and redirect stdout.
+    weird_stuff(3)                                  # Call function.
+    sys.stdout = sys.__stdout__                     # Reset redirect.
+
+    assert capturedOutput.getvalue() == "Weird\n", f"Printed: {capturedOutput.getvalue()}, instead of Weird"
+
+
+
+
+
+
