@@ -21,6 +21,22 @@ def test_weird_stuff_weird():
 
     assert capturedOutput.getvalue() == "Weird\n", f"Printed: {capturedOutput.getvalue()}, instead of Weird"
 
+def test_weird_stuff_weird():
+    capturedOutput = io.StringIO()                  # Create StringIO object
+    sys.stdout = capturedOutput                     #  and redirect stdout.
+    weird_stuff(8)                                  # Call function.
+    sys.stdout = sys.__stdout__                     # Reset redirect.
+
+    assert capturedOutput.getvalue() == "Weird\n", f"Printed: {capturedOutput.getvalue()}, instead of Weird"
+
+def test_weird_stuff_weird():
+    capturedOutput = io.StringIO()                  # Create StringIO object
+    sys.stdout = capturedOutput                     #  and redirect stdout.
+    weird_stuff(22)                                  # Call function.
+    sys.stdout = sys.__stdout__                     # Reset redirect.
+
+    assert capturedOutput.getvalue() == "Not Weird\n", f"Printed: {capturedOutput.getvalue()}, instead of Not Weird"
+
 
 
 
