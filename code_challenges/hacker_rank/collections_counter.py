@@ -10,8 +10,6 @@ def rhagu_shoe_orders(shoe_sizes, shoe_order_and_size):
     print(money_made)  
 
 
-
-
 if __name__ == '__main__':
     number_of_shoes = int("10")
     shoe_sizes = "2 3 4 5 6 8 7 6 5 18".split()
