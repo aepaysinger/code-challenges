@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def rhagu_shoe_orders(shoe_sizes, shoe_order_and_size):
     inventory = Counter(shoe_sizes)
     money_made = 0    
