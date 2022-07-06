@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 def fun_division(a,b):
     print((a // b))
     print(round(a / b, 2))
