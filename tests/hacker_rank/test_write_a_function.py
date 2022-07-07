@@ -1,6 +1,3 @@
-import io
-import sys
-
 from code_challenges.hacker_rank.write_a_function import is_leap
 
 
