@@ -13,6 +13,5 @@ print(f'({count}, {current_letter})', end = '')
     
 
 if __name__ == '__main__':
-    a_string = "aabbbcaafff"
-    # print(a_string)
+    a_string = str(input())
     compressing_strings(a_string)
