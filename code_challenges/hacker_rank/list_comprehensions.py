@@ -3,8 +3,8 @@ def create_cuboids(x, y, z, n):
     print(cuboids)
 
 if __name__ == '__main__':
-    x = 1
-    y = 1
-    z = 1
-    n = 2
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
     create_cuboids(x, y, z, n)
