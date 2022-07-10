@@ -29,3 +29,4 @@ def test_create_cuboids_n3():
     sys.stdout = sys.__stdout__                    
 
     assert capturedOutput.getvalue() == '[[0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [0, 2, 0], [0, 3, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 2, 1], [1, 3, 0], [1, 3, 1]]\n', f"Printed: {capturedOutput.getvalue()}, instead of [[[0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 1], [0, 2, 0], [0, 3, 1], [1, 0, 0], [1, 0, 1], [1, 1, 0], [1, 2, 1], [1, 3, 0], [1, 3, 1]]"    
+    
