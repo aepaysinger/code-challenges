@@ -9,7 +9,7 @@ def compressing_strings(a_string):
             print(f'({count}, {current_letter}) ', end = '')
             current_letter = letter
             count = 1
-print(f'({count}, {current_letter})', end = '')
+    print(f'({count}, {current_letter})', end = '')
     
 
 if __name__ == '__main__':
