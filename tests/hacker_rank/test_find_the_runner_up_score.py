@@ -29,3 +29,4 @@ def test_runner_up_high_first():
     sys.stdout = sys.__stdout__                    
 
     assert capturedOutput.getvalue() == "6\n", f"Printed: {capturedOutput.getvalue()}, instead of 6"
+    
