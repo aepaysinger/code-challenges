@@ -16,5 +16,4 @@ if __name__ == '__main__':
     print(making_combinations('ABCD', 3))
 
       # CREATE A STRING THAT IS EXACTLY WHAT I WANT TO PRINT OUT, THEN IN THE IF __NAME__ == '__MAIN__' PRINT THE FUNCTION        
-    # for number in range(1,a_number + 1):
-    #     print(number)
+
