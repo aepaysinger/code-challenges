@@ -8,3 +8,7 @@ def is_leap(year):
       return True
 
     return leap
+
+
+if __name__ == '__main__':
+    print(is_leap(2003))
