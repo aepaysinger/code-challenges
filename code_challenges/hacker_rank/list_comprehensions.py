@@ -1,6 +1,6 @@
 def create_cuboids(x, y, z, n):
     cuboids = [[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if i + j + k != n]
-    print(cuboids)
+    return cuboids
 
 
 if __name__ == '__main__':
@@ -8,4 +8,4 @@ if __name__ == '__main__':
     y = int(input())
     z = int(input())
     n = int(input())
-    create_cuboids(x, y, z, n)
+    print(create_cuboids(x, y, z, n))
