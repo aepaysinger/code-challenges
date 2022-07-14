@@ -4,8 +4,7 @@ def check_tie(array):
 
 def runner_up(array):
     if check_tie(array) == True: 
-        print("it's a tie!")
-        return
+        return "it's a tie!"
     else: 
         biggest_number = -100 
         second_biggest = -100    
@@ -15,11 +14,10 @@ def runner_up(array):
                 biggest_number = number
             elif number > second_biggest and number < biggest_number:
                 second_biggest = number        
-    print(second_biggest)
+    return second_biggest
 
 
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    check_tie(n)
-    runner_up(n)
+    print(runner_up(arr))
