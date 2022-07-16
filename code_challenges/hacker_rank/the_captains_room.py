@@ -11,14 +11,14 @@ def find_the_captain(room_numbers):
             family_room.add(room_number)
     if not captains_room:
         return "where did the captain go?"
+    elif len(captains_room) >= 2:
+        return "Don't forget the crew!" 
     else:
         return captains_room.pop()
+        
 
 
 if __name__ == "__main__":
-    # K = int(input())
-    # print(K)
-    room_numbers = (
-        "1 2 3 6 5 4 4 2 5 3 6 1 6 5 3 2 4 1 2 5 1 4 3 6 8 4 3 1 5 6 2".split(" ")
-    )
+    K = int(input())
+    room_numbers = input().split(" ")
     print(find_the_captain(room_numbers))
