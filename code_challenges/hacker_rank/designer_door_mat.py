@@ -1,7 +1,6 @@
 def draw_door_mat(size, greeting):
     height = int(size[0])
     length = int(size[1])
-    starter = int((length - 1) / 2)
     greeting_design_count = int((length - int(len(greeting))) / 2)
     detail_a = ".|."
     detail_b = "-"
