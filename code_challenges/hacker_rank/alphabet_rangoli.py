@@ -8,7 +8,7 @@ def alphabet_rangoli(rangoli_size):
     for _ in range(rangoli_size):
         pattern.append("-"*count + design[rangoli_size-1] + "-"*count )
         count -= 2
-    return pattern
+    return "\n".join(pattern)
 
     
 
