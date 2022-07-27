@@ -1,18 +1,25 @@
 def find_the_exception(number_of_test_cases, the_values):
-    result =[]
-    try:
-        for pairs in the_values:
-           result.append(int(pairs[0]) / int(pairs[1]))
-    except ZeroDivisionError:
-        result.append("Error Code: integer division or modulo by zero")
-        pass
-    except ValueError:
-        result.append("Error Code: invalid literal for int() with base 10: '{the_values[1]}'")
-    print(result)
+    result = []
+    for first, second in the_values:
+        try:
+            result.append(int(int(first) / int(second)))
+        except ZeroDivisionError:
+            result.append("Error Code: integer division or modulo by zero")
+        except ValueError:
+            if first.isdigit():
+                result.append(
+                    f"Error Code: invalid literal for int() with base 10: '{second}'"
+                )
+            else:
+                result.append(
+                    f"Error Code: invalid literal for int() with base 10: '{first}'"
+                )
+    return "\n".join(map(str, result))
+
 
 if __name__ == "__main__":
-    number_of_test_cases = 3
-    the_values = [['1', '0'], ['2', '$'], ['3', '1']]
-    # for _ in range(number_of_test_cases):
-    #     the_values.append(input().split())
-    find_the_exception(number_of_test_cases, the_values)
+    number_of_test_cases = int(input())
+    the_values = []
+    for _ in range(number_of_test_cases):
+        the_values.append(input().split())
+    print(find_the_exception(number_of_test_cases, the_values))
