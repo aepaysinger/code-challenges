@@ -23,7 +23,7 @@ def test_make_logo_tie_out_of_order():
 
 
 def test_make_logo_with_space():
-    actual = make_logo("crazy company name")
-    expected = "a 3\nc 2\nm 2"
+    actual = make_logo("aa bb cc dd")
+    expected = "a 2\nb 2\nc 2"
 
     assert actual == expected, f"Returned {actual} but should have returned {expected}"

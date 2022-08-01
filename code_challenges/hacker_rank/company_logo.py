@@ -2,7 +2,6 @@ def make_logo(name):
     letters = {}
     for letter in name:
         if letter == " ":
-            letters[letter] = 0
             continue
         try:
             letters[letter] += 1
@@ -27,5 +26,5 @@ def make_logo(name):
 
 
 if __name__ == "__main__":
-    name = "crazy company name"
+    name = input()
     print(make_logo(name))
