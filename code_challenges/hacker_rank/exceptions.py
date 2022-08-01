@@ -2,7 +2,7 @@ def find_the_exception(the_values):
     result = []
     for first, second in the_values:
         try:
-            result.append(str(int(int(first) / int(second))))
+            result.append(str((int(first) // int(second))))
         except ZeroDivisionError:
             result.append("Error Code: integer division or modulo by zero")
         except ValueError:
