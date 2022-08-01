@@ -10,8 +10,8 @@ def compressing_strings(a_string):
             compressed_string.append((count, current_letter))
             current_letter = letter
             count = 1
-    return compressed_string
-    # print(f'({count}, {current_letter})', end = '')
+    return ",".join(compressed_string)
+    
     
 
 if __name__ == '__main__':
