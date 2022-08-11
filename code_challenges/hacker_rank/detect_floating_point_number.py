@@ -5,10 +5,10 @@ def detect_floating_point_number(cases):
             results.append("False")
         if case.isalpha():
             results.append("False")   
-        if case[0] == "-" or "+":
+        if case[0] == "-" or case[0] == "+":
             case = case.replace('-', '')
             case = case.replace('+', '')
-        if case.isdigit():
+        elif case.isdigit():
             results.append("False")
         else:
             results.append("True")
