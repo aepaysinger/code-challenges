@@ -12,4 +12,6 @@ def is_square(n):
 
 
 if __name__ == "__main__":
+    n = 34
+    print(is_square(n))
     
