@@ -13,4 +13,3 @@ def test_count_by_5():
     expected = "5, 10, 15, 20, 25, 30"
 
     assert actual == expected, f"should have returned {expected}, but returned {actual}"
-
