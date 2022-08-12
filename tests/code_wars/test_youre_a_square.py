@@ -13,3 +13,10 @@ def test_youre_a_square_true():
     expected = True
 
     assert actual == expected, f"Returned {actual}, instead of {expected}"
+
+
+def test_youre_a_square_less_than_zero():
+    actual = is_square(-16)
+    expected = False
+
+    assert actual == expected, f"Returned {actual}, instead of {expected}"
