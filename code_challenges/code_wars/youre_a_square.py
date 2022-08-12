@@ -1,7 +1,7 @@
 import math
 
 
-def is_square(n):    
+def is_square(n):
     if n < 0:
         return False
     x = math.sqrt(n)
@@ -14,6 +14,3 @@ def is_square(n):
 if __name__ == "__main__":
     n = 34
     print(is_square(n))
-    
-
-    # fun things
