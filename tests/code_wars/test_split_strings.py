@@ -7,7 +7,7 @@ def test_split_the_string_even_string_len():
 
     assert (
         actual == expected
-    ), "you should renturn a list with the strings evenly split into pairs."
+    ), "you should return a list with the strings evenly split into pairs."
 
 
 def test_split_the_string_odd():
