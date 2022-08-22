@@ -33,3 +33,10 @@ def test_find_short_number():
     expected = 2
 
     assert actual == expected, f"Should have returned {expected} instead of {actual}"
+
+
+def test_find_short_empty_string():
+    actual = find_short("")
+    expected = 0
+
+    assert actual == expected, f"Should have returned {expected} instead of {actual}"

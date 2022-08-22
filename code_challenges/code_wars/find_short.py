@@ -1,10 +1,8 @@
 def find_short(s):
-    shortest = ""
     seperated_words = s.split(" ")
+    shortest = seperated_words[0]
 
     for word in seperated_words:
-        if shortest == "":
-            shortest += word
         if len(word) < len(shortest):
             shortest = word
     return len(shortest)
