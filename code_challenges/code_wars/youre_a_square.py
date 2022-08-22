@@ -12,5 +12,5 @@ def is_square(n):
 
 
 if __name__ == "__main__":
-    n = 34
+    n = int(input())
     print(is_square(n))
