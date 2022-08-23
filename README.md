@@ -1,6 +1,5 @@
 # code_challenges
 ## Code Wars
----
 ### Counting Duplicates (6kyu)
   * Module: `code_challenges/code_wars/counting_duplicates.py`
   * Tests: `tests/code_wars/test_counting_duplicates.py`
