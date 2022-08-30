@@ -1,4 +1,4 @@
-def high(words):
+def highest_scoring_word(words):
     letter_points = {
         "a": 1,
         "b": 2,
@@ -36,16 +36,16 @@ def high(words):
         score_board[word] = word_points
     highest_word = None
     highest_score = 0
-    for key in score_board:
-        if score_board[key] > highest_score:
-            highest_score = score_board[key]
-            highest_word = key
-        elif score_board[key] == highest_score:
-            highest_word += " " + key
+    for word in score_board:
+        if score_board[word] > highest_score:
+            highest_score = score_board[word]
+            highest_word = word
+        elif score_board[word] == highest_score:
+            highest_word += " " + word
 
     return highest_word
 
 
 if __name__ == "__main__":
     words = "not sure what other test to run"
-    print(high(words))
+    print(highest_scoring_word(words))
