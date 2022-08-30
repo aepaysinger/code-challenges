@@ -12,4 +12,8 @@
   * Module: `code_challenges/code_wars/counting_duplicates.py`
   * Tests: `tests/code_wars/test_counting_duplicates.py`
   * URL: [challenge url](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/python)
+### Dice Game (6kyu)
+  * Module: `code_challenges/code_wars/dice_game.py`
+  * Tests: `tests/code_wars/test_dice_game.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5270d0d18625160ada0000e4/python)
 
