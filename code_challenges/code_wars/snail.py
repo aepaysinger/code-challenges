@@ -28,6 +28,10 @@ def snail(trail):
 
 
 if __name__ == "__main__":
-    trail = [[1, 2, 3], [8, 9, 4], [7, 6, 5]]
+    trail = [
+        [1, 2, 3], 
+        [8, 9, 4], 
+        [7, 6, 5],
+    ]
 
     print(snail(trail))
