@@ -12,4 +12,7 @@
   * Module: `code_challenges/code_wars/counting_duplicates.py`
   * Tests: `tests/code_wars/test_counting_duplicates.py`
   * URL: [challenge url](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/python)
-
+### Snail (4kyu)
+  * Module: `code_challenges/code_wars/snail.py`
+  * Tests: `tests/code_wars/test_snail.py`
+  * URL: [challenge url](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/python)
