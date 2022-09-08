@@ -16,6 +16,10 @@
   * Module: `code_challenges/code_wars/snail.py`
   * Tests: `tests/code_wars/test_snail.py`
   * URL: [challenge url](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/python)
+### Multiples of 3 and 5 (6kyu)
+  * Module `code_challenges/code_wars/multiples_of_3_and_5.py`
+  * Tests: `tests/code_wars/test_multiples_of_3_and_5.py`
+  * URL: [challenge url](https://www.codewars.com/kata/514b92a657cdc65150000006/python)
 ### Make The Deadfish Swim (6kyu)
   * Module: `code_challenges/code_wars/make_the_deadfish_swim.py`
   * Tests: `tests/code_wars/test_make_the_deadfish_swim.py`
