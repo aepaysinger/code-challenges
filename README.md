@@ -12,6 +12,10 @@
   * Module: `code_challenges/code_wars/counting_duplicates.py`
   * Tests: `tests/code_wars/test_counting_duplicates.py`
   * URL: [challenge url](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/python)
+### Multiples of 3 and 5 (6kyu)
+  * Module `code_challenges/code_wars/multiples_of_3_and_5.py`
+  * Tests: `tests/code_wars/test_multiples_of_3_and_5.py`
+  * URL: [challenge url](https://www.codewars.com/kata/514b92a657cdc65150000006/python)
 ### Make The Deadfish Swim (6kyu)
   * Module: `code_challenges/code_wars/make_the_deadfish_swim.py`
   * Tests: `tests/code_wars/test_make_the_deadfish_swim.py`
@@ -28,5 +32,3 @@
   * Module: `code_challenges/code_wars/highest_scoring_word.py`
   * Tests: `tests/code_wars/test_highest_scoring_word.py`
   * URL: [challenge url](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/python)
-
-
