@@ -1,4 +1,6 @@
 def consecutive_strings(starr, k):
+    if k > len(starr) or k <= 0 or len(starr) == 0:
+        return ""
     word_tracker = {}
     
     for word in starr:
@@ -9,8 +11,6 @@ def consecutive_strings(starr, k):
     print(word_tracker)
     
     the_words = []
-
-    
     for _ in range(len(word_tracker)):
         amount = 0
         for word_length in word_tracker:
@@ -20,8 +20,6 @@ def consecutive_strings(starr, k):
         del word_tracker[amount]
         amount = 0
         
-       
-    
     final_string = ""
     for i in range(k):
         final_string += the_words[i]
@@ -32,3 +30,5 @@ if __name__ == "__main__":
     starr = ["zone", "abigail", "theta", "form", "libe", "zas"]
     k = 2
     print(consecutive_strings(starr, k)) 
+
+   # return in the order they came in"xx
