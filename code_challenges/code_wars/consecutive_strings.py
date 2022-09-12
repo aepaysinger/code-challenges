@@ -20,14 +20,20 @@ def consecutive_strings(starr, k):
         del word_tracker[amount]
         amount = 0
         
-    final_string = ""
+    final_words = []
     for i in range(k):
-        final_string += the_words[i]
+        final_words.append(the_words[i])
+
+    final_string = ""
+    for word in starr:
+        if word in final_words:
+            final_string += word
+
        
     return  final_string
     
 if __name__ == "__main__":
-    starr = ["zone", "abigail", "theta", "form", "libe", "zas"]
+    starr = ["zone", "theta", "abigail", "form", "libe", "zas"]
     k = 2
     print(consecutive_strings(starr, k)) 
 
