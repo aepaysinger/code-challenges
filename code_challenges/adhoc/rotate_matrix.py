@@ -18,6 +18,20 @@ def rotate_matrix(matrix):
 
     return final_matrix  #"\n".join(map(str,final_matrix))
 
+
+def rotate_v2(matrix):
+    rotated = []
+    for i in range(len(matrix)):
+        row = []
+        for j in range(len(matrix) - 1, -1, -1):
+            row.append(matrix[j][i])
+        rotated.append(row)
+    return rotated
+
+
+def rotate_v3(matrix):
+    return [list(r) for r in zip(*matrix[::-1])]
+
 if __name__ == "__main__":
     matrix = [
         [1,2,3,8],
