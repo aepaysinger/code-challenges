@@ -21,22 +21,23 @@ def test_consecutive_strings_same_length():
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
+
 def test_consecutive_strings_k_bigger():
     actual = consecutive_strings(["auto", "zone", "love", "them", "cars", "man!"], 7)
     expected = ""
-    
+
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
 
 def test_consecutive_strings_k_too_small():
     actual = consecutive_strings(["auto", "zone", "love", "them", "cars", "man!"], -3)
     expected = ""
-    
+
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
 
 def test_consecutive_strings_len_0():
     actual = consecutive_strings([], 2)
     expected = ""
-    
+
     assert actual == expected, f"Returned {actual} instead of {expected}"
