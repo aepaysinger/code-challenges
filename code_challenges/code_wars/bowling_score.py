@@ -14,11 +14,12 @@ def bowling_score(frames):
         "X": 10,
         "/": 10,
     }
-    for i, round in enumerate(frames):
-        if round[0] == "x":
-            
+    for round in frames:
         score += points[round[0]] + points[round[0]]
-        print(score)
+    for i, round in enumerate(frames):
+        if round == "X":
+            score += frames[i]
+    
         
         
 
@@ -26,5 +27,5 @@ def bowling_score(frames):
 
 
 if __name__ == "__main__":
-    frames = "11 11 11 11 11 11 11 11 11 11"
+    frames = "11 X 11 11 11 11 11 11 11 11"
     print(bowling_score(frames))
