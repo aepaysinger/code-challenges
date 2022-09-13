@@ -1,8 +1,8 @@
 def rotate_matrix(matrix):
     rotated_matrix = []
-    length = 0
-    for path in matrix:
-        length += 1
+    length = len(matrix)
+    # for path in matrix:
+    #     length += 1
     count = 0
     while count < (length * length):
         for path in reversed(matrix):
