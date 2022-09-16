@@ -18,6 +18,7 @@ def bowling_score(frames):
                 score += 10 + (points[frames[i+1][0]])
             else:
                 score += points[frames[i][0]] + points[frames[i][1]]
+            
         if len(frames[i]) == 3:
             if frames[i] == "XXX":
                 score += 30
@@ -25,14 +26,13 @@ def bowling_score(frames):
             if i == 7:
                 if frames[i+1] == "X" and frames[i+2][0] == "X":
                     score += 30
-                    
+                    continue      
             if i == 8:    
                 if frames[i+1][0] == "X" and frames[i+1][1] == "X":
+                    score += 30      
+            if i == 9:
+                if frames[i+1][0] == "X" and frames[i+1][1] == "X" and frames[i+1][2] == "X":
                     score += 30
-                    
-            # if i == 9:
-            #     if frames[i+1][0] == "X" and frames[i+1][1] == "X" and frames[i+1][2] == "X":
-            #         score += 30
             elif frames[i+1] == "X" and frames[i+2] == "X":
                 score += 30
             elif frames[i+1] == "X":
@@ -41,8 +41,15 @@ def bowling_score(frames):
                 score += 10 + (points[frames[i+1][0]] + points[frames[i+1][1]])
         print(frames[i], i, score)
     return score
+# def find_points_last_frame(points, frames)
+
+
 
 
 if __name__ == "__main__":
     frames = "X X X X X X X X X XXX"
     print(bowling_score(frames))
+
+    # must have more then 1 function!
+
+
