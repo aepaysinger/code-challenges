@@ -40,4 +40,7 @@
   * Module: `code_challenges/code_wars/highest_scoring_word.py`
   * Tests: `tests/code_wars/test_highest_scoring_word.py`
   * URL: [challenge url](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/python)
-
+### Help the bookseller (6kyu)
+  * Module: `code_challenges/code_wars/help_the_bookseller.py`
+  * Tests: `tests/code_wars/test_help_the_bookseller.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54dc6f5a224c26032800005c/python)

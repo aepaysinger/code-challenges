@@ -1,15 +1,18 @@
 def help_the_bookseller(codes, categories):
     category_with_amount = category_amount(codes)
     
+    category_tracker = 0
     final_result = ""
     for letter in categories:
         if letter in category_with_amount:
             final_result += f"({letter} : {category_with_amount[letter]}) - "
+            category_tracker += 1
         else:
             final_result += f"({letter} : 0) - "
-    
-        
-    return final_result[:-3]
+    if category_tracker == 0:
+        return ""
+    else:
+        return final_result[:-3]
     
 
 def category_amount(codes):
@@ -23,9 +26,6 @@ def category_amount(codes):
     return category_with_amount
     
         
-    
-
-
 if __name__ == "__main__":
     codes = ["BBAR 150", "CDXE 515", "BKWR 250", "BTSQ 890", "DRTY 600"]
     categories = ["E", "F", "G", "H"]
