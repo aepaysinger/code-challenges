@@ -1,4 +1,4 @@
-from code_challenges.code_wars.scramble import scramble, unscramble
+from code_challenges.code_wars.scramble import count_characters, scramble
 
 
 def test_scramble_true():
