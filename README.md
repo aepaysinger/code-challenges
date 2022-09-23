@@ -48,4 +48,4 @@
   * Module: `code_challenges/code_wars/scramble.py`
   * Tests: `tests/code_wars/test_scramble.py`
   * URL: [challenge url](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/python)
-  * Run time: On
+  * Run time: O(n)
