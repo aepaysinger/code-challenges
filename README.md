@@ -48,7 +48,7 @@
   * Module: `code_challenges/code_wars/weight_for_weight.py`
   * Tests: `tests/code_wars/test_weight_for_weight.py`
   * URL: [challenge url](https://www.codewars.com/kata/55c6126177c9441a570000cc/python)
-  * Run time: On2
+  * Run time: O(n)
 ### Scramblies (5kyu)
   * Module: `code_challenges/code_wars/scramble.py`
   * Tests: `tests/code_wars/test_scramble.py`
