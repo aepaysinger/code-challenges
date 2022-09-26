@@ -44,8 +44,14 @@
   * Module: `code_challenges/code_wars/help_the_bookseller.py`
   * Tests: `tests/code_wars/test_help_the_bookseller.py`
   * URL: [challenge url](https://www.codewars.com/kata/54dc6f5a224c26032800005c/python)
+### Weight for weight (5kyu)
+  * Module: `code_challenges/code_wars/weight_for_weight.py`
+  * Tests: `tests/code_wars/test_weight_for_weight.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55c6126177c9441a570000cc/python)
+  * Run time: O(n log n)
 ### Scramblies (5kyu)
   * Module: `code_challenges/code_wars/scramble.py`
   * Tests: `tests/code_wars/test_scramble.py`
   * URL: [challenge url](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/python)
   * Run time: O(n)
+
