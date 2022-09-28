@@ -1,16 +1,16 @@
 def trigrams(phrase):
-    i = 0
     j = 3
     trigrams = []
-    updated_phrase = phrase.replace(" ", "_")
-    while i < len(phrase):
-        for character in updated_phrase:
-            print(i, j, updated_phrase[i:j])
-            trigrams.append(updated_phrase[i:j])
-            i += 1
-            j += 1
 
-    return " ".join(trigrams[:-2])
+    updated_phrase = phrase.replace(" ", "_")
+
+    for i in range(len(updated_phrase)):
+        print(i, j, updated_phrase[i:j])
+        if len(updated_phrase[i:j]) == 3:
+            trigrams.append(updated_phrase[i:j])
+            j += 1
+        else:
+            return " ".join(trigrams)
 
 
 if __name__ == "__main__":
