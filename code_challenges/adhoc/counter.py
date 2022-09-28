@@ -2,11 +2,10 @@
 class Counter:
     def __init__(self):
         self._value = 0
-        pass
+        
 
     def value(self):
-        value = self._value
-        return value
+        return self._value
 
     def increment(self):
         self._value += 1
