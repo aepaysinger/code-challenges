@@ -2,7 +2,6 @@
 class Counter:
     def __init__(self):
         self._value = 0
-        
 
     def value(self):
         return self._value
