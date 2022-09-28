@@ -3,9 +3,8 @@ def trigrams(phrase):
     trigrams = []
 
     updated_phrase = phrase.replace(" ", "_")
-
+    
     for i in range(len(updated_phrase)):
-        print(i, j, updated_phrase[i:j])
         if len(updated_phrase[i:j]) == 3:
             trigrams.append(updated_phrase[i:j])
             j += 1
