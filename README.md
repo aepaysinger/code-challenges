@@ -54,4 +54,8 @@
   * Tests: `tests/code_wars/test_scramble.py`
   * URL: [challenge url](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/python)
   * Run time: O(n)
-
+### Trigrams (7kyu)
+  * Mudule: `code_challenges/code_wars/trigrams.py`
+  * Tests: `tests/code_wars/test_trigrams.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55d8dc4c8e629e55dc000068/python)
+  * Run time: (O)n

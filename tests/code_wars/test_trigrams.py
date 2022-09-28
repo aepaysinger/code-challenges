@@ -6,3 +6,4 @@ def test_trigrams():
     expected = "the he_ e_q _qu qui uic ick ck_ k_r _re red"
 
     assert actual == expected, f"Returned {actual}, instead of {expected}"
+    
