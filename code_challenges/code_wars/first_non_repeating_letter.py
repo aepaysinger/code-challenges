@@ -1,10 +1,7 @@
 def first_non_repeating_letter(word):
     word = list(word)
     for i, letter in enumerate(word):
-        if letter in word[i + 1 :: 1] or letter in word[0:i]:
-            print(letter, word[i + 1 :: 1], word[0:i])
-            continue
-        else:
+        if letter not in word[i + 1 :: 1] or letter not in word[0:i]:
             return letter
 
 
