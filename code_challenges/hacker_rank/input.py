@@ -1,11 +1,16 @@
-def polynomial_input(polynomail, x_and_k):
-    holder =[]
-    for i in polynomial:
-        holder.append(i.replace("x",x_and_k[1]))
-    # for i in holder:
-    #     int(i)
-    holder.pop()
-    return holder
+def polynomial_input(polynomial, x_and_k):
+
+    polynomial = " ".join(polynomial)
+    polynomial = polynomial.replace("x", x_and_k[0])
+    polynomial = polynomial.split(" ")
+    total = 0
+    
+    for equation in polynomial:
+        total += eval(equation)
+    
+    return total == int(x_and_k[1])
+        
+    
 
         
 
