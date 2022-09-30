@@ -2,9 +2,10 @@ from collections import Counter
 
 
 def first_non_repeating_letter(word):
+    counter = Counter(word)
     for letter in word:
-        if Counter(word)[letter] == 1:
-            return letter 
+        if counter[letter] == 1:
+            return letter
 
 
 if __name__ == "__main__":
