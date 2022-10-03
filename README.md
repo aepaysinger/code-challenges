@@ -12,6 +12,10 @@
   * Module: `code_challenges/code_wars/counting_duplicates.py`
   * Tests: `tests/code_wars/test_counting_duplicates.py`
   * URL: [challenge url](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/python)
+### Snail (4kyu)
+  * Module: `code_challenges/code_wars/snail.py`
+  * Tests: `tests/code_wars/test_snail.py`
+  * URL: [challenge url](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/python)
 ### Between (8kyu)
   * Mudule: `code_challenges/code_wars/between.py`
   * Tests: `tests/code_wars/test_between.py`
@@ -40,5 +44,22 @@
   * Module: `code_challenges/code_wars/consecutive_strings.py`
   * Tests: `tests/code_wars/test_consecutive_strings.py`
   * URL: [challenge url](https://www.codewars.com/kata/56a5d994ac971f1ac500003e/python)
-
-
+### Help the bookseller (6kyu)
+  * Module: `code_challenges/code_wars/help_the_bookseller.py`
+  * Tests: `tests/code_wars/test_help_the_bookseller.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54dc6f5a224c26032800005c/python)
+### Weight for weight (5kyu)
+  * Module: `code_challenges/code_wars/weight_for_weight.py`
+  * Tests: `tests/code_wars/test_weight_for_weight.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55c6126177c9441a570000cc/python)
+  * Run time: O(n log n)
+### Scramblies (5kyu)
+  * Module: `code_challenges/code_wars/scramble.py`
+  * Tests: `tests/code_wars/test_scramble.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/python)
+  * Run time: O(n)
+### Trigrams (7kyu)
+  * Mudule: `code_challenges/code_wars/trigrams.py`
+  * Tests: `tests/code_wars/test_trigrams.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55d8dc4c8e629e55dc000068/python)
+  * Run time: (O)n
