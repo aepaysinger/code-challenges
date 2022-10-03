@@ -59,3 +59,8 @@
   * Tests: `tests/code_wars/test_trigrams.py`
   * URL: [challenge url](https://www.codewars.com/kata/55d8dc4c8e629e55dc000068/python)
   * Run time: (O)n
+### Song (7kyu)
+  * Module: `code_challenges/code_wars/song.py`
+  * Tests: `tests/code_wars/test_song.py`
+  * URL: [challenge url](https://www.codewars.com/kata/6089c7992df556001253ba7d/python)
+  * Run time: O(n)
