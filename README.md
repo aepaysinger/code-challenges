@@ -64,3 +64,8 @@
   * Tests: `tests/code_wars/test_song.py`
   * URL: [challenge url](https://www.codewars.com/kata/6089c7992df556001253ba7d/python)
   * Run time: O(n)
+### Person (7kyu)
+  * Module: `code_challenges/code_wars/person.py`
+  * Tests: `tests/code_wars/test_person.py`
+  * URL: [Challenge url](https://www.codewars.com/kata/513f887e484edf3eb3000001/python)
+  * Run Time: O(1)
