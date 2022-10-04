@@ -41,3 +41,13 @@ def test_consecutive_strings_len_0():
     expected = ""
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
+
+
+def test_consecutive_strings_at_end():
+    actual = consecutive_strings(
+        ["zone", "abigail", "theta", "form", "libe", "adventure", "computer", "loving"],
+        3,
+    )
+    expected = "adventurecomputerloving"
+
+    assert actual == expected, f"Returned {actual} instead of {expected}"
