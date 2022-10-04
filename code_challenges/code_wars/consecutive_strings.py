@@ -5,7 +5,6 @@ def consecutive_strings(names, k):
     concatenated_string = ""
     for i in range(len(names) - k + 1):
         word_groups = names[i : i + k]
-        print(i, word_groups)
         words = "".join(word_groups)
         if len(words) > length:
             length = len(words)
