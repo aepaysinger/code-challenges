@@ -63,4 +63,4 @@
   * Module: `code_challenges/code_wars/person.py`
   * Tests: `tests/code_wars/test_person.py`
   * URL: [Challenge url](https://www.codewars.com/kata/513f887e484edf3eb3000001/python)
-  * Run Time: (O)1
+  * Run Time: O(1)
