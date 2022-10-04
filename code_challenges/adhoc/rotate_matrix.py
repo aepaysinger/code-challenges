@@ -23,15 +23,16 @@ def rotate_v2(matrix):
     rotated = []
     for i in range(len(matrix)):
         row = []
-        for j in range(len(matrix) -1, -1, -1):
+        for j in range(len(matrix) -1, -1, -1): 
             print(range(len(matrix) - 1, -1, -1), j)
             print(matrix[j][i])
             row.append(matrix[j][i])
         rotated.append(row)
     return rotated
-# understand the range? none inclusive?? how to range(len(matrix) -1 ) run 4 times? 
+# stop at -1????
 
 def rotate_v3(matrix):
+    print(*matrix[::-1])
     return [list(r) for r in zip(*matrix[::-1])]
 
 if __name__ == "__main__":
@@ -41,4 +42,4 @@ if __name__ == "__main__":
         [9, 10, 11, 12],
         [13, 14, 15, 16],
     ]
-    print(rotate_v2(matrix))
+    print(rotate_v3(matrix))
