@@ -69,3 +69,7 @@
   * Tests: `tests/code_wars/test_person.py`
   * URL: [Challenge url](https://www.codewars.com/kata/513f887e484edf3eb3000001/python)
   * Run Time: O(1)
+### Vector class (5kyu)
+  * Module: `code_challenges/code_wars/vector_class.py`
+  * Tests: `tests/code_wars/test_vector_class.py`
+  * Run Time: O(n)
