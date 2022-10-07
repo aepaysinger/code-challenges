@@ -1,15 +1,13 @@
 class Vector:
     def __init__(self, values):
         self.values = values
-        self._length = 0
-        for value in self.values:
-            self._length += 1
+        self._length = len(values)
 
     def __eq__(self, vector):
         return self.values == vector.values
 
     def equals(self, vector):
-        return self.values == vector.values
+        return __eq__(self, vector)
 
     def __str__(self):
         vector_str = "("
