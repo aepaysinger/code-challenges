@@ -1,4 +1,4 @@
-import pytest
+import math, pytest
 
 from code_challenges.code_wars.vector_class import Vector
 
@@ -55,7 +55,7 @@ def test_vector_norm():
     a = Vector([1, 2, 3])
     # sqrt(1^2 + 2^2 + 3^2) = sqrt(14)
     # 1+4+9
-    assert a.norm() == 14
+    assert a.norm() == math.sqrt(14)
 
 
 def test_vector_str():
