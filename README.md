@@ -72,4 +72,4 @@
 ### Vector class (5kyu)
   * Module: `code_challenges/code_wars/vector_class.py`
   * Tests: `tests/code_wars/test_vector_class.py`
-  * Run Time: O(n)
+  * Run Time: n/a

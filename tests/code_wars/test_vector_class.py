@@ -1,4 +1,6 @@
-import math, pytest
+import math
+
+import pytest
 
 from code_challenges.code_wars.vector_class import Vector
 
