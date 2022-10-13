@@ -1,6 +1,3 @@
-import itertools
-
-
 class Vehicle:
     def __init__(self, seats, wheels, engine):
         self.seats = seats
