@@ -1,7 +1,20 @@
-from code_challenges.code_wars.instance import Vehicle, Planet, show_me
+from code_challenges.code_wars.instance import show_me
+
+
+class Vehicle:
+    def __init__(self, seats, wheels, engine):
+        self.seats = seats
+        self.wheels = wheels
+        self.engine = engine
+
+
+class Planet:
+    def __init__(self, moon):
+        self.moon = moon
 
 
 def test_vehicle():
+
     porsche = Vehicle(2, 4, "Gas")
 
     assert porsche.seats == 2

@@ -1,15 +1,3 @@
-class Vehicle:
-    def __init__(self, seats, wheels, engine):
-        self.seats = seats
-        self.wheels = wheels
-        self.engine = engine
-
-
-class Planet:
-    def __init__(self, moon):
-        self.moon = moon
-
-
 def show_me(instance):
 
     attributes = sorted([key for key in instance.__dict__])
