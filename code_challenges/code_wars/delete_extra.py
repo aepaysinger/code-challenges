@@ -2,14 +2,10 @@ def delete_extra(alist, amount):
     updated = []
     count = {}
     for item in alist:
-        print(count.get(item,+1))
-        
-        # if item not in count:
-        #     count[item] = 1
-        # else:
-        #     count[item] += 1
-        # if count[item] <= amount:
-        #     updated.append(item)
+        count[item] = count.get(item, 0) + 1
+        if count[item] <= amount:
+            updated.append(item)
+
     return updated
 
 
