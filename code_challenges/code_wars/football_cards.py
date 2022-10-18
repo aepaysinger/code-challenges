@@ -1,81 +1,55 @@
-# TRY WITH ONE FUNCTION!
-# Rules: start with 11 players, red card lose 1 player, 2 yellow cards lost 1 player,
-# must have 7 or more players
 def football_cards(team_cards):
-    a_card, b_card = check_card(team_cards)
     a_players = 11
     b_players = 11
-    while a_players or b_players != 6:#fix
-        # for player in a_card:
-        #     if a_card[player] == "YY":
-        #         a_players -= 1
-        #     if a_card[player] == "R":
-        #         a_players -= 1
-        #     if b_card[player] == "YY":
-        #         b_players -= 1
-        #     if b_card[player] == "R":
-        #         b_players -= 1
-        for i in range(10):
-            if a_card[i+1] == "YY":
-                a_players -= 1
-            if a_card[i+1] == "R":
-                a_players -= 1
-            if b_card[i+1] == "YY":
-                b_players -= 1
-            if b_card[i+1] == "R":
-                b_players -= 1
-            
+    a_cards = {}
+    b_cards = {}
+    while a_players > 6 and b_players > 6:
+        for card in team_cards:
+            if a_players == 6 or b_players == 6:
+                break
+            if card[0] == "A":
+                if len(card) == 3:
+                    player_number = card[1]
+                    a_cards[player_number] = a_cards.get(player_number, "") + card[2]
+                    if (
+                        a_cards[player_number] == "R"
+                        or a_cards[player_number] == "YY"
+                        or a_cards[player_number] == "YR"
+                    ):
+                        a_players -= 1
+                else:
+                    player_number = card[1] + card[2]
+                    a_cards[player_number] = a_cards.get(player_number, "") + card[3]
+                    if (
+                        a_cards[player_number] == "R"
+                        or a_cards[player_number] == "YY"
+                        or a_cards[player_number] == "YR"
+                    ):
+                        a_players -= 1
+            else:
+                if len(card) == 3:
+                    player_number = card[1]
+                    b_cards[player_number] = b_cards.get(player_number, "") + card[2]
+                    if (
+                        b_cards[player_number] == "R"
+                        or b_cards[player_number] == "YY"
+                        or b_cards[player_number] == "YR"
+                    ):
+                        b_players -= 1
+                else:
+                    player_number = card[1] + card[2]
+                    b_cards[player_number] = b_cards.get(player_number, "") + card[3]
+                    if (
+                        b_cards[player_number] == "R"
+                        or b_cards[player_number] == "YY"
+                        or b_cards[player_number] == "YR"
+                    ):
+                        b_players -= 1
+        return (a_players, b_players)
 
-        
     return (a_players, b_players)
-    
-
-    
-def check_card(team_cards):
-    a_team = {
-        1: "",
-        2: "",
-        3: "",
-        4: "",
-        5: "",
-        6: "",
-        7: "",
-        8: "",
-        9: "",
-        10: "",
-        11: ""
-    }
-    b_team = {
-        1: "",
-        2: "",
-        3: "",
-        4: "",
-        5: "",
-        6: "",
-        7: "",
-        8: "",
-        9: "",
-        10: "",
-        11: ""
-    }
-    for card in team_cards:
-        if card[0] == "A":
-            if len(card) == 3:
-                a_team[int(card[1])] += card[2]
-            else:
-                card_num = card[1] + card[2]
-                a_team[int(card_num)] += card[3]
-        else:
-            if len(card) == 3:
-                b_team[int(card[1])] += card[2]
-            else:
-                card_num = card[1] + card[2]
-                b_team[int(card_num)] += card[3]
-    return a_team, b_team
-
-
 
 
 if __name__ == "__main__":
-    team_cards = ["A4Y", "A4Y"]
+    team_cards = ["A4R", "A6R", "A8R", "A10R", "A11R"]
     print(football_cards(team_cards))
