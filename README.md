@@ -81,4 +81,5 @@
 ### Count Smileys (6kyu)
   * Module: `code_challenges/code_wars/count_smileys.py`
   * Tests: `tests/code_wars/test_count_smileys.py`
+  * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
