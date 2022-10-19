@@ -78,3 +78,7 @@
   * Module: `code_challenges/code_wars/vector_class.py`
   * Tests: `tests/code_wars/test_vector_class.py`
   * Run Time: n/a
+### Count Smileys (6kyu)
+  * Module: `code_challenges/code_wars/count_smileys.py`
+  * Tests: `tests/code_wars/test_count_smileys.py`
+  * Run Tumes: O(n)
