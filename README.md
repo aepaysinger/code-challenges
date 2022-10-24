@@ -83,3 +83,8 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Rot13 (5kyu)
+  * Module: `code_challenges/code_wars/rot13.py`
+  * Tests: `tests/code_wars/test_rot13.py`
+  * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
+  * Run Time: O(n)
