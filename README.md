@@ -81,7 +81,7 @@
 ### Football Cards (6kyu)
   * Module: `code_challenges/code_wars/football_cards`
   * Tests: `tests/code_wars/test_football_cards`
-  * Run Time: O(n log n)
+  * Run Time: O(n)
 ### Count Smileys (6kyu)
   * Module: `code_challenges/code_wars/count_smileys.py`
   * Tests: `tests/code_wars/test_count_smileys.py`
