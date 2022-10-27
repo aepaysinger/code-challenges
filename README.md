@@ -78,6 +78,10 @@
   * Module: `code_challenges/code_wars/vector_class.py`
   * Tests: `tests/code_wars/test_vector_class.py`
   * Run Time: n/a
+### Football Cards (6kyu)
+  * Module: `code_challenges/code_wars/football_cards`
+  * Tests: `tests/code_wars/test_football_cards`
+  * Run Time: O(n)
 ### Count Smileys (6kyu)
   * Module: `code_challenges/code_wars/count_smileys.py`
   * Tests: `tests/code_wars/test_count_smileys.py`
@@ -88,3 +92,4 @@
   * Tests: `tests/code_wars/test_rot13.py`
   * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
   * Run Time: O(n)
+
