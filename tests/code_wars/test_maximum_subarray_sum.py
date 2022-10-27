@@ -26,3 +26,4 @@ def test_max_sequence_A():
     expected = 155
 
     assert actual == expected, f"Returned {actual} instead of {expected}."
+    
