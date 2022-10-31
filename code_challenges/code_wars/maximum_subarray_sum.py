@@ -23,17 +23,17 @@ def max_sequence(sequence):
         arrays_to_check.append((start, stop))
         j -= 1
         i += 1
-    for start_stop in arrays_to_check:
-        if start_stop[1] == len(sequence) - 1:
-            if sum(sequence[start_stop[0]:start_stop[1]]) > total:
-                total = sum(sequence[start_stop[0]:start_stop[1]])
-        if sum(sequence[start_stop[0]:start_stop[1]+1]) > total:
-            total = sum(sequence[start_stop[0]:start_stop[1]+1])
-    return total
+    # for start_stop in arrays_to_check:
+    #     if start_stop[1] == len(sequence) - 1:
+    #         if sum(sequence[start_stop[0]:start_stop[1]]) > total:
+    #             total = sum(sequence[start_stop[0]:start_stop[1]])
+    #     if sum(sequence[start_stop[0]:start_stop[1]+1]) > total:
+    #         total = sum(sequence[start_stop[0]:start_stop[1]+1])
+    return arrays_to_check
 
 
 if __name__ == "__main__":
-    sequence = [-2, 1, -3, 4, -1, 2, 1, -5, 4] #(1,8) (3,6) 
+    sequence = [1,2,3,-4,5,6,7] #(1,8) (2,6) (3,5) 
     print(max_sequence(sequence))
     # i start or after neg
     # j last item or before neg
