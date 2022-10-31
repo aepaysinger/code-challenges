@@ -87,3 +87,8 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Increment String (5kyu)
+  * Module: `code_challenges/code_wars/increment_string.py`
+  * Tests: `tests/code_wars/test_increment_string`
+  * URL: [challenge url](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/python)
+  * Run Time:(o)n
