@@ -1,23 +1,24 @@
 def rot13(a_string):
     code = ""
     amount_to_shift = 13
-    upper_alpha_min = 65
+    upper_alpha_min = 64
     upper_alpha_max = 90
-    lower_alpha_min = 97
+    lower_alpha_min = 96
     lower_alpha_max = 122
     for character in a_string:
         if character.isalpha():
             count = ord(character) + amount_to_shift
+
             if character.islower():
                 if count > lower_alpha_max:
                     new = count - lower_alpha_max
-                    code += chr((lower_alpha_min + 1) + new)
+                    code += chr(lower_alpha_min + new)
                 else:
                     code += chr(count)
             else:
                 if count > upper_alpha_max:
                     new = count - upper_alpha_max
-                    code += chr((upper_alpha_min + 1) + new)
+                    code += chr(upper_alpha_min + new)
                 else:
                     code += chr(count)
         else:
