@@ -8,21 +8,19 @@ def max_sequence(sequence):
         return total
     
     arrays_to_check = []
-    j = len(sequence) - 1
     i = 0
+    j = i + 1
     
     for _ in range(len(sequence)):
-        while sequence[i] < 1:
+        while sequence[i] < 0:
             i += 1
-        while sequence[j] < 1:
-            j -= 1
-        if i >= j:
-            break   
-        start = i
-        stop = j
-        arrays_to_check.append((start, stop))
-        j -= 1
-        i += 1
+        while sequence[j] > 0:
+            j += 1
+        arrays_to_check.appened((i, j))
+        i = j
+        j = i+1
+
+        
     # for start_stop in arrays_to_check:
     #     if start_stop[1] == len(sequence) - 1:
     #         if sum(sequence[start_stop[0]:start_stop[1]]) > total:
@@ -33,7 +31,7 @@ def max_sequence(sequence):
 
 
 if __name__ == "__main__":
-    sequence = [1,2,3,-4,5,6,7] #(1,8) (2,6) (3,5) 
+    sequence = [1,2,3,-4,5,6,7] #(0,8) (0,2) (4,6) 
     print(max_sequence(sequence))
     # i start or after neg
     # j last item or before neg
