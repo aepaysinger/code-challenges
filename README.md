@@ -92,3 +92,8 @@
   * Tests: `tests/code_wars/test_direction_reduction.py`
   * URL: [challenge url](https://www.codewars.com/kata/550f22f4d758534c1100025a/python)
   * Run Time: O(n)
+### Rot13 (5kyu)
+  * Module: `code_challenges/code_wars/rot13.py`
+  * Tests: `tests/code_wars/test_rot13.py`
+  * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
+  * Run Time: O(n)
