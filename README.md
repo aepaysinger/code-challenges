@@ -87,3 +87,8 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Directions Reduction (5kyu)
+  * Module: `code_challenges/code_wars/directions_reduction.py`
+  * Tests: `tests/code_wars/test_direction_reduction.py`
+  * URL: [challenge url](https://www.codewars.com/kata/550f22f4d758534c1100025a/python)
+  * Run Time: O(n)
