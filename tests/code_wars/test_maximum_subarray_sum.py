@@ -1,11 +1,11 @@
 from code_challenges.code_wars.maximum_subarray_sum import max_sequence
 
 
-# def test_max_sequence():
-#     actual = max_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
-#     expected = 6
+def test_max_sequence():
+    actual = max_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+    expected = 6
 
-#     assert actual == expected, f"Returned {actual} instead of {expected}."
+    assert actual == expected, f"Returned {actual} instead of {expected}."
 
 
 # def test_max_sequence_all_negative():
@@ -27,8 +27,8 @@ from code_challenges.code_wars.maximum_subarray_sum import max_sequence
 
 #     assert actual == expected, f"Returned {actual} instead of {expected}."
 
-def test_max_sequence_B():
-    actual = max_sequence([1,2,3,-4,5,6,7])
-    expected = [(0,2),(0,6),(4,6)]
-    assert actual == expected, f"{actual} != {expected}"
+# def test_max_sequence_B():
+#     actual = max_sequence([1,2,3,-4,5,6,7])
+#     expected = [(0,6),(0,2),(4,6)]
+#     assert actual == expected, f"{actual} != {expected}"
     

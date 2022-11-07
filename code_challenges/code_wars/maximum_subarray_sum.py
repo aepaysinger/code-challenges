@@ -7,19 +7,35 @@ def max_sequence(sequence):
     if total == 0:
         return total
     
-    arrays_to_check = []
+    arrays_to_check = [(0, len(sequence)-1)]
+    stop = len(sequence)-1
+    
     i = 0
     j = i + 1
     
-    for _ in range(len(sequence)):
+    for _ in range(len(sequence)): 
         while sequence[i] < 0:
             i += 1
-        while sequence[j] > 0:
+        while sequence[j] > 0 and j != stop:
             j += 1
-        arrays_to_check.appened((i, j))
-        i = j
-        j = i+1
+        if j == stop:
+            arrays_to_check.append((i,j))
+        else:
+            arrays_to_check.append((i, j-1))
 
+        i = j
+        j = i + 1
+        if j >= stop:
+            break
+        print(arrays_to_check)
+        print(sequence[i], sequence[j])
+
+    for arrays in arrays_to_check:
+        if sum(sequence[arrays[0]:arrays[1]]) > total:
+            total = sum(sequence[arrays[0]:arrays[1]])
+        
+    
+            
         
     # for start_stop in arrays_to_check:
     #     if start_stop[1] == len(sequence) - 1:
@@ -27,11 +43,11 @@ def max_sequence(sequence):
     #             total = sum(sequence[start_stop[0]:start_stop[1]])
     #     if sum(sequence[start_stop[0]:start_stop[1]+1]) > total:
     #         total = sum(sequence[start_stop[0]:start_stop[1]+1])
-    return arrays_to_check
+    return total, arrays_to_check
 
 
 if __name__ == "__main__":
-    sequence = [1,2,3,-4,5,6,7] #(0,8) (0,2) (4,6) 
+    sequence = [-2, 1, -3, 4, -1, 2, 1, -5, 4] #(0,8) (0,2) (4,6) 
     print(max_sequence(sequence))
     # i start or after neg
     # j last item or before neg
