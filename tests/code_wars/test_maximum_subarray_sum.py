@@ -27,8 +27,8 @@ def test_max_sequence():
 
 #     assert actual == expected, f"Returned {actual} instead of {expected}."
 
-# def test_max_sequence_B():
-#     actual = max_sequence([1,2,3,-4,5,6,7])
-#     expected = [(0,6),(0,2),(4,6)]
-#     assert actual == expected, f"{actual} != {expected}"
+def test_max_sequence_B():
+    actual = max_sequence([1,2,3,-4,5,6,7])
+    expected = [(0,6),(0,2),(4,6)]
+    assert actual == expected, f"{actual} != {expected}"
     
