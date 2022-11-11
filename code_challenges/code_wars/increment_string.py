@@ -9,18 +9,18 @@ def increment_string(characters):
 
     parts = re.match(r"([a-zA-Z0-9]+[a-zA-Z])([0-9]+)", characters)
 
-    first_half, nums_at_end = parts.groups()
+    first_half_characters, nums_at_end = parts.groups()
 
-    characters = first_half
+    # characters = first_half
 
     numbers = int(nums_at_end)
     numbers += 1
     numbers = str(numbers)
     numbers = numbers.zfill(len(nums_at_end))
     numbers = str(numbers)
-    characters += numbers
+    # characters += numbers
 
-    return characters
+    return first_half_characters + numbers
 
 
 if __name__ == "__main__":
