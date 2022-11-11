@@ -97,3 +97,8 @@
   * Tests: `tests/code_wars/test_rot13.py`
   * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
   * Run Time: O(n)
+### Valid Parentheses (5kyu)
+  * Module: `code_challenges/code_wars/valid_parentheses.py`
+  * tests: `tests/code_challenges/test_valid_parentheses.py`
+  * URL: [challenge_url](https://www.codewars.com/kata/52774a314c2333f0a7000688/python)
+  * Run Time: O(n)
