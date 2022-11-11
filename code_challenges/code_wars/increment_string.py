@@ -11,13 +11,10 @@ def increment_string(characters):
 
     first_half_characters, nums_at_end = parts.groups()
 
-
     numbers = int(nums_at_end)
     numbers += 1
     numbers = str(numbers)
     numbers = numbers.zfill(len(nums_at_end))
-    numbers = str(numbers)
-   
 
     return first_half_characters + numbers
 
