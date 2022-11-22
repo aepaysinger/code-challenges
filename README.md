@@ -102,4 +102,8 @@
   * Tests: `tests/code_wars/test_rot13.py`
   * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
   * Run Time: O(n)
-
+### If-Else
+  * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
+  * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
+  * Run Time: O(1)
