@@ -1,8 +1,7 @@
 def sum_my_digits(starting_number, pattern, stop):
     digit_to_sum = str(get_number_list(starting_number, pattern, stop))
-    digit_broken_up = []
-    for digit in digit_to_sum:
-        digit_broken_up.append(int(digit))
+    digit_broken_up = [int(digit) for digit in digit_to_sum]
+
     return sum(digit_broken_up)
 
 
