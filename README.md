@@ -102,8 +102,14 @@
   * Tests: `tests/code_wars/test_rot13.py`
   * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
   * Run Time: O(n)
+### Reach Me and Sum my Digits (6kyu)
+  * Module: `code_challenges/code_wars/sum_my_digits.py`
+  * Tests: `tests/code_wars/test_sum_my_digits.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55ffb44050558fdb200000a4/python)
+  * Run Time: O(n)
 ### Unscrambled eggs (7kyu):
   * Module: `code_challenges/code_wars/unscrambled_eggs.py`
   * Tests: `tests/code_wars/test_unscrambled_eggs.py`
   * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
   * * Run Time: O(n)
+
