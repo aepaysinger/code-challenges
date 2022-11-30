@@ -112,4 +112,9 @@
   * Tests: `tests/code_wars/test_unscrambled_eggs.py`
   * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
   * * Run Time: O(n)
+### Basic Data Types:
+  * Module: `code_challenges/hacker_rank/basic_data_types.py`
+  * Tests: `tests/hacker_rank/test_basic_data_types.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+  * Run Time: O(1)   
 
