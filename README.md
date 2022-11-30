@@ -107,6 +107,10 @@
   * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
   * Run Time: O(1)
+### Valid Parentheses (5kyu)
+  * Module: `code_challenges/code_wars/valid_parentheses.py`
+  * tests: `tests/code_challenges/test_valid_parentheses.py`
+  * URL: [challenge_url](https://www.codewars.com/kata/52774a314c2333f0a7000688/python)
 ### Reach Me and Sum my Digits (6kyu)
   * Module: `code_challenges/code_wars/sum_my_digits.py`
   * Tests: `tests/code_wars/test_sum_my_digits.py`
@@ -117,3 +121,9 @@
   * Tests: `tests/code_wars/test_unscrambled_eggs.py`
   * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
   * * Run Time: O(n)
+  * * Run Time: O(n)
+### Basic Data Types:
+  * Module: `code_challenges/hacker_rank/basic_data_types.py`
+  * Tests: `tests/hacker_rank/test_basic_data_types.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+  * Run Time: O(1)   
