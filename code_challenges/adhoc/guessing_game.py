@@ -10,19 +10,23 @@ class GuessingGame:
         self.word = word
         
 
-    def guess(self, guess_word):
-        if guess_word == word:
-            print("YOU WIN")
+    def guess(self, guess_word, word, guesses):
+        while guesses > 0:
+            if guess_word == word:
+                print("YOU WIN")
+            else:
+                guesses -= 1
+                print("try again")
         
 
 
 
 
 if __name__ == "__main__":
-    # word = "world"
+    word = "world"
     guesses = 2
-    guess_word = "world"
+    guess_word = "earth"
     guessing_game = GuessingGame(guesses, "world")
-    guessing_game.guess(guess_word)
+    guessing_game.guess(guess_word, word, guesses)
     
     
