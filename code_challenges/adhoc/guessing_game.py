@@ -1,32 +1,36 @@
-#word guessing game(class)
+# word guessing game(class)
 # play or guess method - you put in a guess
 # it will tell you if the guess is right or wrong, will tell you how many letters are correct in your guess
 # certain amount of guesses b4 game over
 # cant guess the same word twice
 # we give the word and the amount of times they can guess
 class GuessingGame:
-    def __init__(self, guesses, word):
-        self.guesses = guesses
+    def __init__(self, word, guesses):
         self.word = word
-        
+        self.guesses = guesses
+        self.guess_count = 0
+        self.word_tracker = []
 
-    def guess(self, guess_word, word, guesses):
-        while guesses > 0:
-            if guess_word == word:
-                print("YOU WIN")
+    def guess(self, guess_word):
+        matching_letters = 0
+        self.guess_count += 1
+        self.word_tracker.append(guess_word)
+
+        if guess_word == self.word:
+            return "YOU WIN"
+        else:
+            for letter in guess_word:
+                if letter in self.word:
+                    matching_letters += 1
+            if self.guesses == self.guess_count:
+                return "game over"
             else:
-                guesses -= 1
-                print("try again")
-        
+                return f"you are wrong, {matching_letters} letter(s) are correct"
 
-
+    def __repr__(self):
+        return f"The guessing game! you have made {self.guess_count} guesses and the words:{self.word_tracker}"
 
 
 if __name__ == "__main__":
-    word = "world"
-    guesses = 2
-    guess_word = "earth"
-    guessing_game = GuessingGame(guesses, "world")
-    guessing_game.guess(guess_word, word, guesses)
-    
-    
+    gg = GuessingGame("love", 2)
+    gg.guess("love")
