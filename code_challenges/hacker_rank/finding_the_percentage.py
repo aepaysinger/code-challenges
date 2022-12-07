@@ -1,5 +1,5 @@
 def finding_the_percentage(name_and_grades, student_query):
-    average_grade = (sum(name_and_grades[student_query])) / len(
+    average_grade = sum(name_and_grades[student_query]) / len(
         name_and_grades[student_query]
     )
     return "{:.2f}".format(average_grade)
