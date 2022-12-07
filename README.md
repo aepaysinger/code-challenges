@@ -120,8 +120,12 @@
   * Module: `code_challenges/code_wars/unscrambled_eggs.py`
   * Tests: `tests/code_wars/test_unscrambled_eggs.py`
   * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
-  * * Run Time: O(n)
-  * * Run Time: O(n)
+  *  Run Time: O(n)
+### Finding The Percentage:
+  * Module: `code_challenges/hacker_rank/finding_the_percentage.py`
+  * Tests: `tests/hacker_rank/test_finding_the_percentage.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
+  * Run Time: O(n)
 ### Basic Data Types:
   * Module: `code_challenges/hacker_rank/basic_data_types.py`
   * Tests: `tests/hacker_rank/test_basic_data_types.py`
