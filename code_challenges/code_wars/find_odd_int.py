@@ -1,28 +1,25 @@
-class FindOddInt():
+class FindOddInt:
     def __init__(self, numbers):
         self.numbers = numbers
-        self.number_amount = {}
+        self.numbers_amount = {}
 
-    
-    def find_amount(self):
+    def set_numbers_amount(self):
         for number in self.numbers:
-            self.number_amount[number] = self.number_amount.get(number, 0) + 1
+            self.numbers_amount[number] = self.numbers_amount.get(number, 0) + 1
 
-        for number in self.number_amount:
-            if self.number_amount[number] % 2 != 0:
+    def find_odd_int(self):
+        for number in self.numbers_amount:
+            if self.numbers_amount[number] % 2 != 0:
                 return number
 
 
-# def find_it(seq):
-#     number_amount = {}
-#     for number in seq:
-#         number_amount[number] = number_amount.get(number, 0) +1
+def finding_odd_int(seq):
+    finding_odd_int = FindOddInt(seq)
+    finding_odd_int.set_numbers_amount()
 
-#     for number in number_amount:
-#         if number_amount[number] % 2 != 0:
-#             return number
+    return finding_odd_int.find_odd_int()
 
-    
-# if __name__ == "__main__":
-#     seq = [1,1,1,1,1,1,10,1,1,1,1]
-#     print(find_it(seq))
+
+if __name__ == "__main__":
+    seq = [1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1]
+    print(finding_odd_int(seq))
