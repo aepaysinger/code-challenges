@@ -1,6 +1,6 @@
 class Phone:
-    def __init__(self, numbers):
-        self.numbers = numbers
+    def __init__(self):
+        # numbers = numbers
         self.translator = {
             "2": "a",
             "22": "b",
@@ -30,24 +30,24 @@ class Phone:
             "9999": "z",
         }
 
-    def translate_numbers(self):
+    def translate_numbers(self, numbers):
         spot_holder = ""
         translation = ""
-        for i, number in enumerate(self.numbers):
-            if self.numbers[i] == "0":
+        for i in range(len(numbers)):
+            if numbers[i] == "0":
                 translation += " "
                 continue
-            if self.numbers[i] == "1":
+            if numbers[i] == "1":
                 continue
-            spot_holder += self.numbers[i]
-            if i == len(self.numbers) - 1:
+            spot_holder += numbers[i]
+            if i == len(numbers) - 1:
                 translation += self.translator[spot_holder]
                 break
-            elif self.numbers[i] != self.numbers[i + 1]:
+            elif numbers[i] != numbers[i + 1]:
                 translation += self.translator[spot_holder]
                 spot_holder = ""
                 continue
-            elif self.numbers[i + 1] == self.numbers[i]:
+            elif numbers[i + 1] == numbers[i]:
                 if len(spot_holder) == 3:
                     if spot_holder == "777" or spot_holder == "999":
                         continue
@@ -63,9 +63,9 @@ class Phone:
 
 
 def phone_code(numbers):
-    secret_code = Phone(numbers)
+    secret_code = Phone()
 
-    return secret_code.translate_numbers()
+    return secret_code.translate_numbers(numbers)
 
 
 if __name__ == "__main__":

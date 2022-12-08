@@ -3,21 +3,21 @@ from code_challenges.code_wars.phone_words import phone_code
 
 
 def test_translate_numbers_spaces():
-    secret_code = Phone("000")
+    secret_code = Phone()
 
-    assert secret_code.translate_numbers() == "   "
+    assert secret_code.translate_numbers("000") == "   "
 
 
 def test_translate_numbers_1():
-    secret_code = Phone("22128")
+    secret_code = Phone()
 
-    assert secret_code.translate_numbers() == "bat"
+    assert secret_code.translate_numbers("22128") == "bat"
 
 
 def test_translate_numbers_same_letter():
-    secret_code = Phone("4433555555666")
+    secret_code = Phone()
 
-    assert secret_code.translate_numbers() == "hello"
+    assert secret_code.translate_numbers("4433555555666") == "hello"
 
 
 def test_phone_code():
