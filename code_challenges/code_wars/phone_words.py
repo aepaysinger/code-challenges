@@ -1,6 +1,5 @@
 class Phone:
     def __init__(self):
-        # numbers = numbers
         self.translator = {
             "2": "a",
             "22": "b",
