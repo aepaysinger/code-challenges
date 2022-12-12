@@ -15,7 +15,7 @@ def get_elves_calories():
         if elf_calorie > highest_elf_calorie:
             highest_elf_calorie = elf_calorie
 
-    
+
 
 #Test with mocking calls?
 
