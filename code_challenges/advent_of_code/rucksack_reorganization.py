@@ -18,11 +18,9 @@ def find_common_character():
         half_way = length // 2
         first_half.append(item[0:half_way])
         second_half.append(item[half_way:])
-        # first_half = item[0:half_way]
-        # second_half = item[half_way:]
+
     
     for i, characters in enumerate(first_half):
-        # print(i,  characters)
         for character in characters:
             if character in second_half[i]:
                 common_character.append(character)
@@ -31,21 +29,28 @@ def find_common_character():
         
     return common_character
 
-def groups_of_three():
+def find_groups_of_three():
     items = rucksack_reorganization()
     groups = []
     common_of_three = []
+    start = 0
     for i in range(len(items)//3):
-        groups.append(items[i:i+3])
-        i += 3
+        groups.append(items[start:start+3])
+        start += 3
 
-    
-        
-        
+    #groups = [[1,2,3],[1,2,3],[1,2,3]]
+    for group in groups:
+        # i, group        
+        # 0 ['VdzVHmNpdVmBBCpmQLTNfTtMhMJnhFhTTf', 'FgqsZbqDDFqRrhhJnsnLMTfhJG', 'bRRRPrRRwSwbDqgjvDZbRbQzpzmQVWCzzBdvQBFCzlWV']
+        # 1 ['GcDdRdvhRssRhGDdShCRtqWjlQzqWgqzNfNjfQWWjt', 'mwwnnPFwmVrPmJmzfNzqCjQCbgVlgC', 'nPnHHLrHwmJTrCTJpThBscBSdSLGZvZBvRhZ']
+        # 2 ['RVQQcVlcSRclfZCCCnMJJTSTnC', 'NdHwjdwjbBBZrrZrbJDZJJ', 'wmhjGGBGwwmjtjtdPlfRcpVQlhRppVJF']
+        for characters in group:
+            for i, character in enumerate(characters):
+                if characters[i] in group[1] and character in group[2]:
+                    common_of_three.append(character)
+                    break
 
-
-    return common_of_three
-
+    print(common_of_three)
 def find_priority():
     priority_level = {
         "a": 1,
@@ -102,10 +107,14 @@ def find_priority():
         "Z": 52,
     }
     common_characters = find_common_character()
+    groups_of_three = find_groups_of_three()
     priority_level_amount = 0
+    priority_level_amount_of_3 = 0
     for character in common_characters:
         priority_level_amount += priority_level[character]
-    return  priority_level_amount
+    for character in groups_of_three:
+        priority_level_amount_of_3 += priority_level[character]
+    return  f"priority_level_amount = {priority_level_amount} priority_level_amount_of_3 = {priority_level_amount_of_3}"
 
 
-print(groups_of_three())
+print(find_groups_of_three())
