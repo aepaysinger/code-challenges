@@ -1,10 +1,15 @@
-def rcp():
-    elf_guide = open("/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rps_input")
-    moves = elf_guide.read().split("\n")
-    elf_guide.close()
-
-    with open("/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rps_input") as elf_guide:
+def get_rps_moves():
+    with open(
+        "/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rps_input"
+    ) as elf_guide:
         moves = elf_guide.read().split("\n")
+
+    return moves
+
+
+def rps():
+
+    moves = get_rps_moves()
     """
      elf_rock = "A"
      elf_paper = "B"
@@ -41,10 +46,7 @@ def rcp():
             elif move[1] == "Z":
                 points += 7
 
-
     return points
-print(rcp())
 
-# if __name__ == "__main__":
-#     elf_code =
-#     print(rcp(elf_code))
+
+print(rps())
