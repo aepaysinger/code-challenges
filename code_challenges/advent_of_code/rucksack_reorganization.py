@@ -1,11 +1,8 @@
 def rucksack_reorganization():
-    supplies = open("/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rucksack_input")
-    items = supplies.read().split("\n")
-    supplies.close()
     
     with open("/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rucksack_input") as supplies:
         items = supplies.read().split("\n")
-
+    
     return items
 
 def find_common_character():
@@ -38,19 +35,14 @@ def find_groups_of_three():
         groups.append(items[start:start+3])
         start += 3
 
-    #groups = [[1,2,3],[1,2,3],[1,2,3]]
     for group in groups:
-        # i, group        
-        # 0 ['VdzVHmNpdVmBBCpmQLTNfTtMhMJnhFhTTf', 'FgqsZbqDDFqRrhhJnsnLMTfhJG', 'bRRRPrRRwSwbDqgjvDZbRbQzpzmQVWCzzBdvQBFCzlWV']
-        # 1 ['GcDdRdvhRssRhGDdShCRtqWjlQzqWgqzNfNjfQWWjt', 'mwwnnPFwmVrPmJmzfNzqCjQCbgVlgC', 'nPnHHLrHwmJTrCTJpThBscBSdSLGZvZBvRhZ']
-        # 2 ['RVQQcVlcSRclfZCCCnMJJTSTnC', 'NdHwjdwjbBBZrrZrbJDZJJ', 'wmhjGGBGwwmjtjtdPlfRcpVQlhRppVJF']
-        for characters in group:
-            for i, character in enumerate(characters):
-                if characters[i] in group[1] and character in group[2]:
-                    common_of_three.append(character)
-                    break
+        for character in group[0]:
+            if character in group[1] and character in group[2]:
+                common_of_three.append(character)
+                break
 
-    print(common_of_three)
+    return common_of_three    
+    
 def find_priority():
     priority_level = {
         "a": 1,
@@ -117,4 +109,4 @@ def find_priority():
     return  f"priority_level_amount = {priority_level_amount} priority_level_amount_of_3 = {priority_level_amount_of_3}"
 
 
-print(find_groups_of_three())
+print(find_priority())
