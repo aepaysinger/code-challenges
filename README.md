@@ -130,4 +130,9 @@
   * Module: `code_challenges/hacker_rank/basic_data_types.py`
   * Tests: `tests/hacker_rank/test_basic_data_types.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
-  * Run Time: O(1)   
+  * Run Time: O(1)
+## Advent Of Code
+### Rucksack Reorganization:
+  * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
+  * Tests: `tests/advent_of_code/test_rucksack_reorganization.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/3)
