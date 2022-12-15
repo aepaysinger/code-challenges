@@ -136,7 +136,12 @@
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
   * Tests: `tests/advent_of_code/test_rucksack_reorganization.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/3)
+### Camp Cleanup:
+  * Module: `code_challenges/advent_of_code/camp_cleanup.py`
+  * Tests: `tests/advent_of_code/test_camp_cleanup.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/4)
 ### RPS:
   * Module: `code_challenges/advent_of_code/rps.py`
   * Tests: `tests/advent_of_code/test_rps.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/2)
+
