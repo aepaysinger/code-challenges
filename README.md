@@ -140,3 +140,7 @@
   * Module: `code_challenges/advent_of_code/rps.py`
   * Tests: `tests/advent_of_code/test_rps.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/2)
+### Supply Stacks:
+  * Module: `code_challenges/advent_of_code/supply_stacks.py`
+  * Tests: `tests/advent_of_code/test_supply_stacks.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/5)
