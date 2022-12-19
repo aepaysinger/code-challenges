@@ -144,4 +144,7 @@
   * Module: `code_challenges/advent_of_code/rps.py`
   * Tests: `tests/advent_of_code/test_rps.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/2)
-
+### Tuning Trouble:
+  * Module: `code_challenges/advent_of_code/tuning_trouble.py`
+  * Tests: `tests/advent_of_code/test_tuning_trouble.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/6)
