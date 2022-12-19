@@ -19,6 +19,8 @@ class Balloons:
         
         for balloon in self.balloons_amount:
             if self.balloons_amount[balloon] > top_amount:
+                second_amount = top_amount
+                second_balloon = top_balloon
                 top_amount = self.balloons_amount[balloon]
                 top_balloon = balloon
             elif self.balloons_amount[balloon] > second_amount and self.balloons_amount[balloon] <= top_amount:
