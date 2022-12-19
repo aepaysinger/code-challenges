@@ -74,6 +74,8 @@ def freq_stack(pops, balloons):
     return balloons.pop_most_amount()
 
 
+
+
 if __name__ == "__main__":
        pops = 10
        balloons = [1, 2, 3, 4, 5, 5, 7, 8, 9, 10]
