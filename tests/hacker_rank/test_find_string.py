@@ -16,6 +16,7 @@ def test_find_string_b():
 
 
 def test_find_hidden_characters():
-    find_string = FindString("Try this out", "THIS")
+    find_string = FindString("Try this out")
 
-    assert find_string.find_hidden_characters() == 0
+    assert find_string.find_hidden_characters("THIS") == 0
+    assert find_string.find_hidden_characters("this") == 1
