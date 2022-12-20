@@ -29,17 +29,24 @@ def test_popping_balloons_7_pops():
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
 
+def test_popping_balloons_multiple_same_amount():
+    actual = freq_stack(3, [1, 2, 3, 2, 1, 3, 4, 2, 1, 3])
+    expected = [3, 1, 2]
+
+    assert actual == expected, f"Returned {actual} instead of {expected}"
+
+
 def test_track_balloons():
     balloons = Balloons([5, 7, 5, 7, 4, 5])
-    
+
     assert balloons.track_balloons() == {5: 3, 7: 2, 4: 1}
 
 
 def test_find_top_balloon():
     balloons = Balloons([5, 7, 5, 7, 4, 5])
     balloons.track_balloons()
-    
-    assert balloons.find_top_balloons() == (5, 3, 7, 2)
+
+    assert balloons.find_top_balloons() == (5, 3)
 
 
 def test_pop_most_1():
@@ -66,4 +73,3 @@ def test_pop_most_4():
 
     assert balloons.popped_ballons == [5, 7, 5, 4]
     assert balloons.balloons_amount == {5: 1, 7: 1, 4: 1}
-
