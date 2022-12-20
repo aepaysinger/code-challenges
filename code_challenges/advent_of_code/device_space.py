@@ -6,4 +6,12 @@ def device_code():
     device_code = [line.split(" ") for line in device_code]
     return device_code
 
+
+def build_directories():
+    device_code = device_code()
+    computer_directories = {}
+    for line in device_code:
+        if len(line) == 2:
+            if line[0] == "dir":
+                computer_directories
 print(device_code())
