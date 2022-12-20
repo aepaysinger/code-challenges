@@ -148,3 +148,8 @@
   * Module: `code_challenges/advent_of_code/tuning_trouble.py`
   * Tests: `tests/advent_of_code/test_tuning_trouble.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/6)
+## Hacker Rank
+### Find String:
+  * Module: `code_challenges/hacker_rank/find_string.py`
+  * Tests: `tests/hacker_rank/test_find_string.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
