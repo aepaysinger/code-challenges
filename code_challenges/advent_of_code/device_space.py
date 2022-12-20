@@ -10,8 +10,9 @@ def device_code():
 def build_directories():
     device_code = device_code()
     computer_directories = {}
-    for line in device_code:
+    for i, line in enumerate(device_code):
         if len(line) == 2:
-            if line[0] == "dir":
-                computer_directories
+            if line[0] == "ls":
+                
+                
 print(device_code())
