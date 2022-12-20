@@ -68,28 +68,10 @@ def freq_stack(pops, balloons):
     
     return balloons.pop_most(pops)
     
-    
-
-
 
 
 if __name__ == "__main__":
-       pops = 7
-       balloons = [13, 4, 6, 13, 6, 9, 13]
+       pops = 4
+       balloons = [5, 7, 5, 7, 4, 5]
        print(freq_stack(pops, balloons))
-
-# 7, [12, 9, 8, 8, 12, 12, 6, 1, 8]
-# [8, 12, 12, 8, 1, 6, 8]
-
-
-# balloons = Balloons([5, 7, 5, 7, 4, 5], 4)
-# balloons.track_balloons()
-# balloons.find_top_balloons()
-# print(balloons.pop_most_amount())
-
-# print(balloons.pop_most())
-# print(balloons.pop_most())
-# print(balloons.pop_most())
-# print(balloons.pop_most())
-# print(balloons.pop_most())
-# print(balloons.popped_ballons)
+       

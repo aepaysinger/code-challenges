@@ -30,29 +30,40 @@ def test_popping_balloons_7_pops():
 
 
 def test_track_balloons():
-    balloons = Balloons(4, [5, 7, 5, 7, 4, 5])
+    balloons = Balloons([5, 7, 5, 7, 4, 5])
     
     assert balloons.track_balloons() == {5: 3, 7: 2, 4: 1}
 
 
 def test_find_top_balloon():
-    balloons = Balloons(4, [5, 7, 5, 7, 4, 5])
+    balloons = Balloons([5, 7, 5, 7, 4, 5])
     balloons.track_balloons()
     
     assert balloons.find_top_balloons() == (5, 3, 7, 2)
 
 
-def test_pop_most():
-    balloons = Balloons(4, [5, 7, 5, 7, 4, 5])
+def test_pop_most_1():
+    balloons = Balloons([5, 7, 5, 7, 4, 5])
     balloons.track_balloons()
     balloons.find_top_balloons()
-    balloons.pop_most()
+    balloons.pop_most(1)
 
     assert balloons.popped_ballons == [5]
     assert balloons.balloons_amount == {5: 2, 7: 2, 4: 1}
 
-    balloons.pop_most()
+
+def test_pop_most_2():
+    balloons = Balloons([5, 7, 5, 7, 4, 5])
+    balloons.pop_most(2)
 
     assert balloons.popped_ballons == [5, 7]
     assert balloons.balloons_amount == {5: 2, 7: 1, 4: 1}
+
+
+def test_pop_most_4():
+    balloons = Balloons([5, 7, 5, 7, 4, 5])
+    balloons.pop_most(4)
+
+    assert balloons.popped_ballons == [5, 7, 5, 4]
+    assert balloons.balloons_amount == {5: 1, 7: 1, 4: 1}
 
