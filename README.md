@@ -131,6 +131,10 @@
   * Tests: `tests/hacker_rank/test_basic_data_types.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
   * Run Time: O(1)
+### Popping Balloons (6kyu):
+  * Module: `code_challenges/code_wars/popping_balloons.py`
+  * Tests: `tests/code_wars/test_popping_balloons.py`
+  * URL: [challenge url](https://www.codewars.com/kata/633b8be2b5203f003011d79e/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
