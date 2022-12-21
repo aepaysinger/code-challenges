@@ -144,6 +144,10 @@
   * Module: `code_challenges/advent_of_code/rps.py`
   * Tests: `tests/advent_of_code/test_rps.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/2)
+### Supply Stacks:
+  * Module: `code_challenges/advent_of_code/supply_stacks.py`
+  * Tests: `tests/advent_of_code/test_supply_stacks.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/5)
 ### Tuning Trouble:
   * Module: `code_challenges/advent_of_code/tuning_trouble.py`
   * Tests: `tests/advent_of_code/test_tuning_trouble.py`
@@ -153,3 +157,4 @@
   * Module: `code_challenges/hacker_rank/find_string.py`
   * Tests: `tests/hacker_rank/test_find_string.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
+
