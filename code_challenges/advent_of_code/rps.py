@@ -1,6 +1,6 @@
 def get_rps_moves():
     with open(
-        "/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rps_input"
+        "./code_challenges/advent_of_code/rps_input"
     ) as elf_guide:
         moves = elf_guide.read().split("\n")
 

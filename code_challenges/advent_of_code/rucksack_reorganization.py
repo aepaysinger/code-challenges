@@ -1,7 +1,7 @@
 def rucksack_reorganization():
 
     with open(
-        "/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/rucksack_input"
+        "./code_challenges/advent_of_code/rucksack_input"
     ) as supplies:
         items = supplies.read().split("\n")
 
