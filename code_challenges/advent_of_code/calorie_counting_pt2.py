@@ -1,6 +1,6 @@
 def elves_input():
     with open(
-        "/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/calorie_counting_input"
+        "./code_challenges/advent_of_code/calorie_counting_input"
     ) as calories:
         elves_calories = calories.read().split("\n\n")
 

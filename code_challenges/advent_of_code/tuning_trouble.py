@@ -1,7 +1,7 @@
 def get_code():
 
     with open(
-        "/Users/amelia/projects/code-challenges/code_challenges/advent_of_code/tuning_trouble_input"
+        "./code_challenges/advent_of_code/tuning_trouble_input"
     ) as get_code:
         code = get_code.read()
 
