@@ -61,6 +61,8 @@ def test_pop_most_1():
 
 def test_pop_most_2():
     balloons = Balloons([5, 7, 5, 7, 4, 5])
+    balloons.track_balloons()
+    balloons.find_top_balloons()
     balloons.pop_most(2)
 
     assert balloons.popped_ballons == [5, 7]
@@ -69,6 +71,8 @@ def test_pop_most_2():
 
 def test_pop_most_4():
     balloons = Balloons([5, 7, 5, 7, 4, 5])
+    balloons.track_balloons()
+    balloons.find_top_balloons()
     balloons.pop_most(4)
 
     assert balloons.popped_ballons == [5, 7, 5, 4]
