@@ -9,22 +9,20 @@ def code_device():
 
 def build_directories():
     device_code = code_device()
-    computer_directories = {"/": None}
-    old_directory_name = "" # "" / a d a e
-    new_directory_name = "" # / a d a e e
+    computer_directories = {"/": {}}
+    directory_name = [] # [/]
+    directory_level = 0
     for i, line in enumerate(device_code):
-        if len(line) == 3:
-            if line[1] == "cd":
-                old_directory_name = new_directory_name
-                new_directory_name = line[2]
+        if len(line) == 3 and line[1] == "cd":
+            directory_name.append(line[2])
         elif len(line) == 2 and line[1] == "ls":
-            # new_directory_name = old_directory_name #[old directory name = new directory]
-        elif len(line) == 2 and line[0] == "dir":
-            computer_directories[new_directory_name].update({line[1]: []})
-            old_directory_name = new_directory_name
-            new_directory_name = line[1]
+            continue
+        elif len(line) == 2 and line[0] == dir:
+            computer_directories[directory_name[directory_level]].update(line[1], [])
+            directory_name.append(line[1])
         elif len(line) == 2:
-            computer_directories[old_directory_name][old_directory_name].append([line[0], line[1]])
+            computer_directories[old_directory_name][new_directory_name].append([line[0], line[1]])
+
 
     return computer_directories
 
