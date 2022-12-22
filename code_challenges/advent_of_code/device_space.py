@@ -10,24 +10,47 @@ def code_device():
 def build_directories():
     device_code = code_device()
     computer_directories = {"/": None}
-    directory_name = ""
+    old_directory_name = "" # "" / a d a e
+    new_directory_name = "" # / a d a e e
     for i, line in enumerate(device_code):
         if len(line) == 3:
             if line[1] == "cd":
-                directory_name = line[2]
-        elif len(line) == 2 and line[0] == "dir":
-            # computer_directories[directory_name].update({line[1]: []})
-            computer_directories[directory_name] = {line[1]: []}
-            directory_name = {line[1]}
+                old_directory_name = new_directory_name
+                new_directory_name = line[2]
         elif len(line) == 2 and line[1] == "ls":
-            continue
+            # new_directory_name = old_directory_name #[old directory name = new directory]
+        elif len(line) == 2 and line[0] == "dir":
+            computer_directories[new_directory_name].update({line[1]: []})
+            old_directory_name = new_directory_name
+            new_directory_name = line[1]
         elif len(line) == 2:
-            continue
-            # computer_directories[directory_name] = computer_directories.get(line[1])
+            computer_directories[old_directory_name][old_directory_name].append([line[0], line[1]])
 
     return computer_directories
 
-
+$ cd / 
+$ ls (skipped)
+dir a 
+14848514 b.txt
+8504156 c.dat
+dir d
+$ cd a
+$ ls
+dir e
+29116 f
+2557 g
+62596 h.lst
+$ cd e
+$ ls
+584 i
+$ cd ..
+$ cd ..
+$ cd d
+$ ls
+4060174 j
+8033020 d.log
+5626152 d.ext
+7214296 k
                 
                 
 print(build_directories())
