@@ -12,8 +12,7 @@ class MissingNumbers:
         numbers, last_number = self.organize()
         the_gaps = []
         for i in range(last_number - 1):
-            if i == last_number:
-                break
+            print(i, numbers)
             if numbers[i + 1] == numbers[i] + 1:
                 continue
             else:
@@ -29,7 +28,7 @@ def find_missing_numbers(numbers):
     return missing_numbers.fill_in_the_gaps()
 
 if __name__ == "__main__":
-    numbers = [2, 3, 1, 9, 4, 5, 6, 10, 7]
+    numbers = [8, 10, 11, 7, 3, 15, 6, 1, 14, 5, 12]
     print(find_missing_numbers(numbers))
 
 
