@@ -1,6 +1,10 @@
+from copy import deepcopy
+
+
 class MissingNumbers:
     def __init__(self, numbers):
         self.numbers = numbers
+        self.numbers_ = deepcopy(numbers)
 
     def organize(self):
         self.numbers = sorted(self.numbers)
@@ -12,8 +16,10 @@ class MissingNumbers:
         numbers, last_number = self.organize()
         the_gaps = []
         for i in range(last_number - 1):
-            print(i, numbers)
+            print(i, i+1, len(numbers)-1)
+            
             if numbers[i + 1] == numbers[i] + 1:
+            # print(i, numbers)
                 continue
             else:
                 numbers.insert(i + 1, numbers[i] + 1)
@@ -28,7 +34,8 @@ def find_missing_numbers(numbers):
     return missing_numbers.fill_in_the_gaps()
 
 if __name__ == "__main__":
-    numbers = [8, 10, 11, 7, 3, 15, 6, 1, 14, 5, 12]
-    print(find_missing_numbers(numbers))
+    numbers_ = [5, 4, 2, 9, 3, 8, 10, 6, 7]
+            #  [9, 10, 7, 2, 11, 8, 1, 17, 6, 16, 18, 19, 15, 3, 13]
+    print(find_missing_numbers(numbers_))
 
 
