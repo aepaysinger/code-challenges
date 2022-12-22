@@ -87,6 +87,11 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Increment String (5kyu)
+  * Module: `code_challenges/code_wars/increment_string.py`
+  * Tests: `tests/code_wars/test_increment_string`
+  * URL: [challenge url](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/python)
+  * Run Time:(o)n
 ### Directions Reduction (5kyu)
   * Module: `code_challenges/code_wars/directions_reduction.py`
   * Tests: `tests/code_wars/test_direction_reduction.py`
@@ -101,4 +106,64 @@
   * Module: `code_challenges/code_wars/barista_problem.py`
   * Tests: `tests/code_wars/test_barista_problme.py`
   * URL: [challenge url](https://www.codewars.com/kata/6167e70fc9bd9b00565ffa4e/python) 
+  * Run Time: O(n^2)
+### If-Else
+  * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
+  * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
+  * Run Time: O(1)
+### Valid Parentheses (5kyu)
+  * Module: `code_challenges/code_wars/valid_parentheses.py`
+  * tests: `tests/code_challenges/test_valid_parentheses.py`
+  * URL: [challenge_url](https://www.codewars.com/kata/52774a314c2333f0a7000688/python)
+### Reach Me and Sum my Digits (6kyu)
+  * Module: `code_challenges/code_wars/sum_my_digits.py`
+  * Tests: `tests/code_wars/test_sum_my_digits.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55ffb44050558fdb200000a4/python)
   * Run Time: O(n)
+### Unscrambled eggs (7kyu):
+  * Module: `code_challenges/code_wars/unscrambled_eggs.py`
+  * Tests: `tests/code_wars/test_unscrambled_eggs.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
+  *  Run Time: O(n)
+### Finding The Percentage:
+  * Module: `code_challenges/hacker_rank/finding_the_percentage.py`
+  * Tests: `tests/hacker_rank/test_finding_the_percentage.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
+  * Run Time: O(n)
+### Basic Data Types:
+  * Module: `code_challenges/hacker_rank/basic_data_types.py`
+  * Tests: `tests/hacker_rank/test_basic_data_types.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+  * Run Time: O(1)
+### Popping Balloons (6kyu):
+  * Module: `code_challenges/code_wars/popping_balloons.py`
+  * Tests: `tests/code_wars/test_popping_balloons.py`
+  * URL: [challenge url](https://www.codewars.com/kata/633b8be2b5203f003011d79e/train/python)
+## Advent Of Code
+### Rucksack Reorganization:
+  * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
+  * Tests: `tests/advent_of_code/test_rucksack_reorganization.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/3)
+### Camp Cleanup:
+  * Module: `code_challenges/advent_of_code/camp_cleanup.py`
+  * Tests: `tests/advent_of_code/test_camp_cleanup.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/4)
+### RPS:
+  * Module: `code_challenges/advent_of_code/rps.py`
+  * Tests: `tests/advent_of_code/test_rps.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/2)
+### Supply Stacks:
+  * Module: `code_challenges/advent_of_code/supply_stacks.py`
+  * Tests: `tests/advent_of_code/test_supply_stacks.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/5)
+### Tuning Trouble:
+  * Module: `code_challenges/advent_of_code/tuning_trouble.py`
+  * Tests: `tests/advent_of_code/test_tuning_trouble.py`
+  * URL: [challenge url](https://adventofcode.com/2022/day/6)
+## Hacker Rank
+### Find String:
+  * Module: `code_challenges/hacker_rank/find_string.py`
+  * Tests: `tests/hacker_rank/test_find_string.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
+
