@@ -102,6 +102,11 @@
   * Tests: `tests/code_wars/test_rot13.py`
   * URL: [challenge url](https://www.codewars.com/kata/530e15517bc88ac656000716/python)
   * Run Time: O(n)
+### Barista problem (7kyu)
+  * Module: `code_challenges/code_wars/barista_problem.py`
+  * Tests: `tests/code_wars/test_barista_problme.py`
+  * URL: [challenge url](https://www.codewars.com/kata/6167e70fc9bd9b00565ffa4e/python) 
+  * Run Time: O(n^2)
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
   * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
