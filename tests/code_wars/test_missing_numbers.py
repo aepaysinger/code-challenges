@@ -1,4 +1,7 @@
-from code_challenges.code_wars.missing_numbers import MissingNumbers, find_missing_numbers
+from code_challenges.code_wars.missing_numbers import (
+    MissingNumbers,
+    find_missing_numbers,
+)
 
 
 def test_organize():
@@ -17,5 +20,12 @@ def test_fill_in_the_gaps():
 def test_find_missing_numbers():
     actual = find_missing_numbers([8, 10, 11, 7, 3, 15, 6, 1, 14, 5, 12])
     expected = [2, 4, 9, 13]
+
+    assert actual == expected, f"Returned {actual} instead of {expected}"
+
+
+def test_find_missing_numbers_no_one():
+    actual = find_missing_numbers([8, 2, 6, 5, 7, 3, 4, 9])
+    expected = [1]
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
