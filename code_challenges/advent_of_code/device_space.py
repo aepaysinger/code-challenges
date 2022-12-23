@@ -9,9 +9,9 @@ def code_device():
 
 def build_directories():
     device_code = code_device()
-    computer_directories = {"/": {}} # {"/": {"a": [["b.txt", "14848514"], ["c.dat": "8504156"], {"d": []}}
-    directory_name = [] # [/,]
-    directory_level = 0 # 0 
+    computer_directories = {"/": {}} # 
+    directory_name = [] # 
+    directory_level = 0 # 
     for i, line in enumerate(device_code):
         print(line)
         print(computer_directories)
@@ -30,11 +30,8 @@ def build_directories():
 
 
     return computer_directories
-{"/": {
-    a: ["b.txt": 148], ["c.dat, 850"], {
-        e: 
-    } 
-    d: []}}
+{"/": {"a": {"e": {}}, "b.txt": 148, "c.dat": 850, "d": {}}
+
 # $ cd /
 # $ ls
 # dir a
