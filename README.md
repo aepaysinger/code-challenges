@@ -144,6 +144,10 @@
   * Module: `code_challenges/code_wars/unique_number.py`
   * Tests: `tests/code_wars/test_unique_numbers.py`
   * URL: [challenge url](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/python)
+### Unknown Amount of Missing Numbers in an Unordered Array (6kyu)
+  * Module: `code_challenges/code_wars/missing_numbers.py`
+  * Tests: `tests/code_wars/test_missing_numbers.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5b559899f7e38620ef000803/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
