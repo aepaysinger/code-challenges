@@ -140,6 +140,10 @@
   * Module: `code_challenges/code_wars/popping_balloons.py`
   * Tests: `tests/code_wars/test_popping_balloons.py`
   * URL: [challenge url](https://www.codewars.com/kata/633b8be2b5203f003011d79e/train/python)
+### Find the unique number (6kyu):
+  * Module: `code_challenges/code_wars/unique_number.py`
+  * Tests: `tests/code_wars/test_unique_numbers.py`
+  * URL: [challenge url](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/python)
 ### Unknown Amount of Missing Numbers in an Unordered Array (6kyu)
   * Module: `code_challenges/code_wars/missing_numbers.py`
   * Tests: `tests/code_wars/test_missing_numbers.py`
