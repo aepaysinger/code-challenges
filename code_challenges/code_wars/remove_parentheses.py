@@ -1,11 +1,11 @@
 class CharacterRemover:
     def __init__(self, characters):
         self.characters = characters
+        self.start_item = "("
+        self.stop_item = ")"
 
     def item_to_remove(self):
-        self.start_item = "("
         start_item_index = None
-        self.stop_item = ")"
         stop_item_index = None
 
         for i in range(len(self.characters)):
