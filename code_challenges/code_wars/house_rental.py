@@ -17,46 +17,48 @@ class Rent:
         guests_per_day = self.calculate_guests_per_day()
         guest_amount = {}
         amount_paid = 0
-    
+        print(guests_per_day)
         
-        for guest in sorted(self.guests):
-            guest_to_remove = guest
-            amount = self.cost * guest
-            print(f"guest: {guest}")
+        for i in range(len(self.guests)):
+            self.guests = sorted(self.guests)
+            print(f"starting the loop self.guests: {self.guests}")
+            amount = self.cost * self.guests[0]
+            print(f"guest: {self.guests[0]}")
             print(f"starting amount: {amount}")
             amount -= amount_paid
             print(f" amount - amount paid: {amount}")
             amount = math.ceil(amount / len(self.guests))
+            # amount = amount // len(self.guests)
             print(f"amount/len(guest) rounded up: {amount}")
+            print(f"guest per day [0]: {guests_per_day[self.guests[0]]}")
+            guest_amount[self.guests[0]] = guest_amount.get(self.guests[0], amount)
+            amount = amount * guests_per_day[self.guests[0]]
             amount_paid += amount
             print(f"amount paid: {amount_paid}")
-            guest_amount[guest] = guest_amount.get(guest, amount)
-            self.guests = [guest for guest in self.guests if guest != guest]
-                # list_of_num = [num for num in list_of_num if num != 54 and num !=55 ]
+            # guest_amount[self.guests[0]] = guest_amount.get(self.guests[0], amount)
+            for _ in range(guests_per_day[self.guests[0]]):
+                self.guests.remove(self.guests[0])
+            print(self.guests)
            
 
             if len(self.guests) == 0:
                 break
-            print(guest_amount)
+        return guest_amount
             
 
-        # return 
+def calculate_cost_per_person(cost, guests):
+    rent = Rent(cost, guests)
+    rent.calculate_guests_per_day
+
+    return rent.calculate_rent_per_person()
 
 
 
+if __name__ == "__main__":
+    # cost = 50
+    # guests = [12, 20, 4, 20, 10, 10, 10, 7, 7, 7]
+    cost = 100
+    guests = [7, 7, 7, 7, 1, 1, 2, 4, 5, 6]
 
-rent = Rent(100, [7, 7, 7, 7, 1, 1, 2, 4, 5, 6])
-rent.calculate_guests_per_day()
-print(rent.calculate_rent_per_person())
+    print(calculate_cost_per_person(cost, guests))
 
-
-
-# def calculate_cost_per_person(cost):
-#     pass
-
-
-
-# if __name__ == "__main__":
-#     cost = 100
-#     guests = [7, 7, 7, 7, 1, 1, 2, 4, 5, 6]
-#     print(calculate_cost_per_person(cost, [7, 7, 7, 7, 1, 1, 2, 4, 5, 6]))
