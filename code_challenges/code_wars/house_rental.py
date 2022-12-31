@@ -16,8 +16,19 @@ class Rent:
     def calculate_rent_per_person(self):
         guests_per_day = self.calculate_guests_per_day()
         guest_amount = {}
-        amount_paid = 0
+        # amount_paid = 0
         print(guests_per_day)
+        self.guests = sorted(self.guests)
+        print(self.guests)
+        amount = self.cost * self.guests[0]
+        amount = math.ceil(amount/len(self.guests))
+        guest_amount[self.guests[0]] = guest_amount.get(self.guests[0], amount)
+        print(guests_per_day[self.guests[0]])
+        print(f"should be 10, {amount}")
+        print(self.guests[0])
+        amount_paid = amount
+        for _ in range(guests_per_day[self.guests[0]]):
+                self.guests.remove(self.guests[0])
         
         for i in range(len(self.guests)):
             self.guests = sorted(self.guests)
@@ -27,7 +38,11 @@ class Rent:
             print(f"starting amount: {amount}")
             amount -= amount_paid
             print(f" amount - amount paid: {amount}")
-            amount = math.ceil(amount / len(self.guests))
+            if isinstance(amount / len(self.guests), int):
+                amount = (amount / len(self.guests)) + 1
+            if isinstance(amount / len(self.guests), float):
+                amount = math.ceil(amount / len(self.guests))
+                
             # amount = amount // len(self.guests)
             print(f"amount/len(guest) rounded up: {amount}")
             print(f"guest per day [0]: {guests_per_day[self.guests[0]]}")
@@ -55,10 +70,10 @@ def calculate_cost_per_person(cost, guests):
 
 
 if __name__ == "__main__":
-    # cost = 50
-    # guests = [12, 20, 4, 20, 10, 10, 10, 7, 7, 7]
-    cost = 100
-    guests = [7, 7, 7, 7, 1, 1, 2, 4, 5, 6]
+    cost = 50
+    guests = [12, 20, 4, 20, 10, 10, 10, 7, 7, 7]
+    # cost = 100
+    # guests = [7, 7, 7, 7, 1, 1, 2, 4, 5, 6]
 
     print(calculate_cost_per_person(cost, guests))
 
