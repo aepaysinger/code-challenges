@@ -144,6 +144,10 @@
   * Module: `code_challenges/code_wars/missing_numbers.py`
   * Tests: `tests/code_wars/test_missing_numbers.py`
   * URL: [challenge url](https://www.codewars.com/kata/5b559899f7e38620ef000803/train/python)
+### Multiplicatin Table (6kyu)
+  * Module: `code_challenges/code_wars/multiplication_table.py`
+  * Tests: `tests/code_wars/test_multiplication_table.py`
+  * URL: [challenge url](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
