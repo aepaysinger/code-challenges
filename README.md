@@ -83,3 +83,7 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Luck Check (5kyu)
+  * Module: `code_challenges/code_wars/luck_check.py`
+  * Tests: `tests/code_wars/test_luck_check.py`
+  * URL: [Challenge url](https://www.codewars.com/kata/5314b3c6bb244a48ab00076c/python)
