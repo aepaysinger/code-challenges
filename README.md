@@ -87,6 +87,10 @@
   * Tests: `tests/code_wars/test_count_smileys.py`
   * URL: [Challenge url](https://www.codewars.com/kata/583203e6eb35d7980400002a/python)
   * Run Tumes: O(n)
+### Luck Check (5kyu)
+  * Module: `code_challenges/code_wars/luck_check.py`
+  * Tests: `tests/code_wars/test_luck_check.py`
+  * URL: [Challenge url](https://www.codewars.com/kata/5314b3c6bb244a48ab00076c/python)
 ### Increment String (5kyu)
   * Module: `code_challenges/code_wars/increment_string.py`
   * Tests: `tests/code_wars/test_increment_string`
@@ -125,6 +129,10 @@
   * Module: `code_challenges/code_wars/popping_balloons.py`
   * Tests: `tests/code_wars/test_popping_balloons.py`
   * URL: [challenge url](https://www.codewars.com/kata/633b8be2b5203f003011d79e/train/python)
+### Find the unique number (6kyu):
+  * Module: `code_challenges/code_wars/unique_number.py`
+  * Tests: `tests/code_wars/test_unique_numbers.py`
+  * URL: [challenge url](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/python)
 ### Unknown Amount of Missing Numbers in an Unordered Array (6kyu)
   * Module: `code_challenges/code_wars/missing_numbers.py`
   * Tests: `tests/code_wars/test_missing_numbers.py`
@@ -133,6 +141,10 @@
   * Module: `code_challenges/code_wars/remove_parentheses.py`
   * Tests: `tests/code_wars/test_remove_parentheses.py`
   * URL: [challenge url](https://www.codewars.com/kata/5f7c38eb54307c002a2b8cc8/python)
+### Multiplicatin Table (6kyu)
+  * Module: `code_challenges/code_wars/multiplication_table.py`
+  * Tests: `tests/code_wars/test_multiplication_table.py`
+  * URL: [challenge url](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -174,4 +186,3 @@
   * Module: `code_challenges/hacker_rank/find_string.py`
   * Tests: `tests/hacker_rank/test_find_string.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
-
