@@ -18,14 +18,12 @@ def test_character_remover_item_to_remove_2():
 
 def test_character_remover_remove_item():
     characters = CharacterRemover("this(is)it")
-    characters.item_to_remove()
 
     assert characters.remove_item() == "thisit"
 
 
 def test_charcter_remover_remove_item_2():
     characters = CharacterRemover("a(b)c(d)")
-    characters.item_to_remove()
 
     assert characters.remove_item() == "ac"
 
