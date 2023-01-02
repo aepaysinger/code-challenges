@@ -28,10 +28,10 @@ def test_luck_check_odd_length():
 def test_luck_check_empty_string():
     with pytest.raises(ValueError) as exc_info:
         luck_check("")
-        assert exc_info.value.args[0] == "empty string"
+    assert exc_info.value.args[0] == "empty string"
 
 
 def test_luck_check_letters():
     with pytest.raises(ValueError) as exc_info:
         luck_check("234jh43j2")
-        assert exc_info.value.args[0] == "needs to be numbers"
+    assert exc_info.value.args[0] == "needs to be numbers"
