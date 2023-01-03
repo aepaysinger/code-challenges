@@ -156,6 +156,10 @@
   * Module: `code_challenges/code_wars/multiplication_table.py`
   * Tests: `tests/code_wars/test_multiplication_table.py`
   * URL: [challenge url](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/python)
+### Backsoaces in string (6kyu)
+  * Module: `code_challenges/code_wars/backspace_string.py`
+  * Tests: tests/code_wars/test_backspace_string.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
