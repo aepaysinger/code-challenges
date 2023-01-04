@@ -3,11 +3,13 @@ class Backspace:
         self.characters = characters
 
     def hit_backspace(self):
-        while "#" in self.characters:
-            if self.characters.find("#") == 0:
+        index_to_remove = self.characters.find("#")
+        while index_to_remove != -1:
+            if index_to_remove == 0:
                 self.characters = self.characters[1:]
             else:
-                self.characters = self.characters[:(self.characters.find("#")) - 1] + self.characters[(self.characters.find("#")) + 1:]
+                self.characters = self.characters[:index_to_remove - 1] + self.characters[index_to_remove + 1:]
+            index_to_remove = self.characters.find("#")    
         
         return self.characters
 
