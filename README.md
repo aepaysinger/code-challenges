@@ -111,11 +111,6 @@
   * Tests: `tests/code_wars/test_barista_problme.py`
   * URL: [challenge url](https://www.codewars.com/kata/6167e70fc9bd9b00565ffa4e/python) 
   * Run Time: O(n^2)
-### If-Else
-  * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
-  * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
-  * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
-  * Run Time: O(1)
 ### Valid Parentheses (5kyu)
   * Module: `code_challenges/code_wars/valid_parentheses.py`
   * tests: `tests/code_challenges/test_valid_parentheses.py`
@@ -130,16 +125,6 @@
   * Tests: `tests/code_wars/test_unscrambled_eggs.py`
   * URL: [challenge url](https://www.codewars.com/kata/55ea5650fe9247a2ea0000a7/python)
   *  Run Time: O(n)
-### Finding The Percentage:
-  * Module: `code_challenges/hacker_rank/finding_the_percentage.py`
-  * Tests: `tests/hacker_rank/test_finding_the_percentage.py`
-  * URL: [challenge url](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
-  * Run Time: O(n)
-### Basic Data Types:
-  * Module: `code_challenges/hacker_rank/basic_data_types.py`
-  * Tests: `tests/hacker_rank/test_basic_data_types.py`
-  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
-  * Run Time: O(1)
 ### Popping Balloons (6kyu):
   * Module: `code_challenges/code_wars/popping_balloons.py`
   * Tests: `tests/code_wars/test_popping_balloons.py`
@@ -160,6 +145,10 @@
   * Module: `code_challenges/code_wars/persistent_bugger.py`
   * Tests: `tests/code_wars/test_persistent_bugger.py`
   * URL: [challenge url](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/python)
+### Backspaces in string (6kyu)
+  * Module: `code_challenges/code_wars/backspace_string.py`
+  * Tests: tests/code_wars/test_backspace_string.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -186,4 +175,19 @@
   * Module: `code_challenges/hacker_rank/find_string.py`
   * Tests: `tests/hacker_rank/test_find_string.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
+### Finding The Percentage:
+  * Module: `code_challenges/hacker_rank/finding_the_percentage.py`
+  * Tests: `tests/hacker_rank/test_finding_the_percentage.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
+  * Run Time: O(n)
+### Basic Data Types:
+  * Module: `code_challenges/hacker_rank/basic_data_types.py`
+  * Tests: `tests/hacker_rank/test_basic_data_types.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+  * Run Time: O(1)
+### If-Else
+  * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
+  * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
+  * Run Time: O(1)
 
