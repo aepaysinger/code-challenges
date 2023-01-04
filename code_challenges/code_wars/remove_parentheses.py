@@ -19,8 +19,6 @@ class CharacterRemover:
         start, stop = self.item_to_remove()
         self.characters = self.characters[:start] + self.characters[stop + 1 :]
         if self.start_item in self.characters and self.stop_item in self.characters:
-            #neeed to do this another way. can get a maximum incursion error
-            self.item_to_remove()
             self.remove_item()
 
         return self.characters
@@ -28,7 +26,6 @@ class CharacterRemover:
 
 def remove_parentheses(characters):
     characters = CharacterRemover(characters)
-    characters.item_to_remove()
     return characters.remove_item()
 
 
