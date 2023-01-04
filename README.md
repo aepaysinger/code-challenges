@@ -156,6 +156,10 @@
   * Module: `code_challenges/code_wars/multiplication_table.py`
   * Tests: `tests/code_wars/test_multiplication_table.py`
   * URL: [challenge url](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/python)
+### Persistent Bugger (6kyu)
+  * Module: `code_challenges/code_wars/persistent_bugger.py`
+  * Tests: `tests/code_wars/test_persistent_bugger.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
