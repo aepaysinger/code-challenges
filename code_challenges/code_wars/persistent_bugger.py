@@ -1,25 +1,21 @@
 class PersistentMultiplication:
-    def __init__(self, numbers):
-        self.numbers = numbers
+    def __init__(self, number):
+        self.number = number
         self.count = 0
 
     def break_up_numbers(self):
-        self.numbers = [self.numbers]
-        self.numbers = [
-            int(x) if x.isdigit() else x for z in self.numbers for x in str(z)
-        ]
-
+        self.numbers = [int(x) for x in str(self.number)]
+        
         return self.numbers
 
     def multiply_numbers(self):
         if len(self.numbers) == 1:
             return 0
-
-        total = [self.numbers[0]]
-        for i in range(1, len(self.numbers)):
-            total[0] *= self.numbers[i]
+        total = 1
+        for i in range(len(self.numbers)):
+            total *= self.numbers[i]
         self.count += 1
-        total = [int(x) if x.isdigit() else x for z in total for x in str(z)]
+        total = [int(x) for x in str(total)]
         self.numbers = total
         if len(self.numbers) > 1:
             self.multiply_numbers()
@@ -27,13 +23,13 @@ class PersistentMultiplication:
         return self.count
 
 
-def persistence(numbers):
-    persistant_numbers = PersistentMultiplication(numbers)
+def persistence(number):
+    persistant_numbers = PersistentMultiplication(number)
     persistant_numbers.break_up_numbers()
 
     return persistant_numbers.multiply_numbers()
 
 
 if __name__ == "__main__":
-    numbers = 25
-    print(persistence(numbers))
+    number = 25
+    print(persistence(number))
