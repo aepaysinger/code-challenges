@@ -7,8 +7,50 @@ def code_device():
     return device_code
 
 
+# $ cd /
+# $ ls
+# dir a
+# 14848514 b.txt
+# 8504156 c.dat
+# dir d
+# $ cd a
+# $ ls
+# dir e
+# 29116 f
+# 2557 g
+# 62596 h.lst
+# $ cd e
+
+class FileSystem:
+    def __init__(self, device_code):
+        self.root = Directory(device_code[0][2])
+        self.current = self.root
+        
+        for line in device_code[1:]:
+
+            if len(line) == 3 and line[1] == "cd" and line[2] != "..":
+                dir = Directory(line[2], parent=self.current)
+                self.curent.children.append(dir)
+                self.current = dir
+            if len(line) == 3 and line[1] == "cd" and line[2] == "..":
+                self.current = self.current.parent
+            
+
+
+
+class Directory:
+    def __init__(self, location, parent=None):
+        self.location = location
+        self.parent = parent
+        self.children = []
+        self.files = []
+    
+    def (self):
+        pass
+
+
 def build_directories():
-    device_code = code_device()
+    device_code = code_calculate_sizedevice()
     computer_directories = {"/": {}} # {"/": "a": {"e": {"i": 584}, "f": 29116, "g": 2557, "h.lst": 62596}, "b.txt": 14848514, "c.dat": 8504156, "d": {"j": 4060174}}
     directory_name = [] # /, a, d, e
     directory_level = 0 # 0, 1, 3, 2, 1, 2
