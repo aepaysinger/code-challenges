@@ -145,6 +145,10 @@
   * Module: `code_challenges/code_wars/multiplication_table.py`
   * Tests: `tests/code_wars/test_multiplication_table.py`
   * URL: [challenge url](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/python)
+### Persistent Bugger (6kyu)
+  * Module: `code_challenges/code_wars/persistent_bugger.py`
+  * Tests: `tests/code_wars/test_persistent_bugger.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/python)
 ### Backspaces in string (6kyu)
   * Module: `code_challenges/code_wars/backspace_string.py`
   * Tests: tests/code_wars/test_backspace_string.py`
@@ -190,3 +194,18 @@
   * Module: `code_challenges/hacker_rank/find_string.py`
   * Tests: `tests/hacker_rank/test_find_string.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/find-a-string/problem?isFullScreen=true)
+### Finding The Percentage:
+  * Module: `code_challenges/hacker_rank/finding_the_percentage.py`
+  * Tests: `tests/hacker_rank/test_finding_the_percentage.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true)
+  * Run Time: O(n)
+### Basic Data Types:
+  * Module: `code_challenges/hacker_rank/basic_data_types.py`
+  * Tests: `tests/hacker_rank/test_basic_data_types.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true)
+  * Run Time: O(1)
+### Weird or not Weird
+  * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
+  * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
+  * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
+  * Run Time: O(1)
