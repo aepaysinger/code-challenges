@@ -157,6 +157,10 @@
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
   * URL: [challenge url](https://www.codewars.com/kata/58039f8efca342e4f0000023/python)
+### CamelCase Method (6kyu)
+  * Module: `code_challenges/code_wars/camel_case.py`
+  * Tests: `tests/code_wars/test_camel_case.py`
+  * URL: [challenge url](https://www.codewars.com/kata/587731fda577b3d1b0001196/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
