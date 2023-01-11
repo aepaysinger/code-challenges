@@ -42,5 +42,5 @@ def order(text):
 
 
 if __name__ == "__main__":
-    text = "is2 Thi1s T4est 3a"
+    text = "T4est is2 Thi1s 3a"
     print(order(text))
