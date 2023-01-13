@@ -178,6 +178,10 @@
   * Module: `code_challenges/advent_of_code/tuning_trouble.py`
   * Tests: `tests/advent_of_code/test_tuning_trouble.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/6)
+### Perfectly Spherical Houses in a Vacuum:
+  * ModuleL `code_challenges/advent_of_code/santas_route.py`
+  * Tests: `tests/advent_of_code/test_santas_route.py`
+  * URL: [challenge url](https://adventofcode.com/2015/day/3)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
