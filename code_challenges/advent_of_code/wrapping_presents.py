@@ -18,19 +18,19 @@ def find_surface_area():
     present_measurements = find_dimensions()
     total_wrapping_paper = 0
     for present in present_measurements:
-        a = int(present[0]) * int(present[1])
-        b = int(present[1]) * int(present[2])
-        c = int(present[2]) * int(present[0])
+        length = int(present[0]) * int(present[1])
+        width = int(present[1]) * int(present[2])
+        height = int(present[2]) * int(present[0])
 
         smallest_amount = None
 
-        if a <= b and a <= c:
-            smallest_amount = a
-        elif b <= a and b <= c:
-            smallest_amount = b
-        elif c <= a and c <= b:
-            smallest_amount = c
-        total_wrapping_paper += (a * 2) + (b * 2) + (c * 2) + smallest_amount
+        if length <= width and length <= height:
+            smallest_amount = length
+        elif width <= length and width <= height:
+            smallest_amount = width
+        elif c <= length and height <= width:
+            smallest_amount = height
+        total_wrapping_paper += (length * 2) + (width * 2) + (height * 2) + smallest_amount
     return total_wrapping_paper
 
 
