@@ -153,6 +153,10 @@
   * Module: `code_challenges/code_wars/backspace_string.py`
   * Tests: tests/code_wars/test_backspace_string.py`
   * URL: [challenge url](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/python)
+### Your order, please (6kyu)
+  * Module: `code_challenges/code_wars/order_strings.py`
+  * Tests: `tests/code_wars/test_order_strings.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55c45be3b2079eccff00010f/python)
 ### Change it up (6kyu)
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
@@ -182,6 +186,10 @@
   * Module: `code_challenges/advent_of_code/wrapping_presents.py`
   * Tests: `tests/advent_of_code/test_wrapping+presents.py`
   * URL: [challenge url](https://adventofcode.com/2015/day/2)
+### Perfectly Spherical Houses in a Vacuum:
+  * ModuleL `code_challenges/advent_of_code/santas_route.py`
+  * Tests: `tests/advent_of_code/test_santas_route.py`
+  * URL: [challenge url](https://adventofcode.com/2015/day/3)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
