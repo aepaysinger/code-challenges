@@ -7,10 +7,10 @@ def test_camelcase_change_case():
     assert camel_it.change_case() == ["Hello", "World"]
 
 
-def test_camelcase_bring_words_together():
+def test_camelcase_make_string_camel_case():
     camel_it = CamelCase(" camel case word")
 
-    assert camel_it.bring_words_together() == "CamelCaseWord"
+    assert camel_it.make_string_camel_case() == "CamelCaseWord"
 
 
 def test_camel_case():
