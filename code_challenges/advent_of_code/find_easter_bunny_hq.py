@@ -11,33 +11,36 @@ def find_easter_bunny_hq():
     north_south = 0
     east_west = 0
     direction = "N"
+
+    moves = [move.strip() for move in moves]
+    print(moves)
     for move in moves:
-        move = move.strip()
-        print(direction, north_south, east_west)    
-        if direction == "N" and move[0] == "R":
+        left_or_right = move[0]
+        steps = move[1]   
+        if direction == "N" and left_or_right == "R":
             direction = "E"
-            east_west += int(move[1])
-        elif direction == "N" and move[0] == "L":
+            east_west += int(steps)
+        elif direction == "N" and left_or_right == "L":
             direction = "W"
-            east_west -= int(move[1])
-        elif direction == "E" and move[0] == "R":
+            east_west -= int(steps)
+        elif direction == "E" and left_or_right == "R":
             direction = "S"
-            north_south -= int(move[1])
-        elif direction == "E" and move[0] == "L":
+            north_south -= int(steps)
+        elif direction == "E" and left_or_right == "L":
             direction = "N"
-            north_south += int(move[1])
-        elif direction == "S" and move[0] == "R":
+            north_south += int(steps)
+        elif direction == "S" and left_or_right == "R":
             direction = "W"
-            east_west -= int(move[1])
-        elif direction == "S" and move[0] == "L":
+            east_west -= int(steps)
+        elif direction == "S" and left_or_right == "L":
             direction = "E"
-            east_west += int(move[1])
-        elif direction == "W" and move[0] == "R":
+            east_west += int(steps)
+        elif direction == "W" and left_or_right == "R":
             direction = "N"
-            north_south += int(move[1])
-        elif direction == "W" and move[0] == "L":
+            north_south += int(steps)
+        elif direction == "W" and left_or_right == "L":
             direction = "S"
-            north_south -= int(move[1])
+            north_south -= int(steps)
 
     if north_south < 0:
         north_south = north_south * -1
@@ -45,9 +48,9 @@ def find_easter_bunny_hq():
         east_west = east_west * -1
     
 
-    return north_south, east_west
+    return north_south+east_west
 
 
 
-print(elves_directions())
+# print(elves_directions())
 print(find_easter_bunny_hq())
