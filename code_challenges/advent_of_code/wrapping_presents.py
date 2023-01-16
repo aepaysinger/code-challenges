@@ -17,38 +17,38 @@ def find_dimensions():
 def find_surface_area():
     present_measurements = find_dimensions()
     total_wrapping_paper = 0
-    for present in present_measurements:
-        length = int(present[0]) * int(present[1])
-        width = int(present[1]) * int(present[2])
-        height = int(present[2]) * int(present[0])
+    for length, width, height in present_measurements:
+        length_x_width = int(length) * int(width)
+        width_x_height = int(width) * int(height)
+        height_x_length= int(height) * int(length)
 
         smallest_amount = None
 
-        if length <= width and length <= height:
-            smallest_amount = length
-        elif width <= length and width <= height:
-            smallest_amount = width
-        elif c <= length and height <= width:
-            smallest_amount = height
-        total_wrapping_paper += (length * 2) + (width * 2) + (height * 2) + smallest_amount
+        if length_x_width <= width_x_height and length_x_width <= height_x_length:
+            smallest_amount = length_x_width
+        elif width_x_height <= length_x_width and width_x_height <= height_x_length:
+            smallest_amount = width_x_height
+        elif height_x_length <= length_x_width and height_x_length <= width_x_height:
+            smallest_amount = height_x_length
+        total_wrapping_paper += (length_x_width * 2) + (width_x_height * 2) + (height_x_length * 2) + smallest_amount
     return total_wrapping_paper
 
 
 def ribbon_for_present():
     present_measurements = find_dimensions()
     total_ribbon = 0
-    for present in present_measurements:
-        perimeter = (int(present[0]) * 2) + (int(present[1]) * 2)
-        around_sides_a = (int(present[0]) * 2) + (int(present[2]) * 2)
-        arounds_sides_b = (int(present[1]) * 2) + (int(present[2]) * 2)
-        bow = int(present[0]) * int(present[1]) * int(present[2])
+    for length, width, height in present_measurements:
+        perimeter = (int(length) * 2) + (int(width) * 2)
+        length_and_height = (int(length) * 2) + (int(height) * 2)
+        width_and_heght = (int(width) * 2) + (int(height) * 2)
+        bow = int(length) * int(width) * int(height)
         ribbon = 0
-        if perimeter <= around_sides_a and perimeter <= arounds_sides_b:
+        if perimeter <= length_and_height and perimeter <= width_and_heght:
             ribbon = perimeter
-        elif around_sides_a <= perimeter and around_sides_a <= arounds_sides_b:
-            ribbon = around_sides_a
-        elif arounds_sides_b <= perimeter and arounds_sides_b <= around_sides_a:
-            ribbon = arounds_sides_b
+        elif length_and_height <= perimeter and length_and_height <= width_and_heght:
+            ribbon = length_and_height
+        elif width_and_heght <= perimeter and width_and_heght <= length_and_height:
+            ribbon = width_and_heght
         total_ribbon += ribbon + bow
 
     return total_ribbon
