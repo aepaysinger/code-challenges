@@ -13,10 +13,10 @@ def find_easter_bunny_hq():
     direction = "N"
 
     moves = [move.strip() for move in moves]
-    print(moves)
+    visited_locations = [(0,0)]
     for move in moves:
         left_or_right = move[0]
-        steps = move[1]   
+        steps = move[1:]   
         if direction == "N" and left_or_right == "R":
             direction = "E"
             east_west += int(steps)
@@ -42,13 +42,21 @@ def find_easter_bunny_hq():
             direction = "S"
             north_south -= int(steps)
 
+        visited_locations.append((north_south, east_west))
+
     if north_south < 0:
         north_south = north_south * -1
     elif east_west < 0:
         east_west = east_west * -1
     
 
-    return north_south+east_west
+    return north_south+east_west, visited_locations
+
+
+# def first_location_visited_twice():
+#     moves = elves_directions()
+#     moves = [move.strip() for move in moves]
+
 
 
 
