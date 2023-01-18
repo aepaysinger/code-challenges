@@ -120,11 +120,12 @@ def first_location_visited_twice():
 
     for move in moves:
         left_or_right = move[0]
-        steps = move[1:]   
+        steps = move[1:]
+        print(stops)   
         if direction == "N" and left_or_right == "R":
             direction = "E"
             east_west += int(steps)
-            for i in range(int(steps)):
+            for i in range(1, int(steps)+1):
                 if (north_south, i) in stops:
                     print(f"i have already been here {(north_south, i)}")
                     double_stop = [north_south, i]
@@ -138,35 +139,35 @@ def first_location_visited_twice():
         elif direction == "N" and left_or_right == "L":
             direction = "W"
             east_west -= int(steps)
-            for i in range(int(steps)):
-                if (north_south, i) in stops:
-                    print(f"i have already been here {(north_south, i)}")
-                    double_stop = [north_south, i]
+            for i in range(1, int(steps)+1):
+                if (north_south, -i) in stops:
+                    print(f"i have already been here {(north_south, -i)}")
+                    double_stop = [north_south, -i]
                     if double_stop[0] < 0:
                         double_stop[0] = double_stop[0] * -1
                     elif double_stop[1] < 0:
                         double_stop[1] = double_stop[1] * -1
                     return double_stop[0] + double_stop[1]
                 else:
-                    stops.add((north_south, i))
+                    stops.add((north_south, -i))
         elif direction == "E" and left_or_right == "R":
             direction = "S"
             north_south -= int(steps)
-            for i in range(int(steps)):
-                if (i, east_west) in stops:
-                    print(f"i have already been here {(i, east_west)}")
-                    double_stop = [i, east_west]
+            for i in range(1, int(steps)+1):
+                if (-i, east_west) in stops:
+                    print(f"i have already been here {(-i, east_west)}")
+                    double_stop = [-i, east_west]
                     if double_stop[0] < 0:
                         double_stop[0] = double_stop[0] * -1
                     elif double_stop[1] < 0:
                         double_stop[1] = double_stop[1] * -1
                     return double_stop[0] + double_stop[1]
                 else:
-                    stops.add((i, east_west))
+                    stops.add((-i, east_west))
         elif direction == "E" and left_or_right == "L":
             direction = "N"
             north_south += int(steps)
-            for i in range(int(steps)):
+            for i in range(1, int(steps)+1):
                 if (i, east_west) in stops:
                     print(f"i have already been here {(i, east_west)}")
                     double_stop = [i, east_west]
@@ -180,21 +181,21 @@ def first_location_visited_twice():
         elif direction == "S" and left_or_right == "R":
             direction = "W"
             east_west -= int(steps)
-            for i in range(int(steps)):
-                if (north_south, i) in stops:
-                    print(f"i have already been here {(north_south, i)}")
-                    double_stop = [north_south, i]
+            for i in range(1, int(steps)+1):
+                if (north_south, -i) in stops:
+                    print(f"i have already been here {(north_south, -i)}")
+                    double_stop = [north_south, -i]
                     if double_stop[0] < 0:
                         double_stop[0] = double_stop[0] * -1
                     elif double_stop[1] < 0:
                         double_stop[1] = double_stop[1] * -1
                     return double_stop[0] + double_stop[1]
                 else:
-                    stops.add((north_south, i))
+                    stops.add((north_south, -i))
         elif direction == "S" and left_or_right == "L":
             direction = "E"
             east_west += int(steps)
-            for i in range(int(steps)):
+            for i in range(1, int(steps)+1):
                 if (north_south, i) in stops:
                     print(f"i have already been here {(north_south, i)}")
                     double_stop = [north_south, i]
@@ -208,7 +209,7 @@ def first_location_visited_twice():
         elif direction == "W" and left_or_right == "R":
             direction = "N"
             north_south += int(steps)
-            for i in range(int(steps)):
+            for i in range(1, int(steps)+1):
                 if (i, east_west) in stops:
                     print(f"i have already been here {(i, east_west)}")
                     double_stop = [i, east_west]
@@ -222,17 +223,17 @@ def first_location_visited_twice():
         elif direction == "W" and left_or_right == "L":
             direction = "S"
             north_south -= int(steps)
-            for i in range(int(steps)):
-                if (i, east_west) in stops:
-                    print(f"i have already been here {(i, east_west)}")
-                    double_stop = [i, east_west]
+            for i in range(1, int(steps)+1):
+                if (-i, east_west) in stops:
+                    print(f"i have already been here {(-i, east_west)}")
+                    double_stop = [-i, east_west]
                     if double_stop[0] < 0:
                         double_stop[0] = double_stop[0] * -1
                     elif double_stop[1] < 0:
                         double_stop[1] = double_stop[1] * -1
                     return double_stop[0] + double_stop[1]
                 else:
-                    stops.add((i, east_west))
+                    stops.add((-i, east_west))
 
 
 
