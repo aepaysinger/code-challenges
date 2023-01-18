@@ -182,6 +182,10 @@
   * Module: `code_challenges/advent_of_code/tuning_trouble.py`
   * Tests: `tests/advent_of_code/test_tuning_trouble.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/6)
+### I was told there would be no math:
+  * Module: `code_challenges/advent_of_code/wrapping_presents.py`
+  * Tests: `tests/advent_of_code/test_wrapping+presents.py`
+  * URL: [challenge url](https://adventofcode.com/2015/day/2)
 ### Perfectly Spherical Houses in a Vacuum:
   * ModuleL `code_challenges/advent_of_code/santas_route.py`
   * Tests: `tests/advent_of_code/test_santas_route.py`
