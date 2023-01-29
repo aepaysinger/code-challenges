@@ -3,23 +3,13 @@ class EqualSumSidesArray:
         self.numbers = numbers
 
     def sum_sides_of_array(self):
-        left_side = 0
-        right_side = None
-
-        if sum(self.numbers[1:]) == left_side:
-            return 0
-        if len(self.numbers) == 2 and self.numbers[0] == 0:
-            return 1
-
-        j = 2
-        for i in range(len(self.numbers)):
-            left_side = sum(self.numbers[: i + 1])
-            right_side = sum(self.numbers[j:])
-            if left_side == right_side:
-                return i + 1
-            j += 1
-            if j > len(self.numbers):
-                break
+        right_total = sum(self.numbers)
+        left_total = 0
+        for i, number in enumerate(self.numbers):
+            right_total -= number
+            if right_total == left_total:
+                return i
+            left_total += number
         return -1
 
 
