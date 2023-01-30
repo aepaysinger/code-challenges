@@ -161,6 +161,10 @@
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
   * URL: [challenge url](https://www.codewars.com/kata/58039f8efca342e4f0000023/python)
+### Unique In Order (6kyu)
+  * Module: `code_challenges/code_wars/unique_in_order.py`
+  * Tests: `tests/code_wars/test_unique_in_order.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54e6533c92449cc251001667/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
