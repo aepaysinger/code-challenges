@@ -161,6 +161,10 @@
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
   * URL: [challenge url](https://www.codewars.com/kata/58039f8efca342e4f0000023/python)
+### Equal Sides Of An Array (6kyu)
+  * Module: `code_challenges/code_wars/equal_sides_of_an_array.py`
+  * Tests: `tests/code_wars/test_equal_sides_of_an_array.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/python)
 ### Unique In Order (6kyu)
   * Module: `code_challenges/code_wars/unique_in_order.py`
   * Tests: `tests/code_wars/test_unique_in_order.py`
