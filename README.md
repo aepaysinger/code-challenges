@@ -165,6 +165,10 @@
   * Module: `code_challenges/code_wars/unique_in_order.py`
   * Tests: `tests/code_wars/test_unique_in_order.py`
   * URL: [challenge url](https://www.codewars.com/kata/54e6533c92449cc251001667/python)
+### Sudoku board validator (6kyu)
+  * Module: `code_challenges/code_wars/sudoku_board_validator.py`
+  * Tests: `test/code_wars/test_sudoku_board_validator.py`
+  * URL: [challenge url](https://www.codewars.com/kata/63d1bac72de941033dbf87ae/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
