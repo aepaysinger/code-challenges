@@ -1,4 +1,4 @@
-from operator import add, sub, mul
+from operator import add
 
 
 class ZipWith:
