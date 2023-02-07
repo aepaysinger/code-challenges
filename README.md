@@ -173,6 +173,10 @@
   * Module: `code_challenges/code_wars/sudoku_board_validator.py`
   * Tests: `test/code_wars/test_sudoku_board_validator.py`
   * URL: [challenge url](https://www.codewars.com/kata/63d1bac72de941033dbf87ae/train/python)
+### Zip With (6kyu)
+  * Module: `code_challenges/code_wars/zip_with.py`
+  * Tests: `tests/code_wars/test_zip_with.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5825792ada030e9601000782/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
