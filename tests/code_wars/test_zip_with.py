@@ -4,10 +4,10 @@ from operator import add, sub, mul
 from code_challenges.code_wars.zip_with import ZipWith, zip_with
 
 
-def test_zipwith():
-    zipping = ZipWith(add, [0, 1, 2, 3, 4, 5], [6, 5, 4, 3, 2, 1])
+def test_zip_it():
+    zipping = ZipWith(add)
 
-    assert zipping.zip_with() == [6, 6, 6, 6, 6, 6]
+    assert zipping.zip_it([0, 1, 2, 3, 4, 5], [6, 5, 4, 3, 2, 1]) == [6, 6, 6, 6, 6, 6]
 
 
 def test_zip_with_sub():

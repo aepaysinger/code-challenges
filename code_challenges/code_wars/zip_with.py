@@ -2,19 +2,17 @@ from operator import add, sub, mul
 
 
 class ZipWith:
-    def __init__(self, func, array1, array2):
+    def __init__(self, func):
         self.func = func
-        self.array1 = array1
-        self.array2 = array2
 
-    def zip_with(self):
-        return [self.func(a, b) for a, b in zip(self.array1, self.array2)]
+    def zip_it(self, array1, array2):
+        return [self.func(a, b) for a, b in zip(array1, array2)]
 
 
 def zip_with(func, array1, array2):
-    zipping = ZipWith(func, array1, array2)
+    zipping = ZipWith(func)
 
-    return zipping.zip_with()
+    return zipping.zip_it(array1, array2)
 
 
 if __name__ == "__main__":
