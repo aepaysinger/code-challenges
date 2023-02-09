@@ -19,11 +19,13 @@ def find_pairs(mixed_shoes):
     for size in shoes:
         if shoes[size][0] == shoes[size][1]:
             shoe_pairs = True
+        else:
+            shoe_pairs = False
     return shoe_pairs
 
 
 if __name__ == "__main__":
-    mixed_shoes = [[0, 23], [1, 23], [1, 23], [0, 21], [0, 23], [0, 23]]
-    print(find_pairs(mixed_shoes))
+    mixed_shoes = [[0, 21], [1, 23], [1, 21], [1, 23]]
+    print(make_pairs(mixed_shoes))
 
     # use a counter --> collections counter
