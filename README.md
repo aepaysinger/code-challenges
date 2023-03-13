@@ -173,6 +173,10 @@
   * Module: `code_challenges/code_wars/sudoku_board_validator.py`
   * Tests: `test/code_wars/test_sudoku_board_validator.py`
   * URL: [challenge url](https://www.codewars.com/kata/63d1bac72de941033dbf87ae/train/python)
+### Pair of Shoes (6kyu)
+  * Module: `code_challenges/code_wars/pairs_of_shoes.py`
+  * Tests: `tests/code_wars/test_pairs_of_shoes.py`
+  * URL: [challenge url](https://www.codewars.com/kata/58885a7bf06a3d466e0000e3/python)
 ### Zip With (6kyu)
   * Module: `code_challenges/code_wars/zip_with.py`
   * Tests: `tests/code_wars/test_zip_with.py`
