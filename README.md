@@ -181,6 +181,10 @@
   * Module: `code_challenges/code_wars/zip_with.py`
   * Tests: `tests/code_wars/test_zip_with.py`
   * URL: [challenge url](https://www.codewars.com/kata/5825792ada030e9601000782/train/python)
+### Training on Decipher (6kyu)
+  * Module: `code_challenges/code_wars/decipher_this.py`
+  * Tests: `tests/code_wars/test_decipher_this.py`
+  * URL: [challenge url](https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python)
 ### Hamming (6kyu)
   * Module: `code_challenges/code_wars/hamming.py`
   * Tests: `tests/code_wars/test_hamming.py`
