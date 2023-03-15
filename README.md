@@ -185,6 +185,10 @@
   * Module: `code_challenges/code_wars/hamming.py`
   * Tests: `tests/code_wars/test_hamming.py`
   * URL: [challenge url](https://www.codewars.com/kata/5410c0e6a0e736cf5b000e69/train/python)
+### T.T.T.39: Cut Rope (6kyu):
+  * Module: `code_challenges/code_wars/cut_rope.py`
+  * Tests: `tests/code_wars/test_cute_rope.py`
+  * URL: [challenge url](https://www.codewars.com/kata/57b2a9631fae8a30fa000013/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
