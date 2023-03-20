@@ -1,9 +1,7 @@
 def cut_rope(length, m, n):
-    rope = []
+    rope = ["-" for _ in range(length)]
     different_lengths = {}
-    for _ in range(length):
-        rope.append("-")
-
+    rope_with_cuts = rope
     count_m = 0
     count_n = 0
     for i, section in enumerate(rope):
@@ -11,14 +9,14 @@ def cut_rope(length, m, n):
             count_m += 1
             count_n += 1
         if count_m == m:
-            rope.insert(i + 1, ".")
+            rope_with_cuts.insert(i + 1, ".")
             count_m = 0
         if count_n == n:
-            rope.insert(i + 1, ".")
+            rope_with_cuts.insert(i + 1, ".")
             count_n = 0
-
+  
     length_count = 0
-
+    print(rope_with_cuts)
     for i in range(len(rope)):
         if i == (len(rope) - 1) and rope[i] == "-":
             length_count += 1
