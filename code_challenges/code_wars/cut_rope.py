@@ -16,7 +16,7 @@ def cut_rope(length, m, n):
             count_n = 0
   
     length_count = 0
-    print(rope_with_cuts)
+
     for i in range(len(rope)):
         if i == (len(rope) - 1) and rope[i] == "-":
             length_count += 1
