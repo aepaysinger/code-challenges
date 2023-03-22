@@ -153,14 +153,48 @@
   * Module: `code_challenges/code_wars/backspace_string.py`
   * Tests: tests/code_wars/test_backspace_string.py`
   * URL: [challenge url](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/python)
+### Your order, please (6kyu)
+  * Module: `code_challenges/code_wars/order_strings.py`
+  * Tests: `tests/code_wars/test_order_strings.py`
+  * URL: [challenge url](https://www.codewars.com/kata/55c45be3b2079eccff00010f/python)
 ### Change it up (6kyu)
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
   * URL: [challenge url](https://www.codewars.com/kata/58039f8efca342e4f0000023/python)
+<<<<<<< HEAD
 ### CamelCase Method (6kyu)
   * Module: `code_challenges/code_wars/camel_case.py`
   * Tests: `tests/code_wars/test_camel_case.py`
   * URL: [challenge url](https://www.codewars.com/kata/587731fda577b3d1b0001196/python)
+=======
+### Equal Sides Of An Array (6kyu)
+  * Module: `code_challenges/code_wars/equal_sides_of_an_array.py`
+  * Tests: `tests/code_wars/test_equal_sides_of_an_array.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/python)
+### Unique In Order (6kyu)
+  * Module: `code_challenges/code_wars/unique_in_order.py`
+  * Tests: `tests/code_wars/test_unique_in_order.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54e6533c92449cc251001667/python)
+### Sudoku board validator (6kyu)
+  * Module: `code_challenges/code_wars/sudoku_board_validator.py`
+  * Tests: `test/code_wars/test_sudoku_board_validator.py`
+  * URL: [challenge url](https://www.codewars.com/kata/63d1bac72de941033dbf87ae/train/python)
+### Pair of Shoes (6kyu)
+  * Module: `code_challenges/code_wars/pairs_of_shoes.py`
+  * Tests: `tests/code_wars/test_pairs_of_shoes.py`
+  * URL: [challenge url](https://www.codewars.com/kata/58885a7bf06a3d466e0000e3/python)
+### Zip With (6kyu)
+  * Module: `code_challenges/code_wars/zip_with.py`
+  * Tests: `tests/code_wars/test_zip_with.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5825792ada030e9601000782/train/python)
+### Training on Decipher (6kyu)
+  * Module: `code_challenges/code_wars/decipher_this.py`
+  * Tests: `tests/code_wars/test_decipher_this.py`
+  * URL: [challenge url](https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python)
+### Hamming (6kyu)
+  * Module: `code_challenges/code_wars/hamming.py`
+  * Tests: `tests/code_wars/test_hamming.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5410c0e6a0e736cf5b000e69/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -182,6 +216,14 @@
   * Module: `code_challenges/advent_of_code/tuning_trouble.py`
   * Tests: `tests/advent_of_code/test_tuning_trouble.py`
   * URL: [challenge url](https://adventofcode.com/2022/day/6)
+### I was told there would be no math:
+  * Module: `code_challenges/advent_of_code/wrapping_presents.py`
+  * Tests: `tests/advent_of_code/test_wrapping+presents.py`
+  * URL: [challenge url](https://adventofcode.com/2015/day/2)
+### Perfectly Spherical Houses in a Vacuum:
+  * ModuleL `code_challenges/advent_of_code/santas_route.py`
+  * Tests: `tests/advent_of_code/test_santas_route.py`
+  * URL: [challenge url](https://adventofcode.com/2015/day/3)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
