@@ -189,6 +189,10 @@
   * Module: `code_challenges/code_wars/hamming.py`
   * Tests: `tests/code_wars/test_hamming.py`
   * URL: [challenge url](https://www.codewars.com/kata/5410c0e6a0e736cf5b000e69/train/python)
+### Simple Pig Latin (5kyu)
+  * Module: `code_challenges/code_wars/pig_lating.py`
+  * Tests: `tests/code_wars/test_pig_latin.py`
+  * URL: [challeneg url](https://www.codewars.com/kata/520b9d2ad5c005041100000f/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
