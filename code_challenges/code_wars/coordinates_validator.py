@@ -5,7 +5,6 @@ def is_valid_coordinates(coordinates):
     try:
         x_coordinate = float(coordinates.split(", ")[0])
         y_coordinate = float(coordinates.split(", ")[1])
-        print(x_coordinate)
     except:
         return False
     if len(list(coordinates.split(","))) > 2:
