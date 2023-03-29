@@ -1,16 +1,9 @@
 def two_sum(numbers, target):
-    j = len(numbers) - 1
-    numbers.sort()
-    for i in numbers:
-        while numbers[i] + numbers[j] > target:
-            j -= 1
-        if numbers[i] + numbers[j] < target:
-            continue
-        if numbers[i] + numbers[j] == target:
-            result = [i, j]
-            result.sort()
-            return result
-
+    lookup = {}
+    for i, num in enumerate(numbers):
+        if target - num in lookup:
+            return [lookup[target - num], i ]
+        lookup[num] = i
 
 if __name__ == "__main__":
     target = 6
