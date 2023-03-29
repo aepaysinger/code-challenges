@@ -197,6 +197,10 @@
   * Module: `code_challenges/code_wars/pig_lating.py`
   * Tests: `tests/code_wars/test_pig_latin.py`
   * URL: [challeneg url](https://www.codewars.com/kata/520b9d2ad5c005041100000f/python)
+### If you can read this... (6kyu)
+  * Module: `code_challenges/code_wars/translating.py`
+  * Tests: `tests/code_wars/test_translating.py`
+  * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
