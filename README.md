@@ -201,6 +201,10 @@
   * Module: `code_challenges/code_wars/emotional_sort.py`
   * Tests: `tests/code_wars/test_emotional_sort.py`
   * URL: [challenge url](https://www.codewars.com/kata/5a86073fb17101e453000258/solutions/python)
+### If you can read this... (6kyu)
+  * Module: `code_challenges/code_wars/translating.py`
+  * Tests: `tests/code_wars/test_translating.py`
+  * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
