@@ -197,6 +197,10 @@
   * Module: `code_challenges/code_wars/pig_lating.py`
   * Tests: `tests/code_wars/test_pig_latin.py`
   * URL: [challeneg url](https://www.codewars.com/kata/520b9d2ad5c005041100000f/python)
+### Emotional Sort (6kyu)
+  * Module: `code_challenges/code_wars/emotional_sort.py`
+  * Tests: `tests/code_wars/test_emotional_sort.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5a86073fb17101e453000258/solutions/python)
 ### Coordinates Validator (6kyu)
   * Module: `code_challenges/code_wars/coordinates_validator.py`
   * Tests: `tests/code_wars/test_coordinates_validator.py`
