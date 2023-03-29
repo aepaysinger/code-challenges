@@ -3,11 +3,8 @@ def is_valid_coordinates(coordinates):
         if character.isalpha():
             return False
     x_y_coordinates = coordinates.split(", ")
-    try:
-        x_coordinate = float(x_y_coordinates[0])
-        y_coordinate = float(x_y_coordinates[1])
-    except:
-        return False
+    x_coordinate = float(x_y_coordinates[0])
+    y_coordinate = float(x_y_coordinates[1])
 
     if len(x_y_coordinates) > 2:
         return False
@@ -17,5 +14,5 @@ def is_valid_coordinates(coordinates):
 
 
 if __name__ == "__main__":
-    coordinates = "24.53525235, 23.45235"
+    coordinates = "23.43.345, E32.6457"
     print(is_valid_coordinates(coordinates))

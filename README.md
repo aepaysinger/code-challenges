@@ -201,6 +201,10 @@
   * Module: `code_challenges/code_wars/coordinates_validator.py`
   * Tests: `tests/code_wars/test_coordinates_validator.py`
   * URL: [challenge url](https://www.codewars.com/kata/5269452810342858ec000951/train/python)
+### If you can read this... (6kyu)
+  * Module: `code_challenges/code_wars/translating.py`
+  * Tests: `tests/code_wars/test_translating.py`
+  * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
