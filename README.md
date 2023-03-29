@@ -173,10 +173,34 @@
   * Module: `code_challenges/code_wars/sudoku_board_validator.py`
   * Tests: `test/code_wars/test_sudoku_board_validator.py`
   * URL: [challenge url](https://www.codewars.com/kata/63d1bac72de941033dbf87ae/train/python)
+### Pair of Shoes (6kyu)
+  * Module: `code_challenges/code_wars/pairs_of_shoes.py`
+  * Tests: `tests/code_wars/test_pairs_of_shoes.py`
+  * URL: [challenge url](https://www.codewars.com/kata/58885a7bf06a3d466e0000e3/python)
 ### Zip With (6kyu)
   * Module: `code_challenges/code_wars/zip_with.py`
   * Tests: `tests/code_wars/test_zip_with.py`
   * URL: [challenge url](https://www.codewars.com/kata/5825792ada030e9601000782/train/python)
+### Training on Decipher (6kyu)
+  * Module: `code_challenges/code_wars/decipher_this.py`
+  * Tests: `tests/code_wars/test_decipher_this.py`
+  * URL: [challenge url](https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python)
+### Hamming (6kyu)
+  * Module: `code_challenges/code_wars/hamming.py`
+  * Tests: `tests/code_wars/test_hamming.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5410c0e6a0e736cf5b000e69/train/python)
+### T.T.T.39: Cut Rope (6kyu):
+  * Module: `code_challenges/code_wars/cut_rope.py`
+  * Tests: `tests/code_wars/test_cute_rope.py`
+  * URL: [challenge url](https://www.codewars.com/kata/57b2a9631fae8a30fa000013/python)
+### Simple Pig Latin (5kyu)
+  * Module: `code_challenges/code_wars/pig_lating.py`
+  * Tests: `tests/code_wars/test_pig_latin.py`
+  * URL: [challeneg url](https://www.codewars.com/kata/520b9d2ad5c005041100000f/python)
+### If you can read this... (6kyu)
+  * Module: `code_challenges/code_wars/translating.py`
+  * Tests: `tests/code_wars/test_translating.py`
+  * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
