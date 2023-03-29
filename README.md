@@ -201,6 +201,10 @@
   * Module: `code_challenges/code_wars/emotional_sort.py`
   * Tests: `tests/code_wars/test_emotional_sort.py`
   * URL: [challenge url](https://www.codewars.com/kata/5a86073fb17101e453000258/solutions/python)
+### Coordinates Validator (6kyu)
+  * Module: `code_challenges/code_wars/coordinates_validator.py`
+  * Tests: `tests/code_wars/test_coordinates_validator.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5269452810342858ec000951/train/python)
 ### If you can read this... (6kyu)
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
