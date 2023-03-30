@@ -112,11 +112,12 @@ def find_easter_bunny_hq():
 def first_location_visited_twice():
     moves = elves_directions()
     moves = [move.strip() for move in moves]
-    stops = set((0, 0))
+    stops = set((0, ))
     double_stop = None
     north_south = 0
     east_west = 0
     direction = "N"
+    print(f"first stops: {stops}")
 
     for move in moves:
         left_or_right = move[0]
