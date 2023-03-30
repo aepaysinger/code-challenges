@@ -161,12 +161,10 @@
   * Module: `code_challenges/code_wars/change_it_up.py`
   * Tests: `tests/code_wars/test_change_it_up.py`
   * URL: [challenge url](https://www.codewars.com/kata/58039f8efca342e4f0000023/python)
-<<<<<<< HEAD
 ### CamelCase Method (6kyu)
   * Module: `code_challenges/code_wars/camel_case.py`
   * Tests: `tests/code_wars/test_camel_case.py`
   * URL: [challenge url](https://www.codewars.com/kata/587731fda577b3d1b0001196/python)
-=======
 ### Equal Sides Of An Array (6kyu)
   * Module: `code_challenges/code_wars/equal_sides_of_an_array.py`
   * Tests: `tests/code_wars/test_equal_sides_of_an_array.py`
@@ -195,6 +193,26 @@
   * Module: `code_challenges/code_wars/hamming.py`
   * Tests: `tests/code_wars/test_hamming.py`
   * URL: [challenge url](https://www.codewars.com/kata/5410c0e6a0e736cf5b000e69/train/python)
+### T.T.T.39: Cut Rope (6kyu):
+  * Module: `code_challenges/code_wars/cut_rope.py`
+  * Tests: `tests/code_wars/test_cute_rope.py`
+  * URL: [challenge url](https://www.codewars.com/kata/57b2a9631fae8a30fa000013/python)
+### Simple Pig Latin (5kyu)
+  * Module: `code_challenges/code_wars/pig_lating.py`
+  * Tests: `tests/code_wars/test_pig_latin.py`
+  * URL: [challeneg url](https://www.codewars.com/kata/520b9d2ad5c005041100000f/python)
+### Emotional Sort (6kyu)
+  * Module: `code_challenges/code_wars/emotional_sort.py`
+  * Tests: `tests/code_wars/test_emotional_sort.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5a86073fb17101e453000258/solutions/python)
+### Coordinates Validator (6kyu)
+  * Module: `code_challenges/code_wars/coordinates_validator.py`
+  * Tests: `tests/code_wars/test_coordinates_validator.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5269452810342858ec000951/train/python)
+### If you can read this... (6kyu)
+  * Module: `code_challenges/code_wars/translating.py`
+  * Tests: `tests/code_wars/test_translating.py`
+  * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -259,3 +277,6 @@
   * Tests: `tests/hacker_rank/test_weird_or_not_weird.py`
   * URL: [challenge url](https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true)
   * Run Time: O(1)
+## Adhoc
+### Two Sum
+  * Given an array of integers (nums) and an integer (target), return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
