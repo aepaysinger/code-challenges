@@ -238,6 +238,10 @@
   * ModuleL `code_challenges/advent_of_code/santas_route.py`
   * Tests: `tests/advent_of_code/test_santas_route.py`
   * URL: [challenge url](https://adventofcode.com/2015/day/3)
+### The Tyranny of the Rocket Equation:
+  * Module: `code_challenges/advent_of_code/fuel_requirements.py`
+  * Tests: `tests/advent_of_code/test_fuel_requirements.py`
+  * URL: [challenge url](https://adventofcode.com/2019/day/1)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
