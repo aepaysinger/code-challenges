@@ -12,6 +12,7 @@ def get_next_noun_verb_pair():
             verb = j
             pair = (noun, verb)
             yield pair
+    raise StopIteration
 
 
 def opcode_instructions(output):
