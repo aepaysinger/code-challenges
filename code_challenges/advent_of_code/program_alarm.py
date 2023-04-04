@@ -1,6 +1,3 @@
-import random
-
-
 def opcode_integers():
     with open("./code_challenges/advent_of_code/opcode_input") as integers:
         opcode = integers.read().split(",")
