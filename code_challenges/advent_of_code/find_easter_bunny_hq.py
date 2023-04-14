@@ -30,7 +30,11 @@ def find_easter_bunny_hq():
                     start_range = east_west_range[1]
                     end_range = east_west_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    # if north_south < 0:
+                    #     north_south *= -1
+                    # if east_west < 0:
+                    #     east_west *= -1
+                    print(f"already been here N/R: {north_south+east_west, steps}")
                     break 
             east_west_ranges.append((east_west, steps))
             direction = "E"
@@ -45,7 +49,7 @@ def find_easter_bunny_hq():
                     start_range = east_west_range[1]
                     end_range = east_west_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    print(f"already been here N/L: {north_south+east_west, steps}")
                     break 
             north_south_ranges.append((north_south, steps))    
             direction = "W"
@@ -60,7 +64,7 @@ def find_easter_bunny_hq():
                     start_range = north_south_range[1]
                     end_range = north_south_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    print(f"already been here E/R: {north_south+east_west, steps}")
                     break
             north_south_ranges.append((north_south, steps))
             direction = "S"
@@ -74,6 +78,9 @@ def find_easter_bunny_hq():
                 else:
                     start_range = north_south_range[1]
                     end_range = north_south_range[0]
+                if steps in range(start_range, end_range):
+                    print(f"already been here E/L: {north_south+east_west, steps}")
+                    break
             north_south_ranges.append((east_west, steps))
             direction = "N"
             north_south += steps
@@ -87,7 +94,11 @@ def find_easter_bunny_hq():
                     start_range = east_west_range[1]
                     end_range = east_west_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    # if north_south < 0:
+                    #     north_south *= -1
+                    # if east_west < 0:
+                    #     east_west *= -1
+                    print(f"already been here S/R: {north_south+east_west, steps}")
                     break 
             east_west_ranges.append((east_west, steps))
             direction = "W"
@@ -102,7 +113,7 @@ def find_easter_bunny_hq():
                     start_range = east_west_range[1]
                     end_range = east_west_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    print(f"already been here S/L: {north_south+east_west, steps}")
                     break 
             east_west_ranges.append((east_west, steps))
             direction = "E"
@@ -117,7 +128,7 @@ def find_easter_bunny_hq():
                     start_range = north_south_range[1]
                     end_range = north_south_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    print(f"already been here W/R: {north_south+east_west, steps}")
                     break
             north_south_ranges.append((north_south, steps))
             direction = "N"
@@ -132,7 +143,7 @@ def find_easter_bunny_hq():
                     start_range = north_south_range[1]
                     end_range = north_south_range[0]
                 if steps in range(start_range, end_range):
-                    print(f"already been here: {north_south, east_west, steps}")
+                    print(f"already been here W/L: {north_south+east_west, steps}")
                     break
             north_south_ranges.append((north_south, steps))
             direction = "S"
@@ -144,7 +155,7 @@ def find_easter_bunny_hq():
         north_south = north_south * -1
     elif east_west < 0:
         east_west = east_west * -1
-    return north_south+east_west
+    return north_south+east_west, north_south_ranges, east_west_ranges
 
 
 
