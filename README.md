@@ -213,6 +213,10 @@
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
   * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
+### All Star Code Challenge #15 (6kyu)
+  * Module: `code_challenges/code_wars/rotate_text.py`
+  * Tests: `tests/code_wars/test_rotate_text.py`
+  * URL: [challenge ur](https://www.codewars.com/kata/586560a639c5ab3a260000f3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
