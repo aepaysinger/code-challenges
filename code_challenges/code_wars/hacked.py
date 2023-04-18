@@ -2,10 +2,11 @@ def find_hack(student_grades):
     checked_scores = {}
     hacked_students = []
     for student in student_grades:
-        checked_scores[student[0]] = [student[1]]
+        name, old_score, grades = [category for category in student]
+        checked_scores[name] = [old_score]
         score = 0
         extra = 0
-        for list_of_grades in student[2]:
+        for list_of_grades in grades:
             for grade in list_of_grades:
                 if grade == "A":
                     score += 30
