@@ -1,8 +1,8 @@
 def find_hack(student_grades):
     checked_scores = {}
     hacked_students = []
-    for student in student_grades:
-        name, old_score, grades = [category for category in student]
+
+    for name, old_score, grades in student_grades:
         checked_scores[name] = [old_score]
         score = 0
         extra = 0
@@ -24,7 +24,7 @@ def find_hack(student_grades):
                     extra -= 1
         if extra >= 5:
             score += 20
-        checked_scores[student[0]].append(score)
+        checked_scores[name].append(score)
     for student in checked_scores:
         if checked_scores[student][1] > 200:
             hacked_students.append(student)
