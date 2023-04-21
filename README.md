@@ -217,6 +217,10 @@
   * Module: `code_challenges/code_wars/morse_code.py`
   * Tests: `tests/code_wars/test_morse_code.py`
   * URL: [challenge url](https://www.codewars.com/kata/54b724efac3d5402db00065e/python)
+### All Star Code Challenge #15 (6kyu)
+  * Module: `code_challenges/code_wars/rotate_text.py`
+  * Tests: `tests/code_wars/test_rotate_text.py`
+  * URL: [challenge ur](https://www.codewars.com/kata/586560a639c5ab3a260000f3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
