@@ -213,6 +213,10 @@
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
   * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
+### All Star Code Challenge #15 (6kyu)
+  * Module: `code_challenges/code_wars/rotate_text.py`
+  * Tests: `tests/code_wars/test_rotate_text.py`
+  * URL: [challenge ur](https://www.codewars.com/kata/586560a639c5ab3a260000f3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -246,6 +250,10 @@
   * Module: `code_challenges/advent_of_code/program_alarm.py`
   * Tests: `tests/advent_of_code/test_program_alarm.py`
   * URL: [challenge url](https://adventofcode.com/2019/day/2#part2)
+### The Tyranny of the Rocket Equation:
+  * Module: `code_challenges/advent_of_code/fuel_requirements.py`
+  * Tests: `tests/advent_of_code/test_fuel_requirements.py`
+  * URL: [challenge url](https://adventofcode.com/2019/day/1)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`

@@ -1,3 +1,5 @@
+import pytest
+
 from unittest.mock import patch
 
 
@@ -33,3 +35,15 @@ def test_get_next_noun_verb_pair():
     next(pairs)
 
     assert next(pairs) == (0, 3)
+
+
+def test_get_next_noun_verb_pair_stop_itteration():
+    pairs = get_next_noun_verb_pair()
+
+    for _ in range(9999):
+        next(pairs)
+    next(pairs)
+    
+    with pytest.raises(StopIteration) as exc_info:
+        next(pairs)
+    assert exc_info.value.args[0] == RuntimeError
