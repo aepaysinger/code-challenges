@@ -23,15 +23,8 @@ def check_to_add_halfway_digit():
     extra_digits = digits * len(digits)
     total = 0
     for i, digit in enumerate(digits):
-        if i == len(digits) - 1:
-            if digit == digits[half_way - 1]:
-                total += digit
+        if i == len(digits) - 1 and digits == digits[half_way - 1]:
+            total += digit
         elif digit == extra_digits[i + half_way]:
             total += digit
     return total
-   
-
-print(digits_input())
-# print(check_to_add_next_digit())
-# print(check_to_add_halfway_digit())
-# 1122
