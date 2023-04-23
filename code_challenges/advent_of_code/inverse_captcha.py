@@ -9,9 +9,10 @@ def check_to_add_next_digit():
     digits = digits_input()
     total = 0
     for i, digit in enumerate(digits):
-        if i == len(digits) - 1:
-            if digit == digits[0]:
-                total += digit
+        if i == len(digits) - 1 and digit == digits[0]:
+            total += digit
+        elif i == len(digits) - 1 and digit != digits[0]:
+            break
         elif digit == digits[i +1]:
             total += digit
     return total
