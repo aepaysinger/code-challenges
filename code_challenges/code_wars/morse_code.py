@@ -58,6 +58,7 @@ def decode_morse(morse_code):
         "...---...": "SOS",
     }
     translation = ""
+
     morse_code = morse_code.strip()
     morse_code = morse_code.split(" ")
 
