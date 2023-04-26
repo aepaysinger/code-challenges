@@ -254,6 +254,10 @@
   * Module: `code_challenges/advent_of_code/fuel_requirements.py`
   * Tests: `tests/advent_of_code/test_fuel_requirements.py`
   * URL: [challenge url](https://adventofcode.com/2019/day/1)
+### Corruption Checksum:
+  * Module: `code_challenges/advent_of_code/corruption_checksum.py`
+  * Tests: `tests/advent_of_code/test_corruption_checksum.py`
+  * URL: [challenge url](https://adventofcode.com/2017/day/2)
 ### Inverse Captcha:
   * Module: `code_challenges/advent_of_code/inverse_captcha.py`
   * Tests: `tests/advent_of_code/test_inverse_captcha.py`
