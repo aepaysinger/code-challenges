@@ -256,7 +256,7 @@
   * URL: [challenge url](https://adventofcode.com/2019/day/1)
 ### Corruption Checksum:
   * Module: `code_challenges/advent_of_code/corruption_checksum.py`
-  * Tests:
+  * Tests: `tests/advent_of_code/test_corruption_checksum.py`
   * URL: [challenge url](https://adventofcode.com/2017/day/2)
 ## Hacker Rank
 ### If-Else
