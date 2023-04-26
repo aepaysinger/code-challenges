@@ -258,6 +258,11 @@
   * Module: `code_challenges/advent_of_code/corruption_checksum.py`
   * Tests: `tests/advent_of_code/test_corruption_checksum.py`
   * URL: [challenge url](https://adventofcode.com/2017/day/2)
+### Inverse Captcha:
+  * Module: `code_challenges/advent_of_code/inverse_captcha.py`
+  * Tests: `tests/advent_of_code/test_inverse_captcha.py`
+  * URL: [challenge url](https://adventofcode.com/2017/day/1)
+  * input: `code_challenges/advent_of_code/digits_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
