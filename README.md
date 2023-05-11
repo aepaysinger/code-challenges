@@ -221,6 +221,10 @@
   * Module: `code_challenges/code_wars/hacked.py`
   * Tests: `tests/code_wars/test_hacked.py`
   * URL: [challenge url](https://www.codewars.com/kata/59f70440bee845599c000085/train/python)
+### N-Point Crossover (6kyu)
+  * Module: `code_challenges/code_wars/n_point_crossover.py`
+  * Tests: `tests/code_wars/test_n_point_crossover.py`
+  * URL: [challenge url](https://www.codewars.com/kata/57339a5226196a7f90001bcf/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
