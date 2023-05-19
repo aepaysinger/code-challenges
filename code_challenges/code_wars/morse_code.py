@@ -63,7 +63,9 @@ def decode_morse(morse_code):
     morse_code = morse_code.split(" ")
 
     for i in range(len(morse_code)):
-        if morse_code[i] == "" and morse_code[i + 1] == "":
+        if translation[-1:] == " " and morse_code[i] == "":
+            continue
+        elif morse_code[i] == "" and morse_code[i + 1] == "":
             translation += " "
         else:
             translation += translator[morse_code[i]]
@@ -71,5 +73,5 @@ def decode_morse(morse_code):
 
 
 if __name__ == "__main__":
-    morse_code = "      ...---... -.-.--   - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.- "
+    morse_code = "      ...---... -.-.--     - .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --. .-.-.- "
     print(decode_morse(morse_code))
