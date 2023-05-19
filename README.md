@@ -263,6 +263,11 @@
   * Tests: `tests/advent_of_code/test_inverse_captcha.py`
   * URL: [challenge url](https://adventofcode.com/2017/day/1)
   * input: `code_challenges/advent_of_code/digits_input`
+### Report Repair:
+  * Module: `code_challenges/advent_of_code/report_repair.py`
+  * Tests: `tests/advent_of_code/test_report_repair.py`
+  * URL: [Challenge URL](https://adventofcode.com/2020/day/1)
+  * input: `code_challenges/advent_of_code/expense_report_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
