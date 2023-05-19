@@ -213,6 +213,10 @@
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
   * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
+### Decode the Morse code (6kyu)
+  * Module: `code_challenges/code_wars/morse_code.py`
+  * Tests: `tests/code_wars/test_morse_code.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54b724efac3d5402db00065e/python)
 ### All Star Code Challenge #15 (6kyu)
   * Module: `code_challenges/code_wars/rotate_text.py`
   * Tests: `tests/code_wars/test_rotate_text.py`
