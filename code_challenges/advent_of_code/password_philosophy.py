@@ -45,6 +45,11 @@ def check_password_validity_b():
     for i, index in enumerate(password_indexes_to_check):
         if (
             letters_to_check[i] == passwords[i][index[0]]
+            and letters_to_check[i] == passwords[i][index[1]]
+        ):
+            continue
+        elif (
+            letters_to_check[i] == passwords[i][index[0]]
             or letters_to_check[i] == passwords[i][index[1]]
         ):
             valid_passwords += 1
@@ -52,8 +57,8 @@ def check_password_validity_b():
     return valid_passwords
 
 
-print(get_password_input())
+# print(get_password_input())
 # print(break_up_password_input())
 # print(check_password_validity_a())
-# print(check_password_validity_b())
+print(check_password_validity_b())
 # 782 is too high

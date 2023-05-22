@@ -56,6 +56,6 @@ def test_check_password_validity_b(get_password_input_mock):
         ["10-12", "r:", "rqmrkrfrkrrrrl"],
     ]
     actual = check_password_validity_b()
-    expected = 8
+    expected = 6
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
