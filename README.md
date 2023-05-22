@@ -213,6 +213,10 @@
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
   * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
+### Decode the Morse code (6kyu)
+  * Module: `code_challenges/code_wars/morse_code.py`
+  * Tests: `tests/code_wars/test_morse_code.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54b724efac3d5402db00065e/python)
 ### All Star Code Challenge #15 (6kyu)
   * Module: `code_challenges/code_wars/rotate_text.py`
   * Tests: `tests/code_wars/test_rotate_text.py`
@@ -268,6 +272,11 @@
   * Tests: `test/advent_of_code/test_password_philosophy.py`
   * URL: [Challenge Url](https://adventofcode.com/2020/day/2)
   * input: `code_challenges/advent_of_code/password_input`
+### Report Repair:
+  * Module: `code_challenges/advent_of_code/report_repair.py`
+  * Tests: `tests/advent_of_code/test_report_repair.py`
+  * URL: [Challenge URL](https://adventofcode.com/2020/day/1)
+  * input: `code_challenges/advent_of_code/expense_report_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
