@@ -267,6 +267,11 @@
   * Tests: `tests/advent_of_code/test_inverse_captcha.py`
   * URL: [challenge url](https://adventofcode.com/2017/day/1)
   * input: `code_challenges/advent_of_code/digits_input`
+### Password Philosophy:
+  * Module: `code_challenges/advent_of_code/password_philosophy.py`
+  * Tests: `test/advent_of_code/test_password_philosophy.py`
+  * URL: [Challenge Url](https://adventofcode.com/2020/day/2)
+  * input: `code_challenges/advent_of_code/password_input`
 ### Report Repair:
   * Module: `code_challenges/advent_of_code/report_repair.py`
   * Tests: `tests/advent_of_code/test_report_repair.py`
