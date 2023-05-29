@@ -277,6 +277,11 @@
   * Tests: `tests/advent_of_code/test_report_repair.py`
   * URL: [Challenge URL](https://adventofcode.com/2020/day/1)
   * input: `code_challenges/advent_of_code/expense_report_input`
+### Dive:
+  * Module: `code_challenges/advent_of_code/dive.py`
+  * Tests: `tests/advent_of_code/test_dive.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/2)
+  * input: `code_challenges/advent_of_code/directions_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
