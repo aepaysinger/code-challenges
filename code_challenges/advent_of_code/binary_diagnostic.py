@@ -36,6 +36,18 @@ def life_support_rating():
             zeroes.append(numbers)
         else:
             ones.append(numbers)
+    while len(zeroes) != 1:
+        zeroes_holding = []
+        for numbers in zeroes:
+            if numbers[0] == "0":
+                zeroes_holding.append(numbers)
+        zeroes = zeroes_holding  
+    while len(ones) != 1:
+        ones_holding = []
+        for numbers in ones:
+            if numbers[0] == "1":
+                ones_holding.append(numbers)
+        ones = ones_holding
     return zeroes, ones
     
 
