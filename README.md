@@ -277,6 +277,16 @@
   * Tests: `tests/advent_of_code/test_report_repair.py`
   * URL: [Challenge URL](https://adventofcode.com/2020/day/1)
   * input: `code_challenges/advent_of_code/expense_report_input`
+### Binary Diagnostic:
+  * Moduke: `code_challenges/advent_of_code/binary_diagnostic.py`
+  * Tests: `tests/advent_of_code/test_binary_diagnostic.py`
+  * URL: [Challenge URL] (https://adventofcode.com/2021/day/3)
+  * input: `code_challenges/advent_of_code/diagnostic_report_input`
+### Sonar Sweep:
+  * Module: `code_challenges/advent_of_code/sonar_sweep.py`
+  * Tests: `tests/advent_of_code/test_sonar_sweep.py`
+  * URL: [Challenge URL] (https://adventofcode.com/2021/day/1)
+  * input: `code_challenges/advent_of_code/sonar_input`
 ### Dive:
   * Module: `code_challenges/advent_of_code/dive.py`
   * Tests: `tests/advent_of_code/test_dive.py`
