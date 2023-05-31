@@ -25,28 +25,28 @@ def play_bingo():
 
     for number_to_call in numbers_to_call:
         for board in boards:
-            for row_number, rows in enumerate(boards[board]):
-                for i, number in enumerate(rows):
+            for row_number, row in enumerate(boards[board]):
+                for i, number in enumerate(row):
                     if number_to_call == number:
-                        boards[board][row_number][i] = "X"
+                        row[i] = "X"
                     if boards[board][row_number] == ["X", "X", "X", "X", "X"]:
                         return boards[board], number
-                    for _ in range(len(rows)):
+                    for column in range(len(row)):
                         if (
-                            boards[board][0][_] == "X"
-                            and boards[board][1][_] == "X"
-                            and boards[board][2][_] == "X"
-                            and boards[board][3][_] == "X"
-                            and boards[board][4][_] == "X"
+                            boards[board][0][column] == "X"
+                            and boards[board][1][column] == "X"
+                            and boards[board][2][column] == "X"
+                            and boards[board][3][column] == "X"
+                            and boards[board][4][column] == "X"
                         ):
                             return boards[board], number
 
 
 def find_winner_score():
-    wining_board, winning_number = play_bingo()
+    winning_board, winning_number = play_bingo()
     score = 0
-    for rows in wining_board:
-        for character in rows:
+    for row in winning_board:
+        for character in row:
             if character == "X":
                 continue
             score += character
@@ -60,21 +60,21 @@ def find_last_winning_board():
 
     for number_to_call in numbers_to_call:
         for board in boards:
-            for row_number, rows in enumerate(boards[board]):
-                for i, number in enumerate(rows):
+            for row_number, row in enumerate(boards[board]):
+                for i, number in enumerate(row):
                     if number_to_call == number:
-                        boards[board][row_number][i] = "X"
+                        row[i] = "X"
                     if boards[board][row_number] == ["X", "X", "X", "X", "X"]:
                         winning_boards.add(board)
                         if len(winning_boards) == len(boards):
                             return boards[board], number
-                    for _ in range(len(rows)):
+                    for column in range(len(row)):
                         if (
-                            boards[board][0][_] == "X"
-                            and boards[board][1][_] == "X"
-                            and boards[board][2][_] == "X"
-                            and boards[board][3][_] == "X"
-                            and boards[board][4][_] == "X"
+                            boards[board][0][column] == "X"
+                            and boards[board][1][column] == "X"
+                            and boards[board][2][column] == "X"
+                            and boards[board][3][column] == "X"
+                            and boards[board][4][column] == "X"
                         ):
                             winning_boards.add(board)
                             if len(winning_boards) == len(boards):
@@ -84,8 +84,8 @@ def find_last_winning_board():
 def find_last_winner_score():
     wining_board, winning_number = find_last_winning_board()
     score = 0
-    for rows in wining_board:
-        for character in rows:
+    for row in wining_board:
+        for character in row:
             if character == "X":
                 continue
             score += character
