@@ -1,12 +1,11 @@
 def get_bingo_info():
     with open("./code_challenges/advent_of_code/bingo_board_and_numbers") as info:
-        numbers = info.read().split("\n")
+        data = info.read().split("\n")
 
-    numbers = numbers[0].split(",")
+    numbers = data[0].split(",")
     numbers_to_call = [int(number) for number in numbers]
-    with open("./code_challenges/advent_of_code/bingo_board_and_numbers") as info:
-        boards = info.read().split("\n")
-    boards = boards[2:]
+
+    boards = data[2:]
     final_boards = {}
     board_number = 1
     for numbers in boards:
@@ -64,18 +63,19 @@ def find_last_winning_board():
                 for i, number in enumerate(row):
                     if number_to_call == number:
                         row[i] = "X"
-                    if board[row_number] == ["X", "X", "X", "X", "X"]:
-                        winning_boards.add(board_number)
-                        if len(winning_boards) == len(boards):
-                            return board, number
-                    for column in range(len(row)):
-                        if (
-                            board[0][column] == "X"
-                            and board[1][column] == "X"
-                            and board[2][column] == "X"
-                            and board[3][column] == "X"
-                            and board[4][column] == "X"
-                        ):
+                        if board[row_number] == ["X", "X", "X", "X", "X"]:
+                            winning_boards.add(board_number)
+                            if len(winning_boards) == len(boards):
+                                return board, number
+                        if [i] == "X":
+                        # for column in range(len(row)):
+                        #     if (
+                        #         board[0][column] == "X"
+                        #         and board[1][column] == "X"
+                        #         and board[2][column] == "X"
+                        #         and board[3][column] == "X"
+                        #         and board[4][column] == "X"
+                        #     ):
                             winning_boards.add(board_number)
                             if len(winning_boards) == len(boards):
                                 return board, number
