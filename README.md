@@ -292,6 +292,11 @@
   * Tests: `tests/advent_of_code/test_dive.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/2)
   * input: `code_challenges/advent_of_code/directions_input`
+### Lanternfish:
+  * Module: `code_challenges/advent_of_code/lanternfish.py`
+  * Tests: `tests/advent_of_code/test_lanternfish.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/6)
+  * Input: `code_challenges/advent_of_code/lanternfish_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
