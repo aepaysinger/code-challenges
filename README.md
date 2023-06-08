@@ -292,6 +292,11 @@
   * Tests: `tests/advent_of_code/test_dive.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/2)
   * input: `code_challenges/advent_of_code/directions_input`
+### Hydrothermal Venture:
+  * Module: `code_challenges/advent_of_code/hydrothermal_venture.py`
+  * Tests: `test/advent_of_code/test_hydrothermal_venture.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/5)
+  * Input: `code_challenges/advent_of_code/vents_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
