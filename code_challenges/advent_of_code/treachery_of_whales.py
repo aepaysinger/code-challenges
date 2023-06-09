@@ -46,3 +46,4 @@ def fuel_spent_to_align_position_part2():
         return total_fuel
     else:
         return total_fuel_b
+
