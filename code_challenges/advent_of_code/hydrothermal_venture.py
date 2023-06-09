@@ -1,13 +1,11 @@
 def get_vents_input():
     with open("code_challenges/advent_of_code/vents_input") as vents_input:
         vents_coordinates = vents_input.read().split("\n")
-    # for vent_coordinate in vents_coordinates:
-    #     vent_coordinate.split("->")
         
     vents_coordinates = [vent_coordinate.split("->") for vent_coordinate in vents_coordinates]
     vents_coordinates = [coordinate.strip() for vent_coordinate in vents_coordinates for coordinate in vent_coordinate]
     vents_coordinates = [vent_coordinate.split(",") for vent_coordinate in vents_coordinates]
-    # vents_coordinates = [int(coordinate) for vent_coordinate in vents_coordinates for coordinate in vent_coordinate]
+
     return vents_coordinates
 
 
@@ -132,7 +130,7 @@ def mark_coordinates_horizontal_vertical_diagonal():
 
     return danger_zone
 
-# print(get_vents_input())
+print(get_vents_input())
 # print(mark_coordinates_horizontal_vertical())
-print(mark_coordinates_horizontal_vertical_diagonal())
+# print(mark_coordinates_horizontal_vertical_diagonal())
 #19424 too lovw
