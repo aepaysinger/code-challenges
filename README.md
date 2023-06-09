@@ -292,6 +292,11 @@
   * Tests: `tests/advent_of_code/test_dive.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/2)
   * input: `code_challenges/advent_of_code/directions_input`
+### The Treachery of Whales:
+  * module: `code_challenges/advent_of_code/treachery_of_whales.py`
+  * Tests: `tests/advent_of_code/test_treachery_of_whales.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/7)
+  * Input: `code_challenges/advent_of_code/crab_positions_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
