@@ -20,26 +20,24 @@ def get_vents_input():
 def get_coordinate_pairs():
     vents_coordinates = get_vents_input()
     coordinate_pairs = []
+    
     biggest_x = 0
     biggest_y = 0
     j = 1
     i = 0
-    for _ in range(len(vents_coordinates)):
+    for coordinates in vents_coordinates:
         if j > len(vents_coordinates):
             break
-        coordinate_pairs.append([vents_coordinates[i], vents_coordinates[j]])
+        coordinate_pairs.append([(int(vents_coordinates[i][0]), int(vents_coordinates[i][1])), (int(vents_coordinates[j][0]), int(vents_coordinates[j][1]))])
         i += 2
         j += 2
-    coordinate_pairs = [
-        [int(coordinate_x), int(coordinate_y)]
-        for coordinate_pair in coordinate_pairs
-        for coordinate_x, coordinate_y in coordinate_pair
-    ]
-    for x, y in coordinate_pairs:
-        if x > biggest_x:
-            biggest_x = x
-        if y > biggest_y:
-            biggest_y = y
+
+    for coordinates in coordinate_pairs:
+        for x, y in coordinates:
+            if x > biggest_x:
+                biggest_x = x
+            if y > biggest_y:
+                biggest_y = y
 
     return coordinate_pairs, biggest_x, biggest_y
 
@@ -161,6 +159,6 @@ def mark_coordinates_horizontal_vertical_diagonal():
 
 # print(get_vents_input())
 # print(mark_coordinates_horizontal_vertical())
-print(mark_coordinates_horizontal_vertical_diagonal())
-# print(get_coordinate_pairs())
+# print(mark_coordinates_horizontal_vertical_diagonal())
+print(get_coordinate_pairs())
 # 19424 too lovw
