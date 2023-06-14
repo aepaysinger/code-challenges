@@ -96,7 +96,7 @@ def mark_coordinates_horizontal_vertical_diagonal():
                     coordinates_map[coordinate][x1] += 1
             else:
                 for coordinate in range(y1, y2 + 1):
-                    coordinates_map[coordinate][x2] += 1
+                    coordinates_map[coordinate][x1] += 1
         elif x2 < x1 and y2 < y1:
             x_coordinate = x2
             for coordinate in range(y2, y1 + 1):
