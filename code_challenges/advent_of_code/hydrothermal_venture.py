@@ -53,21 +53,21 @@ def mark_coordinates_horizontal_vertical():
     x = 0
     y = 1
 
-    for coordinates in coordinate_pairs:
-        if coordinates[0][y] == coordinates[1][y]:
-            if coordinates[0][x] < coordinates[1][x]:
-                for coordinate in range(coordinates[0][x], coordinates[1][x] + 1):
-                    coordinates_map[coordinates[0][y]][coordinate] += 1
+    for (x1, y1), (x2, y2) in coordinate_pairs:
+        if y1 == y2:
+            if x1 < x2:
+                for coordinate in range(x1, x2 + 1):
+                    coordinates_map[y1][coordinate] += 1
             else:
-                for coordinate in range(coordinates[1][x], coordinates[0][x] + 1):
-                    coordinates_map[coordinates[0][y]][coordinate] += 1
-        elif coordinates[0][x] == coordinates[1][x]:
-            if coordinates[1][y] < coordinates[0][y]:
-                for coordinate in range(coordinates[1][y], coordinates[0][y] + 1):
-                    coordinates_map[coordinate][coordinates[0][x]] += 1
+                for coordinate in range(x2, x1 + 1):
+                    coordinates_map[y1][coordinate] += 1
+        elif x1 == x2:
+            if y2 < y1:
+                for coordinate in range(y2, y1 + 1):
+                    coordinates_map[coordinate][x1] += 1
             else:
-                for coordinate in range(coordinates[0][y], coordinates[1][y] + 1):
-                    coordinates_map[coordinate][coordinates[0][x]] += 1
+                for coordinate in range(y1, y2 + 1):
+                    coordinates_map[coordinate][x1] += 1
 
     danger_zone = 0
     for coordinates in coordinates_map:
@@ -82,50 +82,38 @@ def mark_coordinates_horizontal_vertical_diagonal():
     coordinates_map = [[0 for i in range(biggest_x + 1)] for i in range(biggest_y + 1)]
     x = 0
     y = 1
-    for coordinates in coordinate_pairs:
-        if coordinates[0][y] == coordinates[1][y]:
-            if coordinates[0][x] < coordinates[1][x]:
-                for coordinate in range(coordinates[0][x], coordinates[1][x] + 1):
-                    coordinates_map[coordinates[0][y]][coordinate] += 1
+    for (x1, y1), (x2, y2) in coordinate_pairs:
+        if y1 == y2:
+            if x1 < x2:
+                for coordinate in range(x1, x2 + 1):
+                    coordinates_map[y1][coordinate] += 1
             else:
-                for coordinate in range(coordinates[1][x], coordinates[0][x] + 1):
-                    coordinates_map[coordinates[0][y]][coordinate] += 1
-        elif coordinates[0][x] == coordinates[1][x]:
-            if coordinates[1][y] < coordinates[0][y]:
-                for coordinate in range(coordinates[1][y], coordinates[0][y] + 1):
-                    coordinates_map[coordinate][coordinates[0][x]] += 1
+                for coordinate in range(x2, x1 + 1):
+                    coordinates_map[y1][coordinate] += 1
+        elif x1 == x2:
+            if y2 < y1:
+                for coordinate in range(y2, y1 + 1):
+                    coordinates_map[coordinate][x1] += 1
             else:
-                for coordinate in range(coordinates[0][y], coordinates[1][y] + 1):
-                    coordinates_map[coordinate][coordinates[1][x]] += 1
-        elif (
-            coordinates[1][x] < coordinates[0][x]
-            and coordinates[1][y] < coordinates[0][y]
-        ):
-            x_coordinate = coordinates[1][x]
-            for coordinate in range(coordinates[1][y], coordinates[0][y] + 1):
+                for coordinate in range(y1, y2 + 1):
+                    coordinates_map[coordinate][x2] += 1
+        elif x2 < x1 and y2 < y1:
+            x_coordinate = x2
+            for coordinate in range(y2, y1 + 1):
                 coordinates_map[coordinate][x_coordinate] += 1
                 x_coordinate += 1
-        elif (
-            coordinates[0][x] < coordinates[1][x]
-            and coordinates[0][y] > coordinates[1][y]
-        ):
-            x_coordinate = coordinates[1][x]
-            for coordinate in range(coordinates[1][y], coordinates[0][y] + 1):
+        elif x1 < x2 and y1 > y2:
+            x_coordinate = x2
+            for coordinate in range(y2, y1 + 1):
                 coordinates_map[coordinate][x_coordinate] += 1
                 x_coordinate -= 1
-        elif (
-            coordinates[0][x] < coordinates[1][x]
-            and coordinates[0][y] < coordinates[1][y]
-        ):
-            x_coordinate = coordinates[0][x]
-            for coordinate in range(coordinates[0][x], coordinates[1][x] + 1):
+        elif x1 < x2 and y1 < y2:
+            x_coordinate = x1
+            for coordinate in range(x1, x2 + 1):
                 coordinates_map[coordinate][coordinate] += 1
-        elif (
-            coordinates[1][x] < coordinates[0][x]
-            and coordinates[1][y] > coordinates[0][y]
-        ):
-            y_coordinate = coordinates[1][y]
-            for coordinate in range(coordinates[1][x], coordinates[0][x] + 1):
+        elif x2 < x1 and y2 > y1:
+            y_coordinate = y2
+            for coordinate in range(x2, x1 + 1):
                 coordinates_map[coordinate][y_coordinate] += 1
                 y_coordinate -= 1
 
