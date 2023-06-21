@@ -10,7 +10,7 @@ def find_lowest_point():
     # smoke_levels = [[','.join(number)]for row in smoke_levels for number in row]
     # smoke_levels = []
     print(smoke_levels)
-    # res = [int(test_str[idx : idx + K]) for idx in range(0, len(test_str), K)]
+    # smoke_levels = [int(smoke_levels[i]) for i in range(0, len(test_str), K)]
     # lowest_points = []
     # for i, level in enumerate(smoke_levels):
     #     if i >= 1 and i <= 3:
