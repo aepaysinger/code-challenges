@@ -1,8 +1,5 @@
 def get_moves():
-
-    with open(
-        "./code_challenges/advent_of_code/supply_stacks_moves"
-    ) as move:
+    with open("./code_challenges/advent_of_code/supply_stacks_moves") as move:
         moves = move.read().split("\n")
 
     return moves
