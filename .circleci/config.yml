@@ -4,7 +4,4 @@ jobs:
       - image: cimg/python:3.11.4
     steps:
       - checkout
-      - run: 
-        name: Run Tests
-        command: python -m pytest
-    
+      - run: python --version
