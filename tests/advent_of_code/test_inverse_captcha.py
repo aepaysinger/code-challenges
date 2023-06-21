@@ -1,7 +1,10 @@
 from unittest.mock import patch
 
 
-from code_challenges.advent_of_code.inverse_captcha import check_to_add_next_digit, check_to_add_halfway_digit
+from code_challenges.advent_of_code.inverse_captcha import (
+    check_to_add_next_digit,
+    check_to_add_halfway_digit,
+)
 
 
 @patch("code_challenges.advent_of_code.inverse_captcha.digits_input")
