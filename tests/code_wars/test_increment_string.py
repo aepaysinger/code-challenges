@@ -4,7 +4,7 @@ from code_challenges.code_wars.increment_string import increment_string
 def test_increment_string_basic():
     actual = increment_string("foo")
     expected = "foo1"
- 
+
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
 

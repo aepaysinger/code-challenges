@@ -2,12 +2,14 @@ from code_challenges.adhoc.rotate_matrix import rotate_matrix, rotate_v2, rotate
 
 
 def test_rotate_matrix_4_x_4():
-    actual = rotate_matrix([
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16],
+        ]
+    )
     expected = [
         [13, 9, 5, 1],
         [14, 10, 6, 2],
@@ -19,11 +21,13 @@ def test_rotate_matrix_4_x_4():
 
 
 def test_rotate_matrix_3_x_3():
-    actual = rotate_matrix([
-        [1,2,3],
-        [4,5,6],
-        [7,8,9],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ]
+    )
     expected = [
         [7, 4, 1],
         [8, 5, 2],
@@ -34,12 +38,14 @@ def test_rotate_matrix_3_x_3():
 
 
 def test_rotate_v2_4_x_4():
-    actual = rotate_matrix([
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16],
+        ]
+    )
     expected = [
         [13, 9, 5, 1],
         [14, 10, 6, 2],
@@ -49,12 +55,15 @@ def test_rotate_v2_4_x_4():
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
+
 def test_rotate_v2_3_x_3():
-    actual = rotate_matrix([
-        [1,2,3],
-        [4,5,6],
-        [7,8,9],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ]
+    )
     expected = [
         [7, 4, 1],
         [8, 5, 2],
@@ -65,12 +74,14 @@ def test_rotate_v2_3_x_3():
 
 
 def test_rotate_v3_4_x_4():
-    actual = rotate_matrix([
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12],
+            [13, 14, 15, 16],
+        ]
+    )
     expected = [
         [13, 9, 5, 1],
         [14, 10, 6, 2],
@@ -80,12 +91,15 @@ def test_rotate_v3_4_x_4():
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
+
 def test_rotate_v3_3_x_3():
-    actual = rotate_matrix([
-        [1,2,3],
-        [4,5,6],
-        [7,8,9],
-    ])
+    actual = rotate_matrix(
+        [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ]
+    )
     expected = [
         [7, 4, 1],
         [8, 5, 2],

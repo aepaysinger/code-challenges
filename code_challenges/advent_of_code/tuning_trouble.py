@@ -1,8 +1,5 @@
 def get_code():
-
-    with open(
-        "./code_challenges/advent_of_code/tuning_trouble_input"
-    ) as get_code:
+    with open("./code_challenges/advent_of_code/tuning_trouble_input") as get_code:
         code = get_code.read()
 
     return code
