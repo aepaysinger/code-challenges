@@ -1,5 +1,4 @@
 jobs:
-  run tests:
     build:
       docker:
         - image: cimg/python:3.11.4
