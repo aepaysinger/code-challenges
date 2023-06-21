@@ -65,8 +65,4 @@ def find_lowest_point():
                         lowest_points.append(number)
 
     return sum(lowest_points) + len(lowest_points)
-                
-
-# print(get_smoke_input())
-print(find_lowest_point())
-# 535 too high
+#535 too high
