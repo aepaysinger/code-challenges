@@ -1,8 +1,10 @@
 jobs:
-    build:
-      docker:
-        - image: cimg/python:3.11.4
-      steps:
-        - checkout
-        - run:
-            pytest tests
+  build:
+    docker:
+      - image: cimg/python:3.11.4
+    steps:
+      - checkout
+      - run: 
+        name: Run Tests
+        command: python -m pytest
+    
