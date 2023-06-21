@@ -5,5 +5,4 @@ jobs:
       steps:
         - checkout
         - run:
-          command:
             pytest tests
