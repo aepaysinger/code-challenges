@@ -5,7 +5,7 @@ class PersistentMultiplication:
 
     def break_up_numbers(self):
         self.numbers = [int(x) for x in str(self.number)]
-        
+
         return self.numbers
 
     def multiply_numbers(self):

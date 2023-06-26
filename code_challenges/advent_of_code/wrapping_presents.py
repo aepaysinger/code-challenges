@@ -20,7 +20,7 @@ def find_surface_area():
     for length, width, height in present_measurements:
         length_x_width = int(length) * int(width)
         width_x_height = int(width) * int(height)
-        height_x_length= int(height) * int(length)
+        height_x_length = int(height) * int(length)
 
         smallest_amount = None
 
@@ -30,7 +30,12 @@ def find_surface_area():
             smallest_amount = width_x_height
         elif height_x_length <= length_x_width and height_x_length <= width_x_height:
             smallest_amount = height_x_length
-        total_wrapping_paper += (length_x_width * 2) + (width_x_height * 2) + (height_x_length * 2) + smallest_amount
+        total_wrapping_paper += (
+            (length_x_width * 2)
+            + (width_x_height * 2)
+            + (height_x_length * 2)
+            + smallest_amount
+        )
     return total_wrapping_paper
 
 

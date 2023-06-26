@@ -1,8 +1,5 @@
 def camp_cleanup_sections():
-
-    with open(
-        "./code_challenges/advent_of_code/camp_cleanup_input"
-    ) as sections:
+    with open("./code_challenges/advent_of_code/camp_cleanup_input") as sections:
         section_ids = sections.read().split("\n")
 
     return section_ids
