@@ -10,6 +10,3 @@ def count_skills(tree, required):
             level = tree[level]
 
     return len(visited_levels) + len(required)
-
-
-print(count_skills([0, 0, 0, 1, 3, 3, 2], {1, 2, 3}))
