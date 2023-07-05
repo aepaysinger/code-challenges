@@ -2,7 +2,6 @@ def directions_reduction_a(directions):
     new_directions = []
 
     for direction in directions:
-
         if new_directions == []:
             new_directions.append(direction)
         elif direction == "NORTH" and new_directions[-1] == "SOUTH":

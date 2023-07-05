@@ -1,8 +1,5 @@
 def rucksack_reorganization():
-
-    with open(
-        "./code_challenges/advent_of_code/rucksack_input"
-    ) as supplies:
+    with open("./code_challenges/advent_of_code/rucksack_input") as supplies:
         items = supplies.read().split("\n")
 
     return items

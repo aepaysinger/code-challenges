@@ -8,9 +8,12 @@ class Backspace:
             if index_to_remove == 0:
                 self.characters = self.characters[1:]
             else:
-                self.characters = self.characters[:index_to_remove - 1] + self.characters[index_to_remove + 1:]
-            index_to_remove = self.characters.find("#")    
-        
+                self.characters = (
+                    self.characters[: index_to_remove - 1]
+                    + self.characters[index_to_remove + 1 :]
+                )
+            index_to_remove = self.characters.find("#")
+
         return self.characters
 
 
