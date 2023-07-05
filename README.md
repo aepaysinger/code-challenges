@@ -225,6 +225,10 @@
   * Module: `code_challenges/code_wars/hacked.py`
   * Tests: `tests/code_wars/test_hacked.py`
   * URL: [challenge url](https://www.codewars.com/kata/59f70440bee845599c000085/train/python)
+### Skills Master (6kyu)
+  * Module: `code_challenges/code_wars/skills_master.py`
+  * Tests: `tests/code_wars/test_skills_master.py`
+  * URL: [challenge url](https://www.codewars.com/kata/648f2033d52f51608e06c458/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
