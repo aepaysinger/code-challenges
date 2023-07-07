@@ -28,7 +28,7 @@ def get_coordinate_pairs():
 
     j = 1
     i = 0
-    for coordinates in vents_coordinates:
+    for _ in vents_coordinates:
         if j > len(vents_coordinates):
             break
         coordinate_pairs.append(
@@ -46,7 +46,7 @@ def get_coordinate_pairs():
 def count_coordinate_points():
     coordinate_pairs = get_coordinate_pairs()
     coordinate_points = {}
-    count = 0
+    
     for (x1, y1), (x2, y2) in coordinate_pairs:
         if y1 == y2:
             if x1 < x2:
@@ -82,19 +82,21 @@ def count_coordinate_points():
             for coordinate in range(x2, x1 + 1):
                 coordinate_points[(coordinate, y_coordinate)] = coordinate_points.get((coordinate, y_coordinate), 0) + 1
                 y_coordinate += 1
+        else:
+            print(f"else: {(x1, y1), (x2, y2)}")
    
-    
+    count = 0
     for amount in coordinate_points.values():
         if amount >= 2:
             count += 1
         
-    return count
+    return count, coordinate_points
 
 
 # print(get_vents_input())
 # print(transform_vents_input())
-print(get_coordinate_pairs())
-# print(count_coordinate_points())
+# print(get_coordinate_pairs())
+print(count_coordinate_points())
 
 
 # 19424 too low
