@@ -108,7 +108,7 @@ def find_distance():
 
 # print(elves_directions())
 print(find_easter_bunny_hq())
-# print(find_distance())
+print(find_distance())
 # print(first_location_visited_twice())
 #not 23
 # not 5
