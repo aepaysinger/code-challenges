@@ -18,12 +18,12 @@ def clean_up_triangle_sides():
 
 def find_triangle():
     triangle_sides = clean_up_triangle_sides()
-    number_of_trianles = 0
+    number_of_triangles = 0
     
     for angles in triangle_sides:
         if (angles[0] + angles[1]) > angles[2] and (angles[0] + angles[2]) > angles[1] and (angles[1] + angles[2]) > angles[0]:
-            number_of_trianles += 1
-    return number_of_trianles 
+            number_of_triangles += 1
+    return number_of_triangles 
         
 
 
