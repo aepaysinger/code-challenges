@@ -6,13 +6,13 @@ def get_triangle_sides():
 
 def clean_up_triangle_sides():
     triangle_sides = get_triangle_sides()
-    triangle_sides = [angles.strip() for angles in triangle_sides]
-    triangle_sides = [angles.split() for angles in triangle_sides]
+    triangle_sides = [sides.strip() for sides in triangle_sides]
+    triangle_sides = [sides.split() for sides in triangle_sides]
     
-    for angles in triangle_sides:
-        angles[0] = int(angles[0])
-        angles[1] = int(angles[1])
-        angles[2] = int(angles[2])
+    for sides in triangle_sides:
+        sides[0] = int(sides[0])
+        sides[1] = int(sides[1])
+        sides[2] = int(sides[2])
 
     return triangle_sides
 
@@ -20,8 +20,8 @@ def find_triangle():
     triangle_sides = clean_up_triangle_sides()
     number_of_triangles = 0
     
-    for angles in triangle_sides:
-        if (angles[0] + angles[1]) > angles[2] and (angles[0] + angles[2]) > angles[1] and (angles[1] + angles[2]) > angles[0]:
+    for sides in triangle_sides:
+        if (sides[0] + sides[1]) > sides[2] and (sides[0] + sides[2]) > sides[1] and (sides[1] + sides[2]) > sides[0]:
             number_of_triangles += 1
     return number_of_triangles 
         
