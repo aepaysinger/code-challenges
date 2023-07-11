@@ -229,6 +229,10 @@
   * Module: `code_challenges/code_wars/expanded_form.py`
   * Tests: `tests/code_wars/test_expanded_form.py`
   * URL: [challenge url](https://www.codewars.com/kata/5842df8ccbd22792a4000245/python)
+### Skills Master (6kyu)
+  * Module: `code_challenges/code_wars/skills_master.py`
+  * Tests: `tests/code_wars/test_skills_master.py`
+  * URL: [challenge url](https://www.codewars.com/kata/648f2033d52f51608e06c458/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -306,6 +310,11 @@
   * Tests: `tests/advent_of_code/test_lanternfish.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/6)
   * Input: `code_challenges/advent_of_code/lanternfish_input`
+### Bathroom Security:
+  * Module: `code_challenges/advent_of_code/bathroom_security.py`
+  * Tests: `tests/advent_of_code/test_bathroom_security.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/2)
+  * Input: `code_challenges/advent_of_code/key_pad_moves`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
