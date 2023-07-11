@@ -8,11 +8,10 @@ def get_incrypted_room_name():
     room_names = [room.split("-") for room in room_names]
     for room in room_names:
         letter_count = {}
-        for name in range(len(room)-1):
-            for character in name:
-                print(character)
-                # letter_count[character] = letter_count.get(character, 0) + 1
-        # print(letter_count)
+        for i in range(len(room)-1):
+            for character in room[i]:
+                letter_count[character] = letter_count.get(character, 0) + 1
+        print(letter_count)
 
     
 
