@@ -225,6 +225,10 @@
   * Module: `code_challenges/code_wars/hacked.py`
   * Tests: `tests/code_wars/test_hacked.py`
   * URL: [challenge url](https://www.codewars.com/kata/59f70440bee845599c000085/train/python)
+### Write Number in Expanded Form (6kyu):
+  * Module: `code_challenges/code_wars/expanded_form.py`
+  * Tests: `tests/code_wars/test_expanded_form.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5842df8ccbd22792a4000245/python)
 ### Skills Master (6kyu)
   * Module: `code_challenges/code_wars/skills_master.py`
   * Tests: `tests/code_wars/test_skills_master.py`
