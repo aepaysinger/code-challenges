@@ -100,6 +100,3 @@ def by_number(character_and_amount):
 def by_letter(character_and_amount):
     character, _ = character_and_amount
     return character
-
-
-print(get_room_names())
