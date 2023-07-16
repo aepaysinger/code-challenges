@@ -302,6 +302,11 @@
   * Tests: `tests/advent_of_code/test_lanternfish.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/6)
   * Input: `code_challenges/advent_of_code/lanternfish_input`
+### Security Through Obscurity:
+  * Module: `code_challenges/advent_of_code/security_through_obscurity.py`
+  * Tests: `tests/advent_of_code/test_security_through_obscurity.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/4)
+  * Input: `code_challenges/advent_of_code/room_name_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`

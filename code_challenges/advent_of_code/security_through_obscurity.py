@@ -1,19 +1,17 @@
-
-
-
 def get_room_names():
     with open("./code_challenges/advent_of_code/room_name_input") as room_names_input:
         room_names = room_names_input.read().split("\n")
     return room_names
 
+
 def get_incrypted_room_name():
     room_names = get_room_names()
     room_names = [room.split("-") for room in room_names]
-    # print(room_names)
     rooms = {}
+
     for room in room_names:
         letter_count = {}
-        for i in range(len(room)-1):
+        for i in range(len(room) - 1):
             for character in room[i]:
                 letter_count[character] = letter_count.get(character, 0) + 1
         rooms[room[-1]] = letter_count
@@ -31,6 +29,7 @@ def get_incrypted_room_name():
                 continue
             characters.append((character, room_code[character]))
         characters = sorted(characters, key=by_letter)
+
         characters = sorted(characters, key=by_number, reverse=True)
         characters = "".join([character[0] for character in characters])
         if characters == code:
@@ -38,20 +37,48 @@ def get_incrypted_room_name():
             real_rooms.append(room_names[i])
         i += 1
 
-    return total, real_rooms#["-".join(room) for room in real_rooms]
+    return total, real_rooms
 
 
-def translate_room_names():
+def translate_room_names(desired_room_name):
     _, real_rooms = get_incrypted_room_name()
-    
-    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+    alphabet = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+    ]
     room_names = []
+
     for room in real_rooms:
         room_name = ""
         sector_id, _ = room[-1].split("[")
         sector_id = int(sector_id)
         for characters in room[:-1]:
-            for i, character in enumerate(characters):         
+            for i, character in enumerate(characters):
                 index = alphabet.index(character)
                 total = index + sector_id
                 result = total % 26
@@ -59,9 +86,9 @@ def translate_room_names():
                 if i == len(characters) - 1:
                     room_name += " "
         room_names.append(room_name[:-1])
-        if room_name == "northpole object storage ":
+        if room_name == desired_room_name:
             return sector_id
-        
+
     return room_names
 
 
@@ -75,11 +102,4 @@ def by_letter(character_and_amount):
     return character
 
 
-# print(get_room_names())
-# print(get_incrypted_room_name())
-print(translate_room_names())
-# 16 + 343 = 359
-# take index of the letter
-# add the number = result
-# result % 26 = index
-# alphabet[index]
+print(get_room_names())
