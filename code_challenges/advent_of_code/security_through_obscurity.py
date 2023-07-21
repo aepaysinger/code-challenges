@@ -4,44 +4,42 @@ def get_room_names():
     return room_names
 
 
-def get_incrypted_room_name():
+def get_encrypted_room_name():
     room_names = get_room_names()
     room_names = [room.split("-") for room in room_names]
-    rooms = {}
+    rooms = []
 
     for room in room_names:
         letter_count = {}
         for i in range(len(room) - 1):
             for character in room[i]:
                 letter_count[character] = letter_count.get(character, 0) + 1
-        rooms[room[-1]] = letter_count
-    total = 0
-    real_rooms = []
-    i = 0
-    for room, room_code in rooms.items():
-        characters = []
-        start, end = room.split("[")
+        start, end = room[-1].split("[")
         code = end[:-1]
         digits = int(start)
+        rooms.append((digits, code, letter_count))
 
-        for character in code:
-            if character not in room_code:
+    total = 0
+    real_rooms = []
+
+    for i, (digits, code, letter_count) in enumerate(rooms):
+        characters = []
+        for letter in letter_count:
+            if letter not in code:
                 continue
-            characters.append((character, room_code[character]))
+            characters.append((letter, letter_count[letter]))
         characters = sorted(characters, key=by_letter)
-
         characters = sorted(characters, key=by_number, reverse=True)
         characters = "".join([character[0] for character in characters])
         if characters == code:
             total += digits
             real_rooms.append(room_names[i])
-        i += 1
 
     return total, real_rooms
 
 
 def translate_room_names(desired_room_name):
-    _, real_rooms = get_incrypted_room_name()
+    _, real_rooms = get_encrypted_room_name()
 
     alphabet = [
         "a",
