@@ -5,8 +5,7 @@ def get_room_names():
 
 
 def get_encrypted_room_name():
-    room_names = get_room_names()
-    room_names = [room.split("-") for room in room_names]
+    room_names = [room.split("-") for room in get_room_names()]
     rooms = []
 
     for room in room_names:
