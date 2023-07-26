@@ -5,6 +5,6 @@ def count_up(n):
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     print(count_up(n))

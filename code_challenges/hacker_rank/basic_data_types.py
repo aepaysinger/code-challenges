@@ -15,10 +15,21 @@ def basic_data_types(commands):
             result.pop()
         if command[0] == "reverse":
             result.reverse()
-    
-
 
 
 if __name__ == "__main__":
-    commands = [['insert', '0', '5'], ['insert', '1', '10'], ['insert', '0', '6'], ['print'], ['remove', '6'], ['append', '9'], ['append', '1'], ['sort'], ['print'], ['pop'], ['reverse'], ['print']]
+    commands = [
+        ["insert", "0", "5"],
+        ["insert", "1", "10"],
+        ["insert", "0", "6"],
+        ["print"],
+        ["remove", "6"],
+        ["append", "9"],
+        ["append", "1"],
+        ["sort"],
+        ["print"],
+        ["pop"],
+        ["reverse"],
+        ["print"],
+    ]
     basic_data_types(commands)
