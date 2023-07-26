@@ -1,6 +1,3 @@
-import itertools
-
-
 def frequency_input():
     with open(
         "./code_challenges/advent_of_code/frequency_input"
@@ -27,12 +24,13 @@ def visited_frequency_twice():
     current_frequency = 0
     visited_frequencies = set()
 
-    for frequency in itertools.cycle(frequencies):
-        if frequency[0] == "+":
-            current_frequency += int(frequency[1:])
-        elif frequency[0] == "-":
-            current_frequency -= int(frequency[1:])
+    while True:
+        for frequency in frequencies:
+            if frequency[0] == "+":
+                current_frequency += int(frequency[1:])
+            elif frequency[0] == "-":
+                current_frequency -= int(frequency[1:])
 
-        if current_frequency in visited_frequencies:
-            return current_frequency
-        visited_frequencies.add(current_frequency)
+            if current_frequency in visited_frequencies:
+                return current_frequency
+            visited_frequencies.add(current_frequency)
