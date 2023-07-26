@@ -186,6 +186,11 @@
   * ModuleL `code_challenges/advent_of_code/santas_route.py`
   * Tests: `tests/advent_of_code/test_santas_route.py`
   * URL: [challenge url](https://adventofcode.com/2015/day/3)
+### Chronal Calibration:
+  * Moduel: `code_challenges/advent_of_code/chronal_calibration.py`
+  * Tests: `tests/advent_of_code/test_chronal_calibration.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/1)
+  * input: `code_challenges/advent_of_code/frequency_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`

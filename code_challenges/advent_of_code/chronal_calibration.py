@@ -1,3 +1,6 @@
+import itertools
+
+
 def frequency_input():
     with open(
         "./code_challenges/advent_of_code/frequency_input"
@@ -5,6 +8,7 @@ def frequency_input():
         frequencies = different_frequencies.read().split("\n")
 
     return frequencies
+
 
 def find_final_frequency():
     frequencies = frequency_input()
@@ -17,34 +21,18 @@ def find_final_frequency():
             final_frequency -= int(frequency[1:])
     return final_frequency
 
+
 def visited_frequency_twice():
     frequencies = frequency_input()
     current_frequency = 0
-    visited_frequencies = []
-    visited_twice = None
-    while visited_twice == None:
-        for frequency in frequencies:
-            # print(current_frequency, visited_frequencies)
-            if frequency[0] == "+":
-                current_frequency += int(frequency[1:])
-                if current_frequency not in visited_frequencies:
-                    visited_frequencies.append(current_frequency)
-                else:
-                    visited_twice = current_frequency
-            elif frequency[0] == "-":
-                current_frequency -= int(frequency[1:])
-                if current_frequency not in visited_frequencies:
-                    visited_frequencies.append(current_frequency)
-                else:
-                    visited_twice = current_frequency
-    return visited_twice
+    visited_frequencies = set()
 
-    # print(len(visited_frequencies))
-    # updated_visited_frequencies = set(visited_frequencies)
-    # print(len(updated_visited_frequencies))
+    for frequency in itertools.cycle(frequencies):
+        if frequency[0] == "+":
+            current_frequency += int(frequency[1:])
+        elif frequency[0] == "-":
+            current_frequency -= int(frequency[1:])
 
-    
-
-# print(frequency_input())
-# print(find_final_frequency())
-print(visited_frequency_twice())
+        if current_frequency in visited_frequencies:
+            return current_frequency
+        visited_frequencies.add(current_frequency)
