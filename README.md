@@ -233,6 +233,10 @@
   * Module: `code_challenges/code_wars/skills_master.py`
   * Tests: `tests/code_wars/test_skills_master.py`
   * URL: [challenge url](https://www.codewars.com/kata/648f2033d52f51608e06c458/train/python)
+### Anagram Difference (6kyu)
+  * Module: `code_challenges/code_wars/anagram_difference.py`
+  * Tests: `tests/code_wars/test_anagram_difference.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -262,6 +266,11 @@
   * ModuleL `code_challenges/advent_of_code/santas_route.py`
   * Tests: `tests/advent_of_code/test_santas_route.py`
   * URL: [challenge url](https://adventofcode.com/2015/day/3)
+### Chronal Calibration:
+  * Moduel: `code_challenges/advent_of_code/chronal_calibration.py`
+  * Tests: `tests/advent_of_code/test_chronal_calibration.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/1)
+  * input: `code_challenges/advent_of_code/frequency_input`
 ### The Tyranny of the Rocket Equation:
   * Module: `code_challenges/advent_of_code/fuel_requirements.py`
   * Tests: `tests/advent_of_code/test_fuel_requirements.py`
@@ -310,6 +319,11 @@
   * Tests: `tests/advent_of_code/test_lanternfish.py`
   * URL: [Challenge URL](https://adventofcode.com/2021/day/6)
   * Input: `code_challenges/advent_of_code/lanternfish_input`
+### Security Through Obscurity:
+  * Module: `code_challenges/advent_of_code/security_through_obscurity.py`
+  * Tests: `tests/advent_of_code/test_security_through_obscurity.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/4)
+  * Input: `code_challenges/advent_of_code/room_name_input`
 ### Bathroom Security:
   * Module: `code_challenges/advent_of_code/bathroom_security.py`
   * Tests: `tests/advent_of_code/test_bathroom_security.py`
