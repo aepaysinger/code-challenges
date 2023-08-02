@@ -4,19 +4,27 @@ import hashlib
 def find_pass_code(code):
     used_hashes = []
     number = 0
+    password = ""
     while len(used_hashes) < 8:
-        test_hash = hashlib.md5(code + str(number).encode('utf-8')).hexdigest()
+        test_hash = hashlib.md5(code + str(number).encode("utf-8")).hexdigest()
         if test_hash.startswith("00000"):
-            print("{}: {}".format(code + str(number).encode('utf-8'), test_hash))
-            used_hashes.append(number)
+            used_hashes.append(test_hash)
         number += 1
-    return used_hashes
-    
+    for hash in used_hashes:
+        password += hash[5]
+    return password
 
 
+def find_second_pass_code(code):
+    password = ["-" for _ in range(8)]
+    number = 0
+    while "-" in password:
+        test_hash = hashlib.md5(code + str(number).encode("utf-8")).hexdigest()
+        if test_hash.startswith("00000"):
+            if test_hash[5].isdigit():
+                spot = int(test_hash[5])
+                if spot <= 7 and password[spot] == "-":
+                    password[spot] = test_hash[6]
+        number += 1
 
-
-
-if __name__ == "__main__":
-    code = "abc".encode('utf-8')
-    print(find_pass_code(code))
+    return "".join(password)

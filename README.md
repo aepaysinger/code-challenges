@@ -315,6 +315,10 @@
   * Tests: `tests/advent_of_code/test_bathroom_security.py`
   * URL: [Challenge URL](https://adventofcode.com/2016/day/2)
   * Input: `code_challenges/advent_of_code/key_pad_moves`
+### How About a Nice Game of Chess?:
+  * Module: `code_challenges/advent_of_code/chess_game.py`
+  * Tests: `tests/advent_of_code/test_chess_game.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/5)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
