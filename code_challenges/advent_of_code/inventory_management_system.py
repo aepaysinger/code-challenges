@@ -32,34 +32,21 @@ def find_similar_box():
     box_ids_counts = find_box_ids_checksum()
     box_ids_counts = [[box, box_ids_counts[box]] for box in box_ids_counts]
     # print(box_ids_counts)
-    similar_boxes = []
     
+    for i, (box, count) in enumerate(box_ids_counts[:-2]):
+        for (other_box, other_count) in box_ids_counts[i + 1:]:
+            is_similar, letters = compare_boxes(count, other_count)
+            if is_similar:
+                return letters
+         
     
-    for i, box in enumerate(box_ids_counts):
-        count = i
-        not_same = 0
-        if i == len(box_ids_counts) - 1:
-            break
-        for letter in box[0]:
-            print(count, box, letter)
-            boxes_to_check = []
-            # if letter in box_ids_counts[count]:
-            #     boxes_to_check.append(box_ids_counts[count])
-            if letter not in box_ids_counts[count + 1][0]:
-                not_same += 1
-            if not_same == 2:
-                letter = box[0][0]
-                print(box[0][0])
-                not_same = 0
-                count = i
-                break
-        
-        if not_same == 1:
-            similar_boxes.append((box)[0])            
-    
-    return similar_boxes
 
+def compare_boxes(box_count, other_box_count):
+    #return boolean, and wrong letters
 
+# for each enumerate(box)
+#     for each other get_box_ids
+#         compare each to other 
 
 
 # print(get_box_ids())
