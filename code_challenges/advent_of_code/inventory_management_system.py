@@ -68,17 +68,4 @@ def compare_boxes(box_count, other_box_count):
         else:
             wrong_letters.append(letter * other_box_count[letter])
 
-    # print(len(wrong_letters)), wrong_letters
     return len(wrong_letters) == 2, wrong_letters
-
-
-# print(get_box_ids())
-# print(find_box_ids_checksum())
-# print(get_id_counts())
-# print(find_similar_box())
-print(
-    compare_boxes(
-        {"a": 2, "b": 1, "c": 1, "d": 1, "e": 1},
-        {"a": 1, "x": 1, "c": 2, "y": 1, "e": 1},
-    )
-)
