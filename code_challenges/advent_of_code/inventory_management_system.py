@@ -16,9 +16,9 @@ def find_box_ids_checksum():
         if 2 in counts and 3 in counts:
             twos_count += 1
             threes_count += 1
-        elif 2 in counts:
+        if 2 in counts:
             twos_count += 1
-        elif 3 in counts:
+        if 3 in counts:
             threes_count += 1
     return twos_count * threes_count
 
