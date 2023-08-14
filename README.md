@@ -329,6 +329,11 @@
   * Tests: `tests/advent_of_code/test_bathroom_security.py`
   * URL: [Challenge URL](https://adventofcode.com/2016/day/2)
   * Input: `code_challenges/advent_of_code/key_pad_moves`
+### Inventroy Management System:
+  * Module: `code_challenges/advent_of_code/inventory_management_system.py`
+  * Tests: `test/advent_of_code/test_inventory_management_system.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/2)
+  * Input: `code_challenges/advent_of_code/box_ids_input`
 ### How About a Nice Game of Chess?:
   * Module: `code_challenges/advent_of_code/chess_game.py`
   * Tests: `tests/advent_of_code/test_chess_game.py`
