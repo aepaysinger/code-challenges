@@ -5,23 +5,19 @@ def get_elf_claims():
 
 
 def break_down_claims_info():
-    claims_info = get_elf_claims()
-    claims_info = [claim.split(" ") for claim in claims_info]
-
-    return claims_info
+    return [claim.split(" ") for claim in get_elf_claims()]
 
 
 def organize_claim_info():
     claims_info = break_down_claims_info()
-
     claims = {}
-    for claim in claims_info:
-        x, y = claim[2].split(",")
+    for claim_number, _, starting_coordinates, length_height in claims_info:
+        x, y = starting_coordinates.split(",")
         x_coordinate = int(x)
         y_coordinate = int(y[:-1])
-        length, height = claim[3].split("x")
+        length, height = length_height.split("x")
 
-        claims[claim[0]] = [(x_coordinate, y_coordinate), (length, height)]
+        claims[claim_number] = [(x_coordinate, y_coordinate), (length, height)]
 
     return claims
 
