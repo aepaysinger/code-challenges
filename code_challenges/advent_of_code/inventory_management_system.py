@@ -13,9 +13,6 @@ def find_box_ids_checksum():
         counts = set()
         for count in id_counts[box].values():
             counts.add(count)
-        if 2 in counts and 3 in counts:
-            twos_count += 1
-            threes_count += 1
         if 2 in counts:
             twos_count += 1
         if 3 in counts:
