@@ -338,6 +338,11 @@
   * Module: `code_challenges/advent_of_code/chess_game.py`
   * Tests: `tests/advent_of_code/test_chess_game.py`
   * URL: [Challenge URL](https://adventofcode.com/2016/day/5)
+### No Matter How You Slice It:
+  * Module: `code_challenges/advent_of_code/fabric_prototype.py`
+  * Tests: `test/advent_of_code/test_fabric_prototype.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/3)
+  * Input: `code_challenges/advent_of_code/elf_claims`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
