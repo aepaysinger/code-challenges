@@ -10,7 +10,7 @@ def get_gaurd_schedule():
 
 def organize_schedule():
     schedule = get_gaurd_schedule()
-    schedule = [[shift[0:16], shift[17:]] for shift in schedule]
+    schedule = [(shift[0:16], shift[17:]) for shift in schedule]
     schedule = sorted(
         schedule,
         key=lambda time_action: datetime.strptime(time_action[0], "%Y-%m-%d %H:%M"),
