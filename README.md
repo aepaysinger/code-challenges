@@ -237,6 +237,10 @@
   * Module: `code_challenges/code_wars/anagram_difference.py`
   * Tests: `tests/code_wars/test_anagram_difference.py`
   * URL: [challenge url](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/python)
+### Constant value (6kyu)
+  * Module: `code_challenges/code_wars/compare_substring_values.py`
+  * Tests: `tests/code_wars/test_compare_substring_values.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/59c633e7dcc4053512000073/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
