@@ -1,4 +1,4 @@
-def find_highest_substring_value(strngs):
+def find_highest_substring_value(strings):
     alphabet = {
         "a": 1,
         "b": 2,
@@ -30,8 +30,8 @@ def find_highest_substring_value(strngs):
 
     highest_substring_value = 0
     substring_value = 0
-    for strng in strngs:
-        for character in strng:
+    for string in strings:
+        for character in string:
             substring_value += alphabet[character]
         if substring_value > highest_substring_value:
             highest_substring_value = substring_value
@@ -40,24 +40,24 @@ def find_highest_substring_value(strngs):
     return highest_substring_value
 
 
-def find_substrings(strng):
-    sub_strngs = []
-    sub_strng = []
+def find_substrings(string):
+    sub_strings = []
+    sub_string = []
     vowels = ("a", "e", "i", "o", "u")
-    for i, character in enumerate(strng):
-        if i == len(strng) - 1:
+    for i, character in enumerate(string):
+        if i == len(string) - 1:
             if character not in vowels:
-                sub_strng.append(character)
-                sub_strngs.append(sub_strng)
+                sub_string.append(character)
+                sub_strings.append(sub_string)
             else:
-                sub_strngs.append(sub_strng)
+                sub_strings.append(sub_string)
         elif character not in vowels:
-            sub_strng.append(character)
+            sub_string.append(character)
 
         else:
-            if len(sub_strng) == 0:
+            if len(sub_string) == 0:
                 continue
             else:
-                sub_strngs.append(sub_strng)
-                sub_strng = []
-    return sub_strngs
+                sub_strings.append(sub_string)
+                sub_string = []
+    return sub_strings
