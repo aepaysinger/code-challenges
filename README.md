@@ -338,6 +338,11 @@
   * Module: `code_challenges/advent_of_code/chess_game.py`
   * Tests: `tests/advent_of_code/test_chess_game.py`
   * URL: [Challenge URL](https://adventofcode.com/2016/day/5)
+### Repose Record:
+  * Module: `code_challenges/advent_of_code/get_past_gaurd.py`
+  * Tests: `tests/advent_of_code/test_get_past_gaurd.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/4)
+  * Input: `code_challenges/advent_of_code/gaurd_schedule`
 ### No Matter How You Slice It:
   * Module: `code_challenges/advent_of_code/fabric_prototype.py`
   * Tests: `test/advent_of_code/test_fabric_prototype.py`
