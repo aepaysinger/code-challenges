@@ -13,3 +13,10 @@ def test_find_amount_of_sets_b():
     expected = 15
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
+
+
+def test_find_amount_of_sets_c():
+    actual = find_amount_of_sets([])
+    expected = 0
+
+    assert actual == expected, f"Returned {actual} instead of {expected}"
