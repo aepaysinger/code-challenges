@@ -241,6 +241,10 @@
   * Module: `code_challenges/code_wars/amount_of_sets.py`
   * Tests: `tests/code+wars/test_amount_of_sets.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/584703d76f6cf6ffc6000275/train/python)
+### Constant value (6kyu)
+  * Module: `code_challenges/code_wars/compare_substring_values.py`
+  * Tests: `tests/code_wars/test_compare_substring_values.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/59c633e7dcc4053512000073/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
