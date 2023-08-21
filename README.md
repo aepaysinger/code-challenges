@@ -237,6 +237,10 @@
   * Module: `code_challenges/code_wars/anagram_difference.py`
   * Tests: `tests/code_wars/test_anagram_difference.py`
   * URL: [challenge url](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/python)
+### Estimating Amounts of Subsets (6kyu):
+  * Module: `code_challenges/code_wars/amount_of_sets.py`
+  * Tests: `tests/code+wars/test_amount_of_sets.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/584703d76f6cf6ffc6000275/train/python)
 ### Constant value (6kyu)
   * Module: `code_challenges/code_wars/compare_substring_values.py`
   * Tests: `tests/code_wars/test_compare_substring_values.py`
