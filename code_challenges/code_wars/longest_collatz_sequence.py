@@ -17,11 +17,6 @@ def collatz_number(num):
 
 
 def find_longest_length(numbers):
-    numbers_with_sequence = find_collatz_sequence(numbers)
-    winner = 0
-    winner_length = 0
-    for number in numbers:
-        if numbers_with_sequence[number] > winner_length:
-            winner = number
-            winner_length = numbers_with_sequence[number]
-    return winner
+    return max(
+        find_collatz_sequence(numbers), key=lambda x: find_collatz_sequence(numbers)[x]
+    )
