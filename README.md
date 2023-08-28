@@ -245,6 +245,10 @@
   * Module: `code_challenges/code_wars/compare_substring_values.py`
   * Tests: `tests/code_wars/test_compare_substring_values.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/59c633e7dcc4053512000073/python)
+### Integer with the longest Collatz (6kyu):
+  * Module: `code_challenges/code_wars/longest_collatz_sequence.py`
+  * Tests: `tests/code_wars/test_longest_collatz_sequence.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/57acc8c3e298a7ae4e0007e3/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
