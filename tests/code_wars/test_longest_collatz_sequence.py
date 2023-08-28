@@ -21,7 +21,7 @@ def test_collatz_number_odd():
 
 def test_find_collatz_sequence():
     actual = find_collatz_sequence([2, 4, 3])
-    expected = {2: [1.0], 4: [2.0, 1.0], 3: [10, 5.0, 16.0, 8.0, 4.0, 2.0, 1.0]}
+    expected = {2: 1, 4: 2, 3: 7}
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
 

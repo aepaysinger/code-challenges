@@ -1,11 +1,11 @@
 def find_collatz_sequence(numbers):
     numbers_with_sequence = {}
     for number in numbers:
-        numbers_with_sequence[number] = []
+        numbers_with_sequence[number] = 0
         updated_number = number
         while updated_number > 1:
             updated_number = collatz_number(updated_number)
-            numbers_with_sequence[number].append(updated_number)
+            numbers_with_sequence[number] += 1
     return numbers_with_sequence
 
 
@@ -21,7 +21,7 @@ def find_longest_length(numbers):
     winner = 0
     winner_length = 0
     for number in numbers:
-        if len(numbers_with_sequence[number]) > winner_length:
+        if numbers_with_sequence[number] > winner_length:
             winner = number
-            winner_length = len(numbers_with_sequence[number])
+            winner_length = numbers_with_sequence[number]
     return winner
