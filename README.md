@@ -360,6 +360,10 @@
   * Tests: `test/advent_of_code/test_fabric_prototype.py`
   * URL: [Challenge URL](https://adventofcode.com/2018/day/3)
   * Input: `code_challenges/advent_of_code/elf_claims`
+### The Ideal Stocking Stuffer:
+  * Module: `code_challenges/advent_of_code/md5.py`
+  * Tests: `tests/advent_of_code/test_md5.py`
+  * URL: [Challenge URL](https://adventofcode.com/2015/day/4)
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
