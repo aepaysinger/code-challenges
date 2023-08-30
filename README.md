@@ -360,6 +360,11 @@
   * Tests: `test/advent_of_code/test_fabric_prototype.py`
   * URL: [Challenge URL](https://adventofcode.com/2018/day/3)
   * Input: `code_challenges/advent_of_code/elf_claims`
+### Doesn't He Have Intern-Elves For This?
+ * Module: `code_challenges/advent_of_code/nice_strings.py`
+ * Tests: `tests/advent_of_code/test_nice_strings.py`
+ * URL: [Challenge URL](https://adventofcode.com/2015/day/5)
+ * Input: `code_challenges/advent_of_code/file_of_strings`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
