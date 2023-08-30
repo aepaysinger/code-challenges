@@ -249,6 +249,10 @@
   * Module: `code_challenges/code_wars/longest_collatz_sequence.py`
   * Tests: `tests/code_wars/test_longest_collatz_sequence.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/57acc8c3e298a7ae4e0007e3/python)
+### Pong!(Basics) (6kyu):
+  * Module: `code_challenges/code_wars/pong.py`
+  * Tests: `tests/code_wars/test_pong.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5b432bdf82417e3f39000195/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
