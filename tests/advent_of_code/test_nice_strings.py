@@ -1,6 +1,14 @@
 from unittest.mock import patch
 
-from code_challenges.advent_of_code.nice_strings import find_vowels, find_double_letter, find_subtext, find_double_pair, find_the_pattern, find_nice_string, find_nice_string_2
+from code_challenges.advent_of_code.nice_strings import (
+    find_vowels,
+    find_double_letter,
+    find_subtext,
+    find_double_pair,
+    find_the_pattern,
+    find_nice_string,
+    find_nice_string_2,
+)
 
 
 def test_find_vowels_true():
@@ -75,7 +83,19 @@ def test_find_the_pattern_false():
 
 @patch("code_challenges.advent_of_code.nice_strings.get_text_to_check")
 def test_find_nice_string(mock_get_text_to_check):
-    mock_get_text_to_check.return_value = ['zpjxvrmaorjpwegy', 'laxrlkntrukjcswz', 'pbqoungonelthcke', 'niexeyzvrtrlgfzw', 'zuetendekblknqng', 'lyazavyoweyuvfye', 'tegbldtkagfwlerf', 'xckozymymezzarpy', 'ehydpjavmncegzfn', 'jlnespnckgwmkkry', 'bfyetscttekoodio']
+    mock_get_text_to_check.return_value = [
+        "zpjxvrmaorjpwegy",
+        "laxrlkntrukjcswz",
+        "pbqoungonelthcke",
+        "niexeyzvrtrlgfzw",
+        "zuetendekblknqng",
+        "lyazavyoweyuvfye",
+        "tegbldtkagfwlerf",
+        "xckozymymezzarpy",
+        "ehydpjavmncegzfn",
+        "jlnespnckgwmkkry",
+        "bfyetscttekoodio",
+    ]
     actual = find_nice_string()
     expected = 2
 
@@ -84,7 +104,13 @@ def test_find_nice_string(mock_get_text_to_check):
 
 @patch("code_challenges.advent_of_code.nice_strings.get_text_to_check")
 def test_find_nice_string(mock_get_text_to_check):
-    mock_get_text_to_check.return_value = ['qljhvhtzxxxzqqjkmpb', 'xxyxx', 'uurcxstgmygtbstg', 'ieodomkazucvgmuy', 'qjhvhtzxzqqjkmpb']
+    mock_get_text_to_check.return_value = [
+        "qljhvhtzxxxzqqjkmpb",
+        "xxyxx",
+        "uurcxstgmygtbstg",
+        "ieodomkazucvgmuy",
+        "qjhvhtzxzqqjkmpb",
+    ]
     actual = find_nice_string_2()
     expected = 2
 

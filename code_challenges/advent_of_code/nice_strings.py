@@ -7,7 +7,7 @@ def get_text_to_check():
 def find_vowels(text):
     vowels = ("a", "e", "i", "o", "u")
     count = 0
-   
+
     for character in text:
         if character in vowels:
             count += 1
@@ -27,7 +27,7 @@ def find_double_letter(text):
 
 
 def find_subtext(text):
-    pairs = ("ab","cd", "pq", "xy")
+    pairs = ("ab", "cd", "pq", "xy")
     j = 1
     for pair in pairs:
         if pair in text:
@@ -39,25 +39,24 @@ def find_double_pair(text):
     pairs = {}
     j = 1
     k = 2
-    for i in  range(len(text)):
+    for i in range(len(text)):
         if i == len(text) - 3 and text[i] == text[j] and text[i] == text[k]:
-            pairs[text[i]+text[j]] = pairs.get(text[i] + text[j], 0) + 1
+            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
             break
         elif i == len(text) - 2:
-            pairs[text[i]+text[j]] = pairs.get(text[i] + text[j], 0) + 1
+            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
             break
         elif text[i] == text[j] and text[i] == text[k]:
             pass
         else:
-            pairs[text[i]+text[j]] = pairs.get(text[i] + text[j], 0) + 1
+            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
         j += 1
         k += 1
-   
+
     for amount in pairs.values():
         if amount >= 2:
             return True
     return False
-     
 
 
 def find_the_pattern(text):
@@ -66,7 +65,6 @@ def find_the_pattern(text):
         if i == len(text) - 2:
             return False
         elif text[i] == text[j]:
-            
             return True
         j += 1
 
@@ -86,7 +84,6 @@ def find_nice_string_2():
             count += 1
     return count
 
-    
 
 # print(get_text_to_check())
 # print(find_vowels("ugknbfddgicrmopn"))
@@ -95,4 +92,4 @@ def find_nice_string_2():
 # print(find_nice_string())
 # print(find_double_pair("qljhvhtzxxxzqqjkmpb"))
 # print(find_the_pattern("qjhvhtzxzqqjkmpb"))
-print(find_nice_string_2()) #65 wrong, and 67, 69, 50
+print(find_nice_string_2())  # 65 wrong, and 67, 69, 50
