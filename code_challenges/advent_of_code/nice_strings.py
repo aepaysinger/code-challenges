@@ -36,37 +36,22 @@ def find_subtext(text):
 
 
 def find_double_pair(text):
-    pairs = {}
-    j = 1
-    k = 2
-    for i in range(len(text)):
-        if i == len(text) - 3 and text[i] == text[j] and text[i] == text[k]:
-            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
-            break
-        elif i == len(text) - 2:
-            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
-            break
-        elif text[i] == text[j] and text[i] == text[k]:
-            pass
-        else:
-            pairs[text[i] + text[j]] = pairs.get(text[i] + text[j], 0) + 1
-        j += 1
-        k += 1
+    pairs = set()
 
-    for amount in pairs.values():
-        if amount >= 2:
+    for i in range(len(text)- 1):
+        if text[i:i+2] in pairs and text[i:i+2] != text[i-1:i+1]:
             return True
+
+        pairs.add(text[i:i+2])
+
     return False
 
 
 def find_the_pattern(text):
-    j = 2
-    for i in range(len(text)):
-        if i == len(text) - 2:
-            return False
-        elif text[i] == text[j]:
+    for i in range(len(text) -2):
+        if text[i] == text[i + 2]:
             return True
-        j += 1
+    return False
 
 
 def find_nice_string():
