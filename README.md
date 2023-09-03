@@ -368,6 +368,11 @@
   * Module: `code_challenges/advent_of_code/md5.py`
   * Tests: `tests/advent_of_code/test_md5.py`
   * URL: [Challenge URL](https://adventofcode.com/2015/day/4)
+### Signals and Noise:
+  * Module: `code_challenges/advent_of_code/repetition_code.py`
+  * Tests: `tests/advent_of_code/test_repetition_code.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/6)
+  * Input: `code_challenges/advent_of_code/message_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
