@@ -28,14 +28,14 @@ def test_break_up_messages(mock_get_messages):
         "enarar",
     ]
     actual = break_up_messages()
-    expected = {
-        "position 0": {"e": 3, "d": 2, "r": 2, "a": 1, "t": 2, "s": 2, "n": 2, "v": 2},
-        "position 1": {"e": 2, "r": 2, "a": 3, "t": 2, "s": 2, "d": 1, "v": 2, "n": 2},
-        "position 2": {"d": 2, "v": 1, "n": 2, "a": 2, "e": 2, "r": 2, "t": 2, "s": 3},
-        "position 3": {"a": 2, "t": 3, "d": 2, "v": 2, "n": 2, "r": 2, "s": 2, "e": 1},
-        "position 4": {"d": 2, "e": 3, "s": 2, "r": 2, "t": 2, "v": 2, "n": 1, "a": 2},
-        "position 5": {"n": 2, "e": 2, "r": 3, "d": 2, "s": 2, "v": 2, "a": 2, "t": 1},
-    }
+    expected = [
+        {"e": 3, "d": 2, "r": 2, "a": 1, "t": 2, "s": 2, "n": 2, "v": 2},
+        {"e": 2, "r": 2, "a": 3, "t": 2, "s": 2, "d": 1, "v": 2, "n": 2},
+        {"d": 2, "v": 1, "n": 2, "a": 2, "e": 2, "r": 2, "t": 2, "s": 3},
+        {"a": 2, "t": 3, "d": 2, "v": 2, "n": 2, "r": 2, "s": 2, "e": 1},
+        {"d": 2, "e": 3, "s": 2, "r": 2, "t": 2, "v": 2, "n": 1, "a": 2},
+        {"n": 2, "e": 2, "r": 3, "d": 2, "s": 2, "v": 2, "a": 2, "t": 1},
+    ]
 
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
