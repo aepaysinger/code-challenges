@@ -8,10 +8,11 @@ def break_up_messages():
     messages = get_messages()
     character_breakdown = []
 
+    for i in range(len(messages[0])):
+        character_breakdown.append({})
+
     for message in messages:
         for i, character in enumerate(message):
-            while len(character_breakdown) < len(messages[0]):
-                character_breakdown.append({})
             character_breakdown[i][character] = (
                 character_breakdown[i].get(character, 0) + 1
             )
