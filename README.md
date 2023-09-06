@@ -373,6 +373,11 @@
   * Tests: `tests/advent_of_code/test_repetition_code.py`
   * URL: [Challenge URL](https://adventofcode.com/2016/day/6)
   * Input: `code_challenges/advent_of_code/message_input`
+### Internet Protocol Version 7:
+  * Module: `code_challenges/advent_of_code/find_sequence.py`
+  * Tests: `tests/advent_of_code/test_sequence.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/7)
+  * Input: `code_challenges/advent_of_code/ip_addresses_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`
