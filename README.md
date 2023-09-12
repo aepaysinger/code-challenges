@@ -253,6 +253,10 @@
   * Module: `code_challenges/code_wars/pong.py`
   * Tests: `tests/code_wars/test_pong.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5b432bdf82417e3f39000195/train/python)
+### Palindromic Numbers (6kyu)
+  * Module: `code_challenges/code_wars/palindromic_numbers.py`
+  * Tests: `tests/code_wars/test_palindromic_numbers.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/52a0f488852a85c723000aca/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
