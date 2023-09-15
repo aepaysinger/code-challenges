@@ -265,6 +265,10 @@
   * Module: `code_challenges/code_wars/lonliest_character.py`
   * Tests: `tests/code_wars/test_lonliets_character.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5f885fa9f130ea00207c7dc8/python)
+### Multi-tap Keypad Text Entry on an Old Mobile Phone (6kyu):
+  * Module: `code_challenges/code_wars/phone_text.py`
+  * Tests: `tests/code_wars/test+phone_text.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/54a2e93b22d236498400134b/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
