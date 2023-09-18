@@ -7,7 +7,7 @@ def align_right(text,width):
         
 
     #     print(words)
-    print(re.split(r'(\W+,)', text))
+    print(re.split(r'(\W+)', text))
 
 
 
