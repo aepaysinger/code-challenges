@@ -273,6 +273,10 @@
   * Module: `code_challenges/code_wars/kebabize.py`
   * Tests: `tests/code_wars/test_kebabize.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/57f8ff867a28db569e000c4a/python)
+### Not Prime Numbers (6kyu):
+  * Module: `code_challenges/code_wars/not_prime_number.py`
+  * Tests: `tests/code_wars/test_not_prime_number.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
