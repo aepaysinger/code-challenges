@@ -277,6 +277,10 @@
   * Module: `code_challenges/code_wars/not_prime_number.py`
   * Tests: `tests/code_wars/test_not_prime_number.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/train/python)
+### Clocky McClock-Face (6kyu)
+  * Module: `code_challenges/code_wars/find_the)time.py`
+  * Tests: `tests/code_wars/test_find_the_time.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/59752e1f064d1261cb0000ec/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
