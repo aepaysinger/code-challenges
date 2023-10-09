@@ -12,10 +12,9 @@ def find_the_captain(room_numbers):
     if not captains_room:
         return "where did the captain go?"
     elif len(captains_room) >= 2:
-        return "Don't forget the crew!" 
+        return "Don't forget the crew!"
     else:
         return captains_room.pop()
-        
 
 
 if __name__ == "__main__":
