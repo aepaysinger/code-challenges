@@ -49,8 +49,3 @@ def final_result():
     noun, verb = opcode_instructions()
 
     return 100 * noun + verb
-
-
-if __name__ == "__main__":
-    output = 4
-    print(opcode_instructions(output))

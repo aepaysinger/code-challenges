@@ -43,7 +43,13 @@ def test_get_next_noun_verb_pair_stop_itteration():
     for _ in range(9999):
         next(pairs)
     next(pairs)
-    
-    with pytest.raises(StopIteration) as exc_info:
+
+    with pytest.raises(RuntimeError) as exc_info:
         next(pairs)
-    assert exc_info.value.args[0] == RuntimeError
+    assert exc_info.value.args[0] == "generator raised StopIteration"
+
+
+def test_opcode_instructions_stop_itteration():
+    with pytest.raises(RuntimeError) as exc_info:
+        opcode_instructions(4)
+    assert exc_info.value.args[0] == "generator raised StopIteration"
