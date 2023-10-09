@@ -314,6 +314,10 @@
   * ModuleL `code_challenges/advent_of_code/santas_route.py`
   * Tests: `tests/advent_of_code/test_santas_route.py`
   * URL: [challenge url](https://adventofcode.com/2015/day/3)
+### 1202 Program Alarm:
+  * Module: `code_challenges/advent_of_code/program_alarm.py`
+  * Tests: `tests/advent_of_code/test_program_alarm.py`
+  * URL: [challenge url](https://adventofcode.com/2019/day/2#part2)
 ### Chronal Calibration:
   * Moduel: `code_challenges/advent_of_code/chronal_calibration.py`
   * Tests: `tests/advent_of_code/test_chronal_calibration.py`
