@@ -1,5 +1,4 @@
 def snail(trail):
-
     final_path = []
     stop = 0
     for path in trail:
@@ -29,8 +28,8 @@ def snail(trail):
 
 if __name__ == "__main__":
     trail = [
-        [1, 2, 3], 
-        [8, 9, 4], 
+        [1, 2, 3],
+        [8, 9, 4],
         [7, 6, 5],
     ]
 

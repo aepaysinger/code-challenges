@@ -213,10 +213,74 @@
   * Module: `code_challenges/code_wars/translating.py`
   * Tests: `tests/code_wars/test_translating.py`
   * URL: [challenge url](https://www.codewars.com/kata/586538146b56991861000293/python)
+### Decode the Morse code (6kyu)
+  * Module: `code_challenges/code_wars/morse_code.py`
+  * Tests: `tests/code_wars/test_morse_code.py`
+  * URL: [challenge url](https://www.codewars.com/kata/54b724efac3d5402db00065e/python)
 ### All Star Code Challenge #15 (6kyu)
   * Module: `code_challenges/code_wars/rotate_text.py`
   * Tests: `tests/code_wars/test_rotate_text.py`
   * URL: [challenge ur](https://www.codewars.com/kata/586560a639c5ab3a260000f3/python)
+### Find Cracker (6kyu):
+  * Module: `code_challenges/code_wars/hacked.py`
+  * Tests: `tests/code_wars/test_hacked.py`
+  * URL: [challenge url](https://www.codewars.com/kata/59f70440bee845599c000085/train/python)
+### Write Number in Expanded Form (6kyu):
+  * Module: `code_challenges/code_wars/expanded_form.py`
+  * Tests: `tests/code_wars/test_expanded_form.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5842df8ccbd22792a4000245/python)
+### Skills Master (6kyu)
+  * Module: `code_challenges/code_wars/skills_master.py`
+  * Tests: `tests/code_wars/test_skills_master.py`
+  * URL: [challenge url](https://www.codewars.com/kata/648f2033d52f51608e06c458/train/python)
+### Anagram Difference (6kyu)
+  * Module: `code_challenges/code_wars/anagram_difference.py`
+  * Tests: `tests/code_wars/test_anagram_difference.py`
+  * URL: [challenge url](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/python)
+### Estimating Amounts of Subsets (6kyu):
+  * Module: `code_challenges/code_wars/amount_of_sets.py`
+  * Tests: `tests/code+wars/test_amount_of_sets.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/584703d76f6cf6ffc6000275/train/python)
+### Constant value (6kyu)
+  * Module: `code_challenges/code_wars/compare_substring_values.py`
+  * Tests: `tests/code_wars/test_compare_substring_values.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/59c633e7dcc4053512000073/python)
+### Integer with the longest Collatz (6kyu):
+  * Module: `code_challenges/code_wars/longest_collatz_sequence.py`
+  * Tests: `tests/code_wars/test_longest_collatz_sequence.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/57acc8c3e298a7ae4e0007e3/python)
+### Pong!(Basics) (6kyu):
+  * Module: `code_challenges/code_wars/pong.py`
+  * Tests: `tests/code_wars/test_pong.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5b432bdf82417e3f39000195/train/python)
+### Palindromic Numbers (6kyu)
+  * Module: `code_challenges/code_wars/palindromic_numbers.py`
+  * Tests: `tests/code_wars/test_palindromic_numbers.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/52a0f488852a85c723000aca/train/python)
+### Two Sum (6kyu):
+  * Module: `code_challenges/code_wars/two_sum.py`
+  * Tests: `tests/code_wars/test_two_sum.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/52c31f8e6605bcc646000082/python)
+### Lonliest Character (6kyu):
+  * Module: `code_challenges/code_wars/lonliest_character.py`
+  * Tests: `tests/code_wars/test_lonliets_character.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5f885fa9f130ea00207c7dc8/python)
+### Multi-tap Keypad Text Entry on an Old Mobile Phone (6kyu):
+  * Module: `code_challenges/code_wars/phone_text.py`
+  * Tests: `tests/code_wars/test+phone_text.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/54a2e93b22d236498400134b/python)
+### Kebabize (6kyu)
+  * Module: `code_challenges/code_wars/kebabize.py`
+  * Tests: `tests/code_wars/test_kebabize.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/57f8ff867a28db569e000c4a/python)
+### Not Prime Numbers (6kyu):
+  * Module: `code_challenges/code_wars/not_prime_number.py`
+  * Tests: `tests/code_wars/test_not_prime_number.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/train/python)
+### Clocky McClock-Face (6kyu)
+  * Module: `code_challenges/code_wars/find_the)time.py`
+  * Tests: `tests/code_wars/test_find_the_time.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/59752e1f064d1261cb0000ec/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
@@ -250,10 +314,102 @@
   * Module: `code_challenges/advent_of_code/program_alarm.py`
   * Tests: `tests/advent_of_code/test_program_alarm.py`
   * URL: [challenge url](https://adventofcode.com/2019/day/2#part2)
+### Chronal Calibration:
+  * Moduel: `code_challenges/advent_of_code/chronal_calibration.py`
+  * Tests: `tests/advent_of_code/test_chronal_calibration.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/1)
+  * input: `code_challenges/advent_of_code/frequency_input`
 ### The Tyranny of the Rocket Equation:
   * Module: `code_challenges/advent_of_code/fuel_requirements.py`
   * Tests: `tests/advent_of_code/test_fuel_requirements.py`
   * URL: [challenge url](https://adventofcode.com/2019/day/1)
+### Corruption Checksum:
+  * Module: `code_challenges/advent_of_code/corruption_checksum.py`
+  * Tests: `tests/advent_of_code/test_corruption_checksum.py`
+  * URL: [challenge url](https://adventofcode.com/2017/day/2)
+### Inverse Captcha:
+  * Module: `code_challenges/advent_of_code/inverse_captcha.py`
+  * Tests: `tests/advent_of_code/test_inverse_captcha.py`
+  * URL: [challenge url](https://adventofcode.com/2017/day/1)
+  * input: `code_challenges/advent_of_code/digits_input`
+### Password Philosophy:
+  * Module: `code_challenges/advent_of_code/password_philosophy.py`
+  * Tests: `test/advent_of_code/test_password_philosophy.py`
+  * URL: [Challenge Url](https://adventofcode.com/2020/day/2)
+  * input: `code_challenges/advent_of_code/password_input`
+### Report Repair:
+  * Module: `code_challenges/advent_of_code/report_repair.py`
+  * Tests: `tests/advent_of_code/test_report_repair.py`
+  * URL: [Challenge URL](https://adventofcode.com/2020/day/1)
+  * input: `code_challenges/advent_of_code/expense_report_input`
+### Binary Diagnostic:
+  * Moduke: `code_challenges/advent_of_code/binary_diagnostic.py`
+  * Tests: `tests/advent_of_code/test_binary_diagnostic.py`
+  * URL: [Challenge URL] (https://adventofcode.com/2021/day/3)
+  * input: `code_challenges/advent_of_code/diagnostic_report_input`
+### Sonar Sweep:
+  * Module: `code_challenges/advent_of_code/sonar_sweep.py`
+  * Tests: `tests/advent_of_code/test_sonar_sweep.py`
+  * URL: [Challenge URL] (https://adventofcode.com/2021/day/1)
+  * input: `code_challenges/advent_of_code/sonar_input`
+### Dive:
+  * Module: `code_challenges/advent_of_code/dive.py`
+  * Tests: `tests/advent_of_code/test_dive.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/2)
+  * input: `code_challenges/advent_of_code/directions_input`
+### The Treachery of Whales:
+  * module: `code_challenges/advent_of_code/treachery_of_whales.py`
+  * Tests: `tests/advent_of_code/test_treachery_of_whales.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/7)
+  * Input: `code_challenges/advent_of_code/crab_positions_input`
+### Lanternfish:
+  * Module: `code_challenges/advent_of_code/lanternfish.py`
+  * Tests: `tests/advent_of_code/test_lanternfish.py`
+  * URL: [Challenge URL](https://adventofcode.com/2021/day/6)
+  * Input: `code_challenges/advent_of_code/lanternfish_input`
+### Security Through Obscurity:
+  * Module: `code_challenges/advent_of_code/security_through_obscurity.py`
+  * Tests: `tests/advent_of_code/test_security_through_obscurity.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/4)
+  * Input: `code_challenges/advent_of_code/room_name_input`
+### Bathroom Security:
+  * Module: `code_challenges/advent_of_code/bathroom_security.py`
+  * Tests: `tests/advent_of_code/test_bathroom_security.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/2)
+  * Input: `code_challenges/advent_of_code/key_pad_moves`
+### Inventroy Management System:
+  * Module: `code_challenges/advent_of_code/inventory_management_system.py`
+  * Tests: `test/advent_of_code/test_inventory_management_system.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/2)
+  * Input: `code_challenges/advent_of_code/box_ids_input`
+### How About a Nice Game of Chess?:
+  * Module: `code_challenges/advent_of_code/chess_game.py`
+  * Tests: `tests/advent_of_code/test_chess_game.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/5)
+### Repose Record:
+  * Module: `code_challenges/advent_of_code/get_past_gaurd.py`
+  * Tests: `tests/advent_of_code/test_get_past_gaurd.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/4)
+  * Input: `code_challenges/advent_of_code/gaurd_schedule`
+### No Matter How You Slice It:
+  * Module: `code_challenges/advent_of_code/fabric_prototype.py`
+  * Tests: `test/advent_of_code/test_fabric_prototype.py`
+  * URL: [Challenge URL](https://adventofcode.com/2018/day/3)
+  * Input: `code_challenges/advent_of_code/elf_claims`
+### The Ideal Stocking Stuffer:
+  * Module: `code_challenges/advent_of_code/md5.py`
+  * Tests: `tests/advent_of_code/test_md5.py`
+  * URL: [Challenge URL](https://adventofcode.com/2015/day/4)
+### Signals and Noise:
+  * Module: `code_challenges/advent_of_code/repetition_code.py`
+  * Tests: `tests/advent_of_code/test_repetition_code.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/6)
+  * Input: `code_challenges/advent_of_code/message_input`
+### Internet Protocol Version 7:
+  * Module: `code_challenges/advent_of_code/find_sequence.py`
+  * Tests: `tests/advent_of_code/test_sequence.py`
+  * URL: [Challenge URL](https://adventofcode.com/2016/day/7)
+  * Input: `code_challenges/advent_of_code/ip_addresses_input`
 ## Hacker Rank
 ### If-Else
   * Module: `code_challenges/hacker_rank/weird_or_not_werid.py`

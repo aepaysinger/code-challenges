@@ -3,7 +3,6 @@ class LikesAmount:
         self.friends = friends
 
     def like(self):
-
         if len(self.friends) == 0:
             return "no one likes this"
         elif len(self.friends) == 1:

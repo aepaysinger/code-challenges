@@ -14,7 +14,6 @@ class Planet:
 
 
 def test_vehicle():
-
     porsche = Vehicle(2, 4, "Gas")
 
     assert porsche.seats == 2

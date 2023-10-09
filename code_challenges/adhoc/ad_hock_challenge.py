@@ -3,12 +3,10 @@
 # The return value should be the return value from the function from the input dict,  at the input string,
 # when called with the values in the input iterable as arguments.
 def find_the_function(functions, function_name, values):
-
     return functions[function_name](*values)
 
 
 def adding(*nums):
-
     return sum(nums)
 
 

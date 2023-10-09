@@ -1,5 +1,4 @@
 def get_directions():
-
     with open("./code_challenges/advent_of_code/santas_directions") as elf_instructions:
         directions = elf_instructions.read()
 
