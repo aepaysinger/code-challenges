@@ -21,14 +21,17 @@ def test_max_sequence_empty():
 
     assert actual == expected, f"Returned {actual} instead of {expected}."
 
+
 def test_max_sequence_A():
-    actual = max_sequence([7, 4, 11, -11, 39, 36, 10, -6, 37, -10, -32, 44, -26, -34, 43, 43])
+    actual = max_sequence(
+        [7, 4, 11, -11, 39, 36, 10, -6, 37, -10, -32, 44, -26, -34, 43, 43]
+    )
     expected = 155
 
     assert actual == expected, f"Returned {actual} instead of {expected}."
+
 
 # def test_max_sequence_B():
 #     actual = max_sequence([1,2,3,-4,5,6,7])
 #     expected = [(0,6),(0,2),(4,6)]
 #     assert actual == expected, f"{actual} != {expected}"
-    
