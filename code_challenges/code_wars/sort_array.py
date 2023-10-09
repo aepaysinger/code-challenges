@@ -5,4 +5,4 @@ def sort_array(numbers_to_sort):
 
 if __name__ == "__main__":
     numbers_to_sort = [5, 8, 6, 3, 4]
-    print(sort_array(numbers_to_sort)) 
+    print(sort_array(numbers_to_sort))
