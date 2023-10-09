@@ -2,9 +2,10 @@ def encode(st):
     final = ""
     for i in range(0, len(st), 2):
         final += st[i + 1] * int(st[i])
-    return final        
-    
-def decode(st): 
+    return final
+
+
+def decode(st):
     final = ""
     count = 0
     current = st[0]
@@ -25,5 +26,5 @@ if __name__ == "__main__":
     # print(encode(st))
     print(decode(st))
 
-#"AAABBBCCCA"
+# "AAABBBCCCA"
 "3A3B3C1A"
