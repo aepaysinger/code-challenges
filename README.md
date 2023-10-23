@@ -281,6 +281,10 @@
   * Module: `code_challenges/code_wars/find_the)time.py`
   * Tests: `tests/code_wars/test_find_the_time.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/59752e1f064d1261cb0000ec/python)
+### Tetris Series #2 - Primitive Gameplay (6kyu)
+  * Module: `code_challenges/code_wars/tetris.py`
+  * Tests: `tests/code_wars/test_tetris.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5db8a241b8d7260011746407/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
