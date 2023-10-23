@@ -39,16 +39,16 @@ def find_double_pair(text):
     pairs = set()
 
     for i in range(len(text)- 1):
-        if text[i:i+2] in pairs and text[i:i+2] != text[i-1:i+1]:
+        if (text[i:i+2] in pairs) and (text[i:i+2] != text[i-1:i+1]):
             return True
 
         pairs.add(text[i:i+2])
-
+    
     return False
 
 
 def find_the_pattern(text):
-    for i in range(len(text) -2):
+    for i in range(len(text) - 2):
         if text[i] == text[i + 2]:
             return True
     return False
@@ -77,4 +77,5 @@ def find_nice_string_2():
 # print(find_nice_string())
 # print(find_double_pair("qljhvhtzxxxzqqjkmpb"))
 # print(find_the_pattern("qjhvhtzxzqqjkmpb"))
-print(find_nice_string_2())  # 65 wrong, and 67, 69, 50
+print(find_nice_string_2())  # 65 wrong, and 67, 69, 50, 101
+# print(find_double_pair("9jhvhtzxzqqjkmpb"))
