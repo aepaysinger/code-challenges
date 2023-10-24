@@ -26,4 +26,4 @@ if __name__ == "__main__":
     print(decode(st))
 
 #"AAABBBCCCA"
-"3A3B3C1A"
+"3A3B3C1A" 
