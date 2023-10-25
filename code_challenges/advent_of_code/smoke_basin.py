@@ -65,4 +65,6 @@ def find_lowest_point():
                         lowest_points.append(number)
 
     return sum(lowest_points) + len(lowest_points)
+
+print(find_lowest_point())
 #535 too high
