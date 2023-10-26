@@ -277,6 +277,10 @@
   * Module: `code_challenges/code_wars/not_prime_number.py`
   * Tests: `tests/code_wars/test_not_prime_number.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5a9a70cf5084d74ff90000f7/train/python)
+### Find All the Possible Numbers Multiple of 3 with the Digits of a positive Integer (5kyu):
+  * Module: `code_challenges/code_wars/multiples_of_three.py`
+  * Tests: `tests/code_wars/test_multiples_of_three.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5828b9455421a4a4e8000007/train/python)
 ### Clocky McClock-Face (6kyu)
   * Module: `code_challenges/code_wars/find_the)time.py`
   * Tests: `tests/code_wars/test_find_the_time.py`
@@ -285,6 +289,10 @@
   * Module: `code_challenges/code_wars/popping_blocks.py`
   * Tests: `tests/code_wars/test_popping_blocks.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/651bfcbcdb0e8b104175b97e/train/python)
+### Tetris Series #2 - Primitive Gameplay (6kyu)
+  * Module: `code_challenges/code_wars/tetris.py`
+  * Tests: `tests/code_wars/test_tetris.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5db8a241b8d7260011746407/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
