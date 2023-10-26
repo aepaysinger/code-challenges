@@ -281,6 +281,10 @@
   * Module: `code_challenges/code_wars/find_the)time.py`
   * Tests: `tests/code_wars/test_find_the_time.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/59752e1f064d1261cb0000ec/python)
+### Popping Blacks (6kyu):
+  * Module: `code_challenges/code_wars/popping_blocks.py`
+  * Tests: `tests/code_wars/test_popping_blocks.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/651bfcbcdb0e8b104175b97e/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
