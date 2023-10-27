@@ -293,6 +293,10 @@
   * Module: `code_challenges/code_wars/tetris.py`
   * Tests: `tests/code_wars/test_tetris.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5db8a241b8d7260011746407/python)
+### Cycle a list of values (6kyu)
+  * Module: `code_challenges/code_wars/find_next_item.py`
+  * Tests: `tests/code_wars/test_find_next_item.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/5456812629ccbf311b000078/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
