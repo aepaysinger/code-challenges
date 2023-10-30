@@ -293,6 +293,10 @@
   * Module: `code_challenges/code_wars/tetris.py`
   * Tests: `tests/code_wars/test_tetris.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5db8a241b8d7260011746407/python)
+### Almost Even (6kyu)
+  * Module: `code_challenges/code_wars/almost_even.py`
+  * Tests: `tests/code_wars/test_almost_even.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/529e2e1f16cb0fcccb000a6b/train/python)
 ### Cycle a list of values (6kyu)
   * Module: `code_challenges/code_wars/find_next_item.py`
   * Tests: `tests/code_wars/test_find_next_item.py`
