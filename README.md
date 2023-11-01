@@ -301,6 +301,10 @@
   * Module: `code_challenges/code_wars/find_next_item.py`
   * Tests: `tests/code_wars/test_find_next_item.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5456812629ccbf311b000078/python)
+### Are they the "same"? (6kyu)
+  * Module: `code_challenges/code_wars/same_check.py`
+  * Tests: `tests/code_wars/test_same_check.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/550498447451fbbd7600041c/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
