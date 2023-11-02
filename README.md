@@ -301,6 +301,10 @@
   * Module: `code_challenges/code_wars/find_next_item.py`
   * Tests: `tests/code_wars/test_find_next_item.py`
   * URL: [Challenge URL](https://www.codewars.com/kata/5456812629ccbf311b000078/python)
+### Complete The Pattern #16 (6kyu)
+  * Module: `code_challenges/code_wars/complete_the_pattern.py`
+  * Tests: `tests/code_wars/test_complete_the_pattern.py`
+  * URL: [Challenge URL](https://www.codewars.com/kata/55ae997d1c40a199e6000018/train/python)
 ## Advent Of Code
 ### Rucksack Reorganization:
   * Module: `code_challenges/advent_of_code/rucksack_reorganization.py`
