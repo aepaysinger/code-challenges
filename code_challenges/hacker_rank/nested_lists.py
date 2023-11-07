@@ -1,5 +1,4 @@
 def student_grades(records):
-
     lowest_score = 100
     second_lowest_score = 100
     lowest_students = []

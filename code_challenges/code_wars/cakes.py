@@ -36,4 +36,3 @@ if __name__ == "__main__":
         "oil": 6589,
     }
     print(how_many_cakes(recipe, available))
-
