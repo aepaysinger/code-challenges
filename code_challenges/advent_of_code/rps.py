@@ -1,14 +1,11 @@
 def get_rps_moves():
-    with open(
-        "./code_challenges/advent_of_code/rps_input"
-    ) as elf_guide:
+    with open("./code_challenges/advent_of_code/rps_input") as elf_guide:
         moves = elf_guide.read().split("\n")
 
     return moves
 
 
 def rps():
-
     moves = get_rps_moves()
     """
      elf_rock = "A"

@@ -14,26 +14,30 @@ def rotate_matrix(matrix):
     stop = length * length
     step = length
     for i in range(start, stop, step):
-        final_matrix.append(rotated_matrix[i:i+step])     
+        final_matrix.append(rotated_matrix[i : i + step])
 
-    return final_matrix  #"\n".join(map(str,final_matrix))
+    return final_matrix  # "\n".join(map(str,final_matrix))
 
 
 def rotate_v2(matrix):
     rotated = []
     for i in range(len(matrix)):
         row = []
-        for j in range(len(matrix) -1, -1, -1): 
+        for j in range(len(matrix) - 1, -1, -1):
             print(range(len(matrix) - 1, -1, -1), j)
             print(matrix[j][i])
             row.append(matrix[j][i])
         rotated.append(row)
     return rotated
+
+
 # stop at -1????
+
 
 def rotate_v3(matrix):
     print(*matrix[::-1])
     return [list(r) for r in zip(*matrix[::-1])]
+
 
 if __name__ == "__main__":
     matrix = [

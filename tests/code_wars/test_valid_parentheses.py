@@ -36,7 +36,6 @@ def test_valid_parentheses_e():
     assert actual == expected, f"Returned {actual} instead of {expected}"
 
 
-
 def test_valid_parentheses_f():
     actual = valid_parentheses("((())")
     expected = False
