@@ -153,6 +153,10 @@
   * Module: `code_challenges/code_wars/backspace_string.py`
   * Tests: tests/code_wars/test_backspace_string.py`
   * URL: [challenge url](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/python)
+### You are a Robot: Translating a Path (6kyu):
+  * Module: `code_challenges/code_wars/robot_path.py`
+  * Tests: `tests/code_wars/test_robot_path.py`
+  * URL: [challenge url](https://www.codewars.com/kata/636173d79cf0de003d6834e4/python)
 ### Your order, please (6kyu)
   * Module: `code_challenges/code_wars/order_strings.py`
   * Tests: `tests/code_wars/test_order_strings.py`
